@@ -91,7 +91,16 @@ dt{text-decoration:underline;}
 <body  onload="start();">
 <h1>Conference Scan: Rising and Falling Terms - Conference Proceedings from ICALT, ECTEL and ICWL 2010</h1>
 
-<p>This is an un-interpreted and automatically-generated report on emerging, rising and falling terms from the abstracts of the IEEE International Conference on Advanced Learning Technolgies European Conference on Technology Enhanced Learning International Conference on Web-based Learning. It is one part of the <a href="http://blogs.cetis.ac.uk/adam/2011/05/12/weak-signals-and-text-mining-i-an-introduction-to-weak-signals/">&quot;Weak Signals Analysis&quot; work of the TEL-Map Project</a>. The same analytical method is also applied to blogs, hence the term "document" is used in plots; this is identical to an abstract.</p>
+<p>This is an un-interpreted and automatically-generated report on emerging, rising and falling terms from the abstracts of the 
+
+   IEEE International Conference on Advanced Learning Technologies,
+ 
+   European Conference on Technology Enhanced Learning 
+ 
+   and International Conference on Web-based Learning.
+ 
+
+It is one part of the <a href="http://blogs.cetis.ac.uk/adam/2011/05/12/weak-signals-and-text-mining-i-an-introduction-to-weak-signals/">&quot;Weak Signals Analysis&quot; work of the TEL-Map Project</a>. The same analytical method is also applied to blogs, hence the term "document" is used in plots; this is identical to an abstract.</p>
 
 <p><em>All plots will open in a new window/tab as 1000x1000 pixed images if clicked on.</em></p>
 <h2>The Method</h2>
@@ -101,7 +110,7 @@ dt{text-decoration:underline;}
 <ul>
    <li><strong>New Terms</strong>, where this report highlights terms that appear at least 4 times in the target year's abstracts and in at least 2 different abstracts but not at all in the previous years.</li>
    <li><strong>Nearly-new Terms</strong>, where terms appearing between 1 and 2 times in the previous years are considered. They must appear 6 times and in at least 2 different abstracts in the target set to be highlighted.</li>
-   <li><strong>Rising Terms</strong>, where term frequency rises are calculated and rises of more than 180% are highlighted. A term must appear 8 times in the previous years set for a term to be considered.</li>
+   <li><strong>Rising Terms</strong>, where term frequency rises are calculated and rises of more than 180% are highlighted. A term must appear at least 8 times in the previous years set for a term to be considered.</li>
    <li><strong>Falling Terms</strong>, are obtained similarly to Rising Terms but only the top 10% of terms in the previous years set are considered and a change of -80% is needed for the term to be highlighted in the results.</li>
 </ul>
 <em>For Rising and Falling Terms, the change is calculated on the proportion of all stemmed words that are the term in question. For example if 2.00% of stemmed words in the previous years set was &quot;learn&quot; and 2.12% pertains to the current set, then the rise is 6%.</em>
@@ -109,7 +118,7 @@ dt{text-decoration:underline;}
 
 <h2>Statistics and Overall Pattern</h2>
 <h3>Corpus Statistics</h3>
-<p>There are 363 abstracts in 2010 and 1601 in the 4 previous years. Within these abstracts, which define the corpus, there are 6294 distinct terms after removing stop words and applying stemming.The summary statistics for the number of times each term appears in the corpus are: mean=17.87, median=2, maximum=4296.</p>
+<p>There are 363 abstracts in 2010 and 1601 in the 4 previous years. Within these abstracts, which define the corpus, there are 6424 distinct terms after removing stop words and applying stemming.The summary statistics for the number of times each term appears in the corpus are: mean=17.51, median=2, maximum=4289.</p>
 
 <p>For the set of New Terms:
 <ul>
@@ -119,17 +128,17 @@ dt{text-decoration:underline;}
 
 For the set of Nearly-New Terms:
 <ul>
-   <li>the number of times each term appears in the target set has: mean=1.526, median=1, maximum=9.</li>
+   <li>the number of times each term appears in the target set has: mean=1.535, median=1, maximum=9.</li>
    <li>after selecting terms that appear at least 6 times and in at least 2 different abstracts, there are 4 terms in scope which appear in 13 out of the 363 target abstracts.</li>
 </ul>
 
 For the set of Rising Terms:
 <ul>
-   <li>the % rise from the previous years to the target year has: mean=52.11, median=33.82, maximum=640.6.</li>
+   <li>the % rise from the previous years to the target year has: mean=52.11, median=33.01, maximum=640.8.</li>
    <li>after selecting terms that rise by at least 180%, there are 19 terms in scope which appear in 125 out of the 363 target abstracts.</li>
 </ul>
 
-The set of Falling Terms (the % fall from the previous years to the target year) has summary statistics of: mean=-30.87, median=-27.7, maximum=-0.03885.
+The set of Falling Terms (the % fall from the previous years to the target year) has summary statistics of: mean=-31.28, median=-27.98, maximum=-0.1483.
 </p>
 
 <h3>New and Nearly-New Terms</h3>
@@ -154,7 +163,7 @@ Figure 4: Number of terms with a given % fall, limited to the most frequent 10% 
 <div>Highlighted New Terms appear for the first time and with at least 4 occurrences in the target year of 2010. </div>
 
 <div class="cap-img"><a href="Images/NewTermFrequencies_Selected.png" target="image_win"><img src="Images/NewTermFrequencies_Selected.png" alt="New Term Frequencies" width="500" height="500" /></a><BR/>
-Figure 5: Frequenies of occurrence of the New Terms in the target year.</div>
+Figure 5: Frequencies of occurrence of the New Terms in the target year.</div>
 
 <!--reset layout-->
 <div class="clear"/>
@@ -619,7 +628,7 @@ Figure 11: Highlighted rising terms and their percentage of rise. Colour coding 
 <div class="clear"/>
 
 <div class="cap-img"><a href="Images/RisingTerms_PastRecent_Counts.png" target="image_win"><img src="Images/RisingTerms_PastRecent_Counts.png" alt="Rising Terms Past and Recent Counts" width="500" height="500" /></a><BR/>
-Figure 12: The number of occurences of the Rising Terms in the past and target sets of abstracts.</div>
+Figure 12: The number of occurrences of the Rising Terms in the past and target sets of abstracts.</div>
 <div class="cap-img"><a href="Images/RisingTerms_PastRecent_PC.png" target="image_win"><img src="Images/RisingTerms_PastRecent_PC.png" alt="Rising Terms Past and Recent Percentages" width="500" height="500" /></a><BR/>
 Figure 13: Comparison of the proportion of all stemmed words that are the term in question in both the previous and target year.</div>
 
@@ -1411,72 +1420,6 @@ Information filtering is one of the core technologies in a recommender system fo
 
 </dl>
 
-<h4>Papers Containing &quot;detect&quot;</h4>
-<dl>
-
-
-<dt>Playing Games on the Screen: Adapting Mouse Interaction at Early Ages.</dt>
-<dd>
-<em>Juan Enrique Agudo, Héctor Sánchez, Mercedes Rico, ICALT 2010 (id=1498)</em><br/>
-
-</dd>
-
-<dt>Automatic Detection of Local Reuse</dt>
-<dd>
-<em>Arno Mittelbach, Lasse Lehmann, Christoph Rensing and Ralf Steinmetz, ECTEL 2010 (id=1921)</em><br/>
-
-</dd>
-
-<dt>Studying the Factors Influencing Automatic User Task Detection on the Computer Desktop</dt>
-<dd>
-<em>Andreas S. Rath, Didier Devaurs and Stefanie N. Lindstaedt, ECTEL 2010 (id=1925)</em><br/>
-
-</dd>
-
-<dt>Learning from Erroneous Examples: When and How Do Students Benefit from Them?</dt>
-<dd>
-<em>Dimitra Tsovaltzi, Erica Melis, Bruce M. McLaren, Ann-Kristin Meyer and Michael Dietrich, et al., ECTEL 2010 (id=1929)</em><br/>
-
-</dd>
-
-<dt>An Advanced Learning Environment Aided by Recognition of Multi-modal Social Signals</dt>
-<dd>
-<em>Jingying Chen, Dan Chen, Lizhe Wang and Oliver Lemon, ICWL 2010 (id=2324)</em><br/>
-
-</dd>
-
-<dt>Gap Detection in Web-Based Adaptive Educational Systems</dt>
-<dd>
-<em>Dominik Jednoralski, Erica Melis, Sergey Sosnovsky and Carsten Ullrich, ICWL 2010 (id=2331)</em><br/>
-
-</dd>
-
-<dt>Using the Petri Nets for the Learner Assessment in Serious Games</dt>
-<dd>
-<em>Amel Yessad, Pradeepa Thomas, Bruno Capdevila and Jean-Marc Labat, ICWL 2010 (id=2354)</em><br/>
-
-</dd>
-
-<dt>Duplicate Page Detection Algorithm Based on the Field Characteristic Clustering</dt>
-<dd>
-<em>Feiyue Ye, Junlei Liu, Bing Liu and Kun Chai, ICWL 2010 (id=2372)</em><br/>
-
-</dd>
-
-<dt>OCL-Based Testing for E-Learning Web Service</dt>
-<dd>
-<em>Jin Liu, Xiaoming Lu, Xiguang Feng and Jianxun Liu, ICWL 2010 (id=2381)</em><br/>
-
-</dd>
-
-<dt>The Detection of Scene Features in Flickr</dt>
-<dd>
-<em>Chunjie Zhou, Pengfei Dai and Jianxun Liu, ICWL 2010 (id=2387)</em><br/>
-
-</dd>
-
-</dl>
-
 <h4>Papers Containing &quot;game&quot;</h4>
 <dl>
 
@@ -1687,6 +1630,72 @@ Information filtering is one of the core technologies in a recommender system fo
 
 </dl>
 
+<h4>Papers Containing &quot;detect&quot;</h4>
+<dl>
+
+
+<dt>Playing Games on the Screen: Adapting Mouse Interaction at Early Ages.</dt>
+<dd>
+<em>Juan Enrique Agudo, Héctor Sánchez, Mercedes Rico, ICALT 2010 (id=1498)</em><br/>
+
+</dd>
+
+<dt>Automatic Detection of Local Reuse</dt>
+<dd>
+<em>Arno Mittelbach, Lasse Lehmann, Christoph Rensing and Ralf Steinmetz, ECTEL 2010 (id=1921)</em><br/>
+
+</dd>
+
+<dt>Studying the Factors Influencing Automatic User Task Detection on the Computer Desktop</dt>
+<dd>
+<em>Andreas S. Rath, Didier Devaurs and Stefanie N. Lindstaedt, ECTEL 2010 (id=1925)</em><br/>
+
+</dd>
+
+<dt>Learning from Erroneous Examples: When and How Do Students Benefit from Them?</dt>
+<dd>
+<em>Dimitra Tsovaltzi, Erica Melis, Bruce M. McLaren, Ann-Kristin Meyer and Michael Dietrich, et al., ECTEL 2010 (id=1929)</em><br/>
+
+</dd>
+
+<dt>An Advanced Learning Environment Aided by Recognition of Multi-modal Social Signals</dt>
+<dd>
+<em>Jingying Chen, Dan Chen, Lizhe Wang and Oliver Lemon, ICWL 2010 (id=2324)</em><br/>
+
+</dd>
+
+<dt>Gap Detection in Web-Based Adaptive Educational Systems</dt>
+<dd>
+<em>Dominik Jednoralski, Erica Melis, Sergey Sosnovsky and Carsten Ullrich, ICWL 2010 (id=2331)</em><br/>
+
+</dd>
+
+<dt>Using the Petri Nets for the Learner Assessment in Serious Games</dt>
+<dd>
+<em>Amel Yessad, Pradeepa Thomas, Bruno Capdevila and Jean-Marc Labat, ICWL 2010 (id=2354)</em><br/>
+
+</dd>
+
+<dt>Duplicate Page Detection Algorithm Based on the Field Characteristic Clustering</dt>
+<dd>
+<em>Feiyue Ye, Junlei Liu, Bing Liu and Kun Chai, ICWL 2010 (id=2372)</em><br/>
+
+</dd>
+
+<dt>OCL-Based Testing for E-Learning Web Service</dt>
+<dd>
+<em>Jin Liu, Xiaoming Lu, Xiguang Feng and Jianxun Liu, ICWL 2010 (id=2381)</em><br/>
+
+</dd>
+
+<dt>The Detection of Scene Features in Flickr</dt>
+<dd>
+<em>Chunjie Zhou, Pengfei Dai and Jianxun Liu, ICWL 2010 (id=2387)</em><br/>
+
+</dd>
+
+</dl>
+
 <h4>Papers Containing &quot;competitive&quot;</h4>
 <dl>
 
@@ -1845,7 +1854,7 @@ Figure 17: Highlighted falling terms and their percentage of fall. Colour coding
 <div class="clear"/>
 
 <div class="cap-img"><a href="Images/FallingTerms_PastRecent_Counts.png" target="image_win"><img src="Images/FallingTerms_PastRecent_Counts.png" alt="Falling Terms Past and Recent Counts" width="500" height="500" /></a><BR/>
-Figure 18: The number of occurences of the Falling Terms in the past and target sets of abstracts.</div>
+Figure 18: The number of occurrences of the Falling Terms in the past and target sets of abstracts.</div>
 
 <div class="cap-img"><a href="Images/FallingTerms_PastRecent_PC.png" target="image_win"><img src="Images/FallingTerms_PastRecent_PC.png" alt="Falling Terms Past and Recent Percentage" width="500" height="500" /></a><BR/>
 Figure 19: Comparison of the proportion of all stemmed words that are the term in question in both the previous and target year.</div>
