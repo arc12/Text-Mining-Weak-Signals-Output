@@ -1,0 +1,26 @@
+Comparison: 2011 Conference Proceedings from ICALT and ICCE
+Set A=ICALT Set B=ICCE
+Run Parameters: min term freq=0.002; min docs=4; max p=0.001
+Summary for ICALT :  Docs= 201  Terms= 16146
+Summary for ICCE :  Docs= 152  Terms= 11533
+Merging the terms lists -> 22246 terms
+Will eliminate terms with freq <0.2%, which equates to 846 term occurrences (aggregated over both sets)
+Now using 72 terms
+Term Co-occurrence calculation and Gephi data creation
+Significant Term Co-occurrence Stats for Set A
+Min.=34
+1st Qu.=91
+Median=105
+Mean=103.1
+3rd Qu.=120
+Max.=166
+Only exporting co-occurrence edges >= the 3rd Quartile in weighting.
+Term Co-occurrence calculation and Gephi data creation
+Significant Term Co-occurrence Stats for Set B
+Min.=14
+1st Qu.=53.25
+Median=69
+Mean=71.89
+3rd Qu.=88.75
+Max.=136
+Only exporting co-occurrence edges >= the 3rd Quartile in weighting.
