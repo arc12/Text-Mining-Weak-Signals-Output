@@ -497,10 +497,14 @@
 
 <div id="chart_div" class="chart"></div>
 
+<div class="reduced">
+
 Each plotted value is a group of terms.
 
-
 </div>
+
+
+
 <div class="reduced">
 <p><a href="http://arc12.github.com/Text-Mining-Weak-Signals-Output/History Visualiser/Union C 2006 to 2011/Groups.html" target="_new">Larger version</a> with more options and more info...</p></div>
 </body>
