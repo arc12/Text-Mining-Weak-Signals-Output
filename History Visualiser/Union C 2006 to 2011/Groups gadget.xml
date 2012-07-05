@@ -497,31 +497,7 @@
 
 <div id="chart_div" class="chart"></div>
 
-<div class="reduced">
-
-<p>Group details: 
-
-<em>Learning Platforms</em>
-(LMS, VLE, LCMS, E-Portfolio, Platform)
-
-<em>Social Software</em>
-(Social, Blog, Twitter, Wiki)
-
-<em>Devices</em>
-(Gestural, Tablet, Smartphone, Mobile, Ubiquitous, Pervasive)
-
-<em>Games</em>
-(Game, Gamification, Game-based, Game-play)
-
-<em>Content</em>
-(Metadata, Stream, Video, Standard)
-
-<em>Infrastructure</em>
-(Cloud, Broadband)
-
-<em>Intelligent Systems</em>
-(Adapt, Semantic, Agent)
-
+Each plotted value is a group of terms.
 
 
 </div>
