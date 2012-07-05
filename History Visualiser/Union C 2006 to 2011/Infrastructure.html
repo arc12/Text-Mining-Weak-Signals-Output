@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>History Visualiser: Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Infrastructure</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=800;
+      		options['height']=600;
+      		      		options['showSidePanel']=true;
+      		options['state']='{"nonSelectedAlpha":0.4,"xZoomedIn":false,"iconType":"LINE","yZoomedIn":false,"xAxisOption":"_TIME","yZoomedDataMin":-0.005,"yZoomedDataMax":0.32000000000000006,"yAxisOption":"2","xZoomedDataMin":1151712000000,"iconKeySettings":[],"xLambda":1,"yLambda":1,"orderedByX":false,"playDuration":15000,"uniColorForNonSelected":false,"colorOption":"_UNIQUE_COLOR","duration":{"timeUnit":"D","multiplier":1},"xZoomedDataMax":1309478400000,"showTrails":false,"sizeOption":"_UNISIZE","orderedByY":false,"dimensions":{"iconDimensions":["dim0"]}}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents (%)');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Cloud',new Date('2006-07-01'),0,0,0,0,0]
+			,
+			
+        		['Cloud',new Date('2006-10-01'),0.000406545,0.006277777,0.001739945,0.001305735,0.00043421]
+			,
+			
+        		['Cloud',new Date('2007-01-01'),0.000650472,0.01004444,0.002783912,0.002089176,0.000694736]
+			,
+			
+        		['Cloud',new Date('2007-04-01'),0.000569163,0.008788888,0.002435923,0.001828029,0.000607894]
+			,
+			
+        		['Cloud',new Date('2007-07-01'),0,0,0,0,0]
+			,
+			
+        		['Cloud',new Date('2007-10-01'),-0.001057017,-0.01632222,-0.004523856,-0.00339491,-0.001128946]
+			,
+			
+        		['Cloud',new Date('2008-01-01'),-0.001951416,-0.03013333,-0.008351735,-0.006267527,-0.002084208]
+			,
+			
+        		['Cloud',new Date('2008-04-01'),-0.001870107,-0.02887777,-0.008003746,-0.00600638,-0.001997366]
+			,
+			
+        		['Cloud',new Date('2008-07-01'),4.336809e-19,0,1.734723e-18,0,4.336809e-19]
+			,
+			
+        		['Cloud',new Date('2008-10-01'),0.004068686,0.06273134,0.01759556,0.01326597,0.00432959]
+			,
+			
+        		['Cloud',new Date('2009-01-01'),0.009132493,0.1402508,0.04054366,0.03091744,0.009626223]
+			,
+			
+        		['Cloud',new Date('2009-04-01'),0.01358465,0.2071686,0.0630612,0.0489832,0.014078]
+			,
+			
+        		['Cloud',new Date('2009-07-01'),0.0158184,0.2380952,0.07936508,0.06349206,0.01587302]
+			,
+			
+        		['Cloud',new Date('2009-10-01'),0.01483139,0.2197235,0.08533451,0.07151401,0.01382051]
+			,
+			
+        		['Cloud',new Date('2010-01-01'),0.01203888,0.1870765,0.08349803,0.0742838,0.009214237]
+			,
+			
+        		['Cloud',new Date('2010-04-01'),0.009460583,0.18726,0.07804649,0.07407739,0.003969102]
+			,
+			
+        		['Cloud',new Date('2010-07-01'),0.009116186,0.2673797,0.07317073,0.07317073,-3.469447e-18]
+			,
+			
+        		['Cloud',new Date('2010-10-01'),0.01251153,0.4613969,0.07216453,0.07339481,-0.001230277]
+			,
+			
+        		['Cloud',new Date('2011-01-01'),0.01909708,0.7506956,0.07473332,0.07480067,-6.735531e-05]
+			,
+			
+        		['Cloud',new Date('2011-04-01'),0.02780942,1.103515,0.07968542,0.07699439,0.002691031]
+			,
+			
+        		['Cloud',new Date('2011-07-01'),0.03758515,1.488095,0.08582918,0.07958203,0.00624715]
+			,
+			
+        		['Broadband',new Date('2006-07-01'),0.004177982,0.2267574,0.08653846,0.06730769,0.01923077]
+			,
+			
+        		['Broadband',new Date('2006-10-01'),0.002871113,0.1558279,0.05946931,0.04625391,0.0132154]
+			,
+			
+        		['Broadband',new Date('2007-01-01'),0.001669194,0.09059445,0.03457398,0.02689087,0.007683106]
+			,
+			
+        		['Broadband',new Date('2007-04-01'),0.0006771729,0.03675314,0.01402627,0.01090932,0.003116949]
+			,
+			
+        		['Broadband',new Date('2007-07-01'),0,-2.775558e-17,0,0,-3.469447e-18]
+			,
+			
+        		['Broadband',new Date('2007-10-01'),-0.000297044,-0.01612188,-0.006152667,-0.004785408,-0.001367259]
+			,
+			
+        		['Broadband',new Date('2008-01-01'),-0.0003073515,-0.01668131,-0.006366167,-0.004951463,-0.001414704]
+			,
+			
+        		['Broadband',new Date('2008-04-01'),-0.0001639833,-0.008900091,-0.003396583,-0.002641787,-0.0007547962]
+			,
+			
+        		['Broadband',new Date('2008-07-01'),0,1.387779e-17,6.938894e-18,3.469447e-18,0]
+			,
+			
+        		['Broadband',new Date('2008-10-01'),7.964903e-05,0.004322901,0.001649769,0.001283154,0.0003666153]
+			,
+			
+        		['Broadband',new Date('2009-01-01'),8.246017e-05,0.004475474,0.001707996,0.001328441,0.0003795547]
+			,
+			
+        		['Broadband',new Date('2009-04-01'),4.404123e-05,0.00239031,0.0009122251,0.0007095084,0.0002027167]
+			,
+			
+        		['Broadband',new Date('2009-07-01'),0,0,-1.734723e-18,1.734723e-18,-4.336809e-19]
+			,
+			
+        		['Broadband',new Date('2009-10-01'),-2.155209e-05,-0.001169726,-0.000446408,-0.0003472062,-9.920179e-05]
+			,
+			
+        		['Broadband',new Date('2010-01-01'),-2.248914e-05,-0.001220584,-0.0004658171,-0.0003623022,-0.0001035149]
+			,
+			
+        		['Broadband',new Date('2010-04-01'),-1.218162e-05,-0.0006611496,-0.0002523176,-0.000196247,-5.607057e-05]
+			,
+			
+        		['Broadband',new Date('2010-07-01'),0,0,4.336809e-19,-4.336809e-19,0]
+			,
+			
+        		['Broadband',new Date('2010-10-01'),6.559332e-06,0.0003560036,0.0001358633,0.0001056715,3.019185e-05]
+			,
+			
+        		['Broadband',new Date('2011-01-01'),7.496379e-06,0.0004068613,0.0001552724,0.0001207674,3.450497e-05]
+			,
+			
+        		['Broadband',new Date('2011-04-01'),4.685237e-06,0.0002542883,9.704522e-05,7.547962e-05,2.156561e-05]
+			,
+			
+        		['Broadband',new Date('2011-07-01'),-6.776264e-21,0,-1.084202e-19,0,0]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	
+      	}
+  </script>
+
+</head>
+
+<div>
+<h1>Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Infrastructure</h1>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="nice">
+
+<p><a href="Groups.html">View terms as a group</a>.</p>
+
+<p>Other sets:</p>
+
+<p><a href="Learning.Platforms.html">Learning Platforms</a></p>
+
+<p><a href="Social.Software.html">Social Software</a></p>
+
+<p><a href="Devices.html">Devices</a></p>
+
+<p><a href="Games.html">Games</a></p>
+
+<p><a href="Content.html">Content</a></p>
+
+<p><a href="Intelligent.Systems.html">Intelligent Systems</a></p>
+
+
+
+</div>
+<div class="reduced">
+<a href="http://fusion.google.com/add?source=atgs&moduleurl=http%3a%2f%2farc12.github.com%2fText-Mining-Weak-Signals-Output%2fHistory%20Visualiser%2fUnion%20C%202006%20to%202011%2fInfrastructure%20gadget.xml"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a><p>
+This shows the history of the way certain terms have been used (related words are counted also, e.g. &quot;gaming&quot; would be counted as &quot;game&quot;). The chart loads up showing each term as a different coloured blob with a size determined by the percentage of 
+abstracts that contain it and a location on the graph to show the term frequency and the average &quot;subjectivity&quot; of abstracts containing the term. &quot;Subjectivity&quot; is calculated as the fraction of words that generally have either a positive or negative sentiment connotation. Calculations were conducted in 12 month slices. True calculated values are plotted for the mid-point of each time slice and spline interpolation is used to give the impression of a smooth change between these points. In total, 2425 abstracts were used</p>
+
+<p><em>NB: observe the scales and be aware that insignificant fluctuations in the data may be magnified (especially true for &quot;subjectivity&quot; and sentiment scores. Also note that sentiment values are essentially meaningless when the frequency is close to the baseline.</em></p>
+</div>
+</body>
+</html>
+

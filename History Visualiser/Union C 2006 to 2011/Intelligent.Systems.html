@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>History Visualiser: Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Intelligent Systems</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=800;
+      		options['height']=600;
+      		      		options['showSidePanel']=true;
+      		options['state']='{"nonSelectedAlpha":0.4,"xZoomedIn":false,"iconType":"LINE","yZoomedIn":false,"xAxisOption":"_TIME","yZoomedDataMin":-0.005,"yZoomedDataMax":0.32000000000000006,"yAxisOption":"2","xZoomedDataMin":1151712000000,"iconKeySettings":[],"xLambda":1,"yLambda":1,"orderedByX":false,"playDuration":15000,"uniColorForNonSelected":false,"colorOption":"_UNIQUE_COLOR","duration":{"timeUnit":"D","multiplier":1},"xZoomedDataMax":1309478400000,"showTrails":false,"sizeOption":"_UNISIZE","orderedByY":false,"dimensions":{"iconDimensions":["dim0"]}}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents (%)');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Adapt',new Date('2006-07-01'),0.4971799,16.55329,0.1171444,0.1104358,0.006708684]
+			,
+			
+        		['Adapt',new Date('2006-10-01'),0.465244,15.97985,0.1155064,0.1077889,0.007717521]
+			,
+			
+        		['Adapt',new Date('2007-01-01'),0.4339454,15.35102,0.1139962,0.1053663,0.008629888]
+			,
+			
+        		['Adapt',new Date('2007-04-01'),0.4039216,14.6114,0.1127417,0.1033924,0.009349313]
+			,
+			
+        		['Adapt',new Date('2007-07-01'),0.3758099,13.70558,0.1118706,0.1020913,0.009779326]
+			,
+			
+        		['Adapt',new Date('2007-10-01'),0.3510341,12.63716,0.1115154,0.1016573,0.009858087]
+			,
+			
+        		['Adapt',new Date('2008-01-01'),0.3341635,11.6456,0.1118267,0.1021644,0.009662281]
+			,
+			
+        		['Adapt',new Date('2008-04-01'),0.3305539,11.02938,0.1129599,0.1036567,0.009303222]
+			,
+			
+        		['Adapt',new Date('2008-07-01'),0.3455609,11.08696,0.1150703,0.1061781,0.008892227]
+			,
+			
+        		['Adapt',new Date('2008-10-01'),0.3814678,11.98323,0.1181712,0.109643,0.008528148]
+			,
+			
+        		['Adapt',new Date('2009-01-01'),0.4282683,13.34881,0.1217084,0.1134484,0.008259987]
+			,
+			
+        		['Adapt',new Date('2009-04-01'),0.4728835,14.68078,0.124986,0.1168617,0.008124286]
+			,
+			
+        		['Adapt',new Date('2009-07-01'),0.5022343,15.47619,0.1273078,0.1191502,0.008157584]
+			,
+			
+        		['Adapt',new Date('2009-10-01'),0.5067984,15.38629,0.1281532,0.1197811,0.008372146]
+			,
+			
+        		['Adapt',new Date('2010-01-01'),0.491278,14.67909,0.1277029,0.1190198,0.008683133]
+			,
+			
+        		['Adapt',new Date('2010-04-01'),0.4639319,13.7768,0.1263132,0.1173318,0.008981432]
+			,
+			
+        		['Adapt',new Date('2010-07-01'),0.4330188,13.1016,0.1243402,0.1151823,0.009157926]
+			,
+			
+        		['Adapt',new Date('2010-10-01'),0.4052255,12.9783,0.1220902,0.1129589,0.009131311]
+			,
+			
+        		['Adapt',new Date('2011-01-01'),0.3809509,13.34197,0.1196699,0.1107384,0.008931506]
+			,
+			
+        		['Adapt',new Date('2011-04-01'),0.3590222,14.0303,0.117136,0.1085198,0.008616243]
+			,
+			
+        		['Adapt',new Date('2011-07-01'),0.3382664,14.88095,0.1145454,0.1063021,0.008243251]
+			,
+			
+        		['Semantic',new Date('2006-07-01'),0.233967,8.390023,0.08608893,0.0782503,0.007838635]
+			,
+			
+        		['Semantic',new Date('2006-10-01'),0.2269564,8.501724,0.08711289,0.07907145,0.008041446]
+			,
+			
+        		['Semantic',new Date('2007-01-01'),0.2226795,8.618067,0.0882781,0.08002648,0.008251623]
+			,
+			
+        		['Semantic',new Date('2007-04-01'),0.2238699,8.743694,0.08972579,0.08124926,0.008476531]
+			,
+			
+        		['Semantic',new Date('2007-07-01'),0.2332613,8.883249,0.09159722,0.08287368,0.008723537]
+			,
+			
+        		['Semantic',new Date('2007-10-01'),0.2514921,9.022695,0.09388855,0.08490774,0.00898081]
+			,
+			
+        		['Semantic',new Date('2008-01-01'),0.2708194,9.073292,0.09601562,0.08685589,0.00915973]
+			,
+			
+        		['Semantic',new Date('2008-04-01'),0.281405,8.92762,0.09724923,0.08809675,0.009152481]
+			,
+			
+        		['Semantic',new Date('2008-07-01'),0.2734108,8.478261,0.09686013,0.08800888,0.008851246]
+			,
+			
+        		['Semantic',new Date('2008-10-01'),0.2413664,7.679993,0.0944778,0.08627682,0.008200983]
+			,
+			
+        		['Semantic',new Date('2009-01-01'),0.1972727,6.736382,0.09116647,0.08380873,0.007357736]
+			,
+			
+        		['Semantic',new Date('2009-04-01'),0.157498,5.913194,0.08834907,0.08181874,0.006530326]
+			,
+			
+        		['Semantic',new Date('2009-07-01'),0.138411,5.47619,0.08744852,0.08152095,0.00592757]
+			,
+			
+        		['Semantic',new Date('2009-10-01'),0.1509088,5.602292,0.08942023,0.08371819,0.005702047]
+			,
+			
+        		['Semantic',new Date('2010-01-01'),0.1840025,6.113038,0.09334948,0.08756811,0.005781373]
+			,
+			
+        		['Semantic',new Date('2010-04-01'),0.221232,6.741126,0.09785401,0.09181709,0.006036921]
+			,
+			
+        		['Semantic',new Date('2010-07-01'),0.246137,7.219251,0.1015516,0.09521151,0.006340067]
+			,
+			
+        		['Semantic',new Date('2010-10-01'),0.2462,7.342047,0.1033815,0.09679453,0.006587]
+			,
+			
+        		['Semantic',new Date('2011-01-01'),0.2246745,7.151892,0.1035696,0.0967964,0.006773162]
+			,
+			
+        		['Semantic',new Date('2011-04-01'),0.1887566,6.753104,0.102663,0.09574418,0.00691881]
+			,
+			
+        		['Semantic',new Date('2011-07-01'),0.1456425,6.25,0.1012091,0.09416492,0.007044202]
+			,
+			
+        		['Agent',new Date('2006-07-01'),0.08355964,2.721088,0.1272823,0.1152872,0.01199517]
+			,
+			
+        		['Agent',new Date('2006-10-01'),0.08589759,2.608895,0.128872,0.1180942,0.01077788]
+			,
+			
+        		['Agent',new Date('2007-01-01'),0.08844764,2.523277,0.1296625,0.11981,0.009852466]
+			,
+			
+        		['Agent',new Date('2007-04-01'),0.09142188,2.490811,0.1288543,0.1193435,0.009510817]
+			,
+			
+        		['Agent',new Date('2007-07-01'),0.0950324,2.538071,0.1256482,0.1156034,0.01004481]
+			,
+			
+        		['Agent',new Date('2007-10-01'),0.09903907,2.672419,0.11978,0.1082009,0.01157911]
+			,
+			
+        		['Agent',new Date('2008-01-01'),0.1013929,2.82435,0.1131265,0.09955702,0.01356947]
+			,
+			
+        		['Agent',new Date('2008-04-01'),0.09959258,2.905146,0.1080994,0.09279495,0.01530443]
+			,
+			
+        		['Agent',new Date('2008-07-01'),0.09113693,2.826087,0.1071105,0.09103799,0.01607251]
+			,
+			
+        		['Agent',new Date('2008-10-01'),0.0750686,2.537982,0.1116586,0.09627264,0.01538599]
+			,
+			
+        		['Agent',new Date('2009-01-01'),0.05660587,2.149748,0.1195904,0.1059383,0.0136521]
+			,
+			
+        		['Agent',new Date('2009-04-01'),0.04251094,1.809828,0.1278393,0.1163375,0.0115018]
+			,
+			
+        		['Agent',new Date('2009-07-01'),0.03954601,1.666667,0.1333389,0.1237728,0.009566044]
+			,
+			
+        		['Agent',new Date('2009-10-01'),0.05189772,1.81626,0.1337495,0.1254208,0.008328703]
+			,
+			
+        		['Agent',new Date('2010-01-01'),0.07345044,2.14481,0.1296388,0.1219535,0.00768526]
+			,
+			
+        		['Agent',new Date('2010-04-01'),0.09551301,2.486071,0.122301,0.1149169,0.0073841]
+			,
+			
+        		['Agent',new Date('2010-07-01'),0.1093942,2.673797,0.1130305,0.1058569,0.007173611]
+			,
+			
+        		['Agent',new Date('2010-10-01'),0.1085545,2.582774,0.1029326,0.09608176,0.006850821]
+			,
+			
+        		['Agent',new Date('2011-01-01'),0.09506035,2.251917,0.09235591,0.08594859,0.006407323]
+			,
+			
+        		['Agent',new Date('2011-04-01'),0.07312996,1.761169,0.08146007,0.07557672,0.005883354]
+			,
+			
+        		['Agent',new Date('2011-07-01'),0.04698144,1.190476,0.07040465,0.0650855,0.005319149]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	
+      	}
+  </script>
+
+</head>
+
+<div>
+<h1>Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Intelligent Systems</h1>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="nice">
+
+<p><a href="Groups.html">View terms as a group</a>.</p>
+
+<p>Other sets:</p>
+
+<p><a href="Learning.Platforms.html">Learning Platforms</a></p>
+
+<p><a href="Social.Software.html">Social Software</a></p>
+
+<p><a href="Devices.html">Devices</a></p>
+
+<p><a href="Games.html">Games</a></p>
+
+<p><a href="Content.html">Content</a></p>
+
+<p><a href="Infrastructure.html">Infrastructure</a></p>
+
+
+
+</div>
+<div class="reduced">
+<a href="http://fusion.google.com/add?source=atgs&moduleurl=http%3a%2f%2farc12.github.com%2fText-Mining-Weak-Signals-Output%2fHistory%20Visualiser%2fUnion%20C%202006%20to%202011%2fIntelligent.Systems%20gadget.xml"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a><p>
+This shows the history of the way certain terms have been used (related words are counted also, e.g. &quot;gaming&quot; would be counted as &quot;game&quot;). The chart loads up showing each term as a different coloured blob with a size determined by the percentage of 
+abstracts that contain it and a location on the graph to show the term frequency and the average &quot;subjectivity&quot; of abstracts containing the term. &quot;Subjectivity&quot; is calculated as the fraction of words that generally have either a positive or negative sentiment connotation. Calculations were conducted in 12 month slices. True calculated values are plotted for the mid-point of each time slice and spline interpolation is used to give the impression of a smooth change between these points. In total, 2425 abstracts were used</p>
+
+<p><em>NB: observe the scales and be aware that insignificant fluctuations in the data may be magnified (especially true for &quot;subjectivity&quot; and sentiment scores. Also note that sentiment values are essentially meaningless when the frequency is close to the baseline.</em></p>
+</div>
+</body>
+</html>
+
