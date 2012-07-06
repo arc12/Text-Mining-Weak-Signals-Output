@@ -1,0 +1,38 @@
+Comparison: Conference Proceedings from ICALT in 2011 and 2012
+Set A=ICALT 2011 Set B=ICALT 2012
+Run Parameters: min term freq=0.0013; min docs=4; max p=0.001
+Summary for ICALT 2011 :  Docs= 201  Terms= 16127
+Summary for ICALT 2012 :  Docs= 236  Terms= 21276
+Eliminating terms appearing in < 1  documents
+Summary for ICALT 2011 :  Docs= 201  Terms= 16127
+Summary for ICALT 2012 :  Docs= 236  Terms= 21276
+Merging the terms lists -> 29931 terms
+Will eliminate terms with joint (A+B) set freq <0.13%, which equates to 707 term occurrences (aggregated over both sets)
+Will eliminate terms with freq in either A or B >2% which equates to removing 1 and 1 terms.
+Now using 143 terms
+Pre-sig test freqs Min.   : 707  
+Pre-sig test freqs 1st Qu.: 825  
+Pre-sig test freqs Median :1015  
+Pre-sig test freqs Mean   :1355  
+Pre-sig test freqs 3rd Qu.:1454  
+Pre-sig test freqs Max.   :7922  
+35 terms meet the probability criterion
+Which split into two sets according to the dominant occurrence. A-terms: 22 ; B-terms 13
+Term Co-occurrence calculation and Gephi data creation
+Significant Term Co-occurrence Stats for Set A
+Min.=12
+1st Qu.=47
+Median=69
+Mean=67.93
+3rd Qu.=86.5
+Max.=147
+Only exporting co-occurrence edges >= the 0.75 Quartile in weighting (wt>= 86.5 )
+Term Co-occurrence calculation and Gephi data creation
+Significant Term Co-occurrence Stats for Set B
+Min.=29
+1st Qu.=51.5
+Median=68.5
+Mean=68.65
+3rd Qu.=78.75
+Max.=113
+Only exporting co-occurrence edges >= the 0.75 Quartile in weighting (wt>= 78.75 )
