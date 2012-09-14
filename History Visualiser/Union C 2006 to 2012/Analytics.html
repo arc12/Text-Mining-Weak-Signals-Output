@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>History Visualiser: Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Analytics</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=800;
+      		options['height']=600;
+      		      		options['showSidePanel']=true;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Analytics',new Date('2006-07-01'),0.008355964,2,0.03434685,0.03434685,0]
+			,
+			
+        		['Analytics',new Date('2006-10-01'),0.004998044,1.176382,0.01133809,0.01133878,0]
+			,
+			
+        		['Analytics',new Date('2007-01-01'),0.002147695,0.4822115,0,0,0]
+			,
+			
+        		['Analytics',new Date('2007-04-01'),0.00031249,0.0469351,0,0,0]
+			,
+			
+        		['Analytics',new Date('2007-07-01'),0,0,0,0,0]
+			,
+			
+        		['Analytics',new Date('2007-10-01'),0.001459455,0.4039063,0.03136751,0.03136573,1.775568e-06]
+			,
+			
+        		['Analytics',new Date('2008-01-01'),0.003906717,1.053365,0.07170768,0.0717044,3.277972e-06]
+			,
+			
+        		['Analytics',new Date('2008-04-01'),0.006299307,1.676142,0.1069179,0.1069148,3.14139e-06]
+			,
+			
+        		['Analytics',new Date('2008-07-01'),0.007594744,2,0.1228956,0.1228956,0]
+			,
+			
+        		['Analytics',new Date('2008-10-01'),0.007048123,1.832993,0.1100315,0.1100379,0]
+			,
+			
+        		['Analytics',new Date('2009-01-01'),0.005104823,1.304327,0.07668939,0.0767014,0]
+			,
+			
+        		['Analytics',new Date('2009-04-01'),0.002507797,0.6234976,0.0357265,0.03573811,0]
+			,
+			
+        		['Analytics',new Date('2009-07-01'),0,0,2.775558e-17,2.775558e-17,0]
+			,
+			
+        		['Analytics',new Date('2009-10-01'),0,0,0,0,2.390188e-05]
+			,
+			
+        		['Analytics',new Date('2010-01-01'),0,0,0,0,4.479895e-05]
+			,
+			
+        		['Analytics',new Date('2010-04-01'),0,0,0,0,4.329655e-05]
+			,
+			
+        		['Analytics',new Date('2010-07-01'),0,0,0,1.387779e-17,0]
+			,
+			
+        		['Analytics',new Date('2010-10-01'),0.003509518,0.6261418,0.02425259,0.02434178,0]
+			,
+			
+        		['Analytics',new Date('2011-01-01'),0.00815806,1.403365,0.05117907,0.05134624,0]
+			,
+			
+        		['Analytics',new Date('2011-04-01'),0.01342572,2.228906,0.07640656,0.07656813,0]
+			,
+			
+        		['Analytics',new Date('2011-07-01'),0.01879258,3,0.09556219,0.09556219,0]
+			,
+			
+        		['Analytics',new Date('2011-10-01'),0.02384291,3.63756,0.1054371,0.1050688,0.0003683621]
+			,
+			
+        		['Analytics',new Date('2012-01-01'),0.02857772,4.157212,0.1074785,0.1065705,0.0009079983]
+			,
+			
+        		['Analytics',new Date('2012-04-01'),0.03310217,4.598257,0.1042976,0.1027357,0.001561817]
+			,
+			
+        		['Analytics',new Date('2012-07-01'),0.03752144,5,0.09850542,0.09623269,0.002272727]
+			,
+			
+        		['Data',new Date('2006-07-01'),0.2673909,42,0.08460323,0.07803841,0.006564819]
+			,
+			
+        		['Data',new Date('2006-10-01'),0.2239533,34.82572,0.08741144,0.07963049,0.007780955]
+			,
+			
+        		['Data',new Date('2007-01-01'),0.1875663,29.02115,0.08987113,0.0808849,0.008986226]
+			,
+			
+        		['Data',new Date('2007-04-01'),0.1652807,25.95601,0.09163376,0.08146399,0.01016977]
+			,
+			
+        		['Data',new Date('2007-07-01'),0.1641469,27,0.0923508,0.08103009,0.01132071]
+			,
+			
+        		['Data',new Date('2007-10-01'),0.1874261,32.7625,0.09186501,0.07947557,0.01238944]
+			,
+			
+        		['Data',new Date('2008-01-01'),0.2232213,40.81154,0.09078422,0.07761291,0.01317131]
+			,
+			
+        		['Data',new Date('2008-04-01'),0.2558459,47.95481,0.08990754,0.07648464,0.0134229]
+			,
+			
+        		['Data',new Date('2008-07-01'),0.2696134,51,0.09003409,0.07713327,0.01290082]
+			,
+			
+        		['Data',new Date('2008-10-01'),0.2537134,47.7649,0.09172716,0.080225,0.01150215]
+			,
+			
+        		['Data',new Date('2009-01-01'),0.2168403,40.10769,0.09460676,0.08492074,0.009686022]
+			,
+			
+        		['Data',new Date('2009-04-01'),0.1725645,30.89663,0.09805709,0.09000505,0.008052048]
+			,
+			
+        		['Data',new Date('2009-07-01'),0.1344564,23,0.1014624,0.09426251,0.007199848]
+			,
+			
+        		['Data',new Date('2009-10-01'),0.1132997,18.69351,0.1042523,0.09672149,0.007530829]
+			,
+			
+        		['Data',new Date('2010-01-01'),0.1087296,17.88269,0.1060391,0.09738551,0.008653546]
+			,
+			
+        		['Data',new Date('2010-04-01'),0.1175945,19.88053,0.1064802,0.09650189,0.009978338]
+			,
+			
+        		['Data',new Date('2010-07-01'),0.1367428,24,0.1052335,0.09431793,0.01091555]
+			,
+			
+        		['Data',new Date('2010-10-01'),0.1632518,29.50793,0.1021864,0.09115751,0.01102885]
+			,
+			
+        		['Data',new Date('2011-01-01'),0.195115,35.48654,0.09814595,0.08765068,0.01049527]
+			,
+			
+        		['Data',new Date('2011-04-01'),0.230555,40.97187,0.09414925,0.08450406,0.00964519]
+			,
+			
+        		['Data',new Date('2011-07-01'),0.2677942,45,0.09123322,0.08242426,0.008808959]
+			,
+			
+        		['Data',new Date('2011-10-01'),0.3053506,46.86851,0.09017379,0.08192624,0.008247545]
+			,
+			
+        		['Data',new Date('2012-01-01'),0.3429233,46.92115,0.0907026,0.0827583,0.007944296]
+			,
+			
+        		['Data',new Date('2012-04-01'),0.380507,45.76322,0.09229024,0.08447708,0.007813157]
+			,
+			
+        		['Data',new Date('2012-07-01'),0.4180961,44,0.0944073,0.08663922,0.007768074]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	
+      	}
+  </script>
+
+</head>
+
+<div>
+<h1>Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Analytics</h1>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="nice">
+
+<p><a href="Groups.html">View terms as a group</a>.</p>
+
+<p>Other sets:</p>
+
+<p><a href="Cloud.html">Cloud</a></p>
+
+<p><a href="eBooks.html">eBooks</a></p>
+
+<p><a href="Gesture.html">Gesture</a></p>
+
+<p><a href="Context.Sensitive.Services.html">Context Sensitive Services</a></p>
+
+<p><a href="Games.html">Games</a></p>
+
+<p><a href="Mobile.html">Mobile</a></p>
+
+<p><a href="Learning.Platforms.html">Learning Platforms</a></p>
+
+</div>
+
+
+
+<div class="reduced">
+<a href="http://fusion.google.com/add?source=atgs&moduleurl=http%3a%2f%2farc12.github.com%2fText-Mining-Weak-Signals-Output%2fHistory%20Visualiser%2fUnion%20C%202006%20to%202012%2fAnalytics%20gadget.xml"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a><p>
+This shows the history of the way certain terms have been used (related words are counted also, e.g. &quot;gaming&quot; would be counted as &quot;game&quot;). The chart loads up showing the trend in word-frequency for a term (or group of terms) with the line coloured to show the average &quot;positive sentiment&quot; of abstracts containing the term. &quot;Positive sentiment&quot; is calculated as the fraction of words that generally have either a positive connotation according to the <a href="http://www.wjh.harvard.edu/~inquirer/">Harvard General Inquirer</a> dictionary. Calculations were conducted in 12 month slices and the number of abstracts per slice is (in date order): 441, 394, 460, 420, 374, 336, 308. True calculated values are plotted for the mid-point of each time slice to show the aggregate value over that 12 month period and spline interpolation is used to give the impression of a smooth change between these points. In total, 2733 abstracts were use</p>
+
+<p><em>NB: be aware that insignificant fluctuations in the data may appear magnified since the plots are shown "zoomed in" (especially true for sentiment scores (or &quot;subjectivity&quot;, which is the sum of positive and negative sentiment). Also note that sentiment values are essentially meaningless when the frequency is close to the baseline.</em></p>
+</div>
+</body>
+</html>
+

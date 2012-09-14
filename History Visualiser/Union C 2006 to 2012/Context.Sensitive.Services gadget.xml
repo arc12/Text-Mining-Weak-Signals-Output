@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <ModulePrefs title="History Visualiser: Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Context Sensitive Services" height="400">
+ <Require feature="dynamic-height"/>
+ </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+<head>
+  <title>History Visualiser: Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Context Sensitive Services</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=420;
+      		options['height']=300;
+      		      		options['showSidePanel']=false;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Context',new Date('2006-07-01'),0.1754752,34,0.07857101,0.07377367,0.004797337]
+			,
+			
+        		['Context',new Date('2006-10-01'),0.1692414,32.75811,0.08596425,0.08072631,0.005237942]
+			,
+			
+        		['Context',new Date('2007-01-01'),0.1626405,31.51298,0.09280866,0.0870895,0.005719154]
+			,
+			
+        		['Context',new Date('2007-04-01'),0.1553051,30.26136,0.0985554,0.09227382,0.006281582]
+			,
+			
+        		['Context',new Date('2007-07-01'),0.1468683,29,0.1026557,0.09568982,0.006965834]
+			,
+			
+        		['Context',new Date('2007-10-01'),0.137084,27.71328,0.1047396,0.09695512,0.00778448]
+			,
+			
+        		['Context',new Date('2008-01-01'),0.1261921,26.33606,0.1051535,0.09651554,0.008637947]
+			,
+			
+        		['Context',new Date('2008-04-01'),0.1145535,24.79081,0.1044226,0.09502398,0.00939862]
+			,
+			
+        		['Context',new Date('2008-07-01'),0.102529,23,0.1030722,0.0931333,0.009938889]
+			,
+			
+        		['Context',new Date('2008-10-01'),0.09136879,21.07626,0.1015492,0.0913875,0.0101617]
+			,
+			
+        		['Context',new Date('2009-01-01'),0.08587816,19.89279,0.09998717,0.08989493,0.01009224]
+			,
+			
+        		['Context',new Date('2009-04-01'),0.09175158,20.51292,0.0984413,0.08865505,0.009786257]
+			,
+			
+        		['Context',new Date('2009-07-01'),0.1146834,24,0.0969668,0.08766731,0.009299492]
+			,
+			
+        		['Context',new Date('2009-10-01'),0.1568289,30.79417,0.09566503,0.08696566,0.008699364]
+			,
+			
+        		['Context',new Date('2010-01-01'),0.2061858,38.84279,0.094822,0.08672203,0.008099976]
+			,
+			
+        		['Context',new Date('2010-04-01'),0.2472131,45.47001,0.0947699,0.0871428,0.007627103]
+			,
+			
+        		['Context',new Date('2010-07-01'),0.2643694,48,0.09584091,0.08843439,0.007406522]
+			,
+			
+        		['Context',new Date('2010-10-01'),0.2473321,44.65331,0.09818766,0.09067831,0.007509349]
+			,
+			
+        		['Context',new Date('2011-01-01'),0.2066532,37.23606,0.1012446,0.09345653,0.00778807]
+			,
+			
+        		['Context',new Date('2011-04-01'),0.1581035,28.45078,0.1042666,0.09622609,0.008040515]
+			,
+			
+        		['Context',new Date('2011-07-01'),0.1174536,21,0.1065086,0.09844407,0.008064512]
+			,
+			
+        		['Context',new Date('2011-10-01'),0.09685959,16.96761,0.1074132,0.09970363,0.007709528]
+			,
+			
+        		['Context',new Date('2012-01-01'),0.0940185,15.96298,0.1071739,0.1001423,0.007031579]
+			,
+			
+        		['Context',new Date('2012-04-01'),0.1030127,16.97686,0.106172,0.1000337,0.006138321]
+			,
+			
+        		['Context',new Date('2012-07-01'),0.1179245,19,0.1047889,0.09965148,0.005137408]
+			,
+			
+        		['Context-sensitive',new Date('2006-07-01'),0,0,0,0,0]
+			,
+			
+        		['Context-sensitive',new Date('2006-10-01'),0.001629411,0.3780048,0.06211585,0.06216593,0]
+			,
+			
+        		['Context-sensitive',new Date('2007-01-01'),0.003039023,0.7048077,0.1153854,0.1154655,0]
+			,
+			
+        		['Context-sensitive',new Date('2007-04-01'),0.004009037,0.9292067,0.1509622,0.1510323,0]
+			,
+			
+        		['Context-sensitive',new Date('2007-07-01'),0.004319654,1,0.16,0.16,0]
+			,
+			
+        		['Context-sensitive',new Date('2007-10-01'),0.003835885,0.8859375,0.1374988,0.1373686,0.0001302083]
+			,
+			
+        		['Context-sensitive',new Date('2008-01-01'),0.00276198,0.6355769,0.09384393,0.09360355,0.0002403846]
+			,
+			
+        		['Context-sensitive',new Date('2008-04-01'),0.001386998,0.3174279,0.0432671,0.04303674,0.0002303686]
+			,
+			
+        		['Context-sensitive',new Date('2008-07-01'),0,0,0,0,0]
+			,
+			
+        		['Context-sensitive',new Date('2008-10-01'),0,0,0,0,0]
+			,
+			
+        		['Context-sensitive',new Date('2009-01-01'),0,0,0,0,0]
+			,
+			
+        		['Context-sensitive',new Date('2009-04-01'),0,0,0,0,0]
+			,
+			
+        		['Context-sensitive',new Date('2009-07-01'),0,0,0,0,0]
+			,
+			
+        		['Context-sensitive',new Date('2009-10-01'),0.002575794,0.5667067,0.02990269,0.02804138,0.001861311]
+			,
+			
+        		['Context-sensitive',new Date('2010-01-01'),0.005589246,1.227885,0.0608591,0.05670579,0.004153312]
+			,
+			
+        		['Context-sensitive',new Date('2010-04-01'),0.008087122,1.77512,0.08470326,0.0785985,0.006104768]
+			,
+			
+        		['Context-sensitive',new Date('2010-07-01'),0.009116186,2,0.09326923,0.08632479,0.006944444]
+			,
+			
+        		['Context-sensitive',new Date('2010-10-01'),0.008043834,1.764303,0.08133742,0.07518257,0.006154848]
+			,
+			
+        		['Context-sensitive',new Date('2011-01-01'),0.005519985,1.210577,0.05547374,0.0512403,0.00423344]
+			,
+			
+        		['Context-sensitive',new Date('2011-04-01'),0.002515191,0.5515625,0.0251905,0.02325908,0.001931424]
+			,
+			
+        		['Context-sensitive',new Date('2011-07-01'),0,4.440892e-16,0,0,0]
+			,
+			
+        		['Context-sensitive',new Date('2011-10-01'),0,0,0,0,0]
+			,
+			
+        		['Context-sensitive',new Date('2012-01-01'),0,0,0,0,0]
+			,
+			
+        		['Context-sensitive',new Date('2012-04-01'),0,0,0,0,0]
+			,
+			
+        		['Context-sensitive',new Date('2012-07-01'),0,0,0,0,8.673617e-19]
+			,
+			
+        		['Context-aware',new Date('2006-07-01'),0.02924587,5,0.08823638,0.08460002,0.003636364]
+			,
+			
+        		['Context-aware',new Date('2006-10-01'),0.0281666,4.920974,0.07072517,0.06948699,0.001238178]
+			,
+			
+        		['Context-aware',new Date('2007-01-01'),0.02675427,4.773558,0.05771836,0.05762629,9.206627e-05]
+			,
+			
+        		['Context-aware',new Date('2007-04-01'),0.02467585,4.489363,0.05372036,0.05227026,0.001450104]
+			,
+			
+        		['Context-aware',new Date('2007-07-01'),0.02159827,4,0.06323557,0.05667121,0.006564365]
+			,
+			
+        		['Context-aware',new Date('2007-10-01'),0.0173629,3.274219,0.08827074,0.07240551,0.01586523]
+			,
+			
+        		['Context-aware',new Date('2008-01-01'),0.01250871,2.429327,0.120842,0.09434566,0.02649634]
+			,
+			
+        		['Context-aware',new Date('2008-04-01'),0.007749075,1.619772,0.1504678,0.1156882,0.03477963]
+			,
+			
+        		['Context-aware',new Date('2008-07-01'),0.003797372,1,0.1666667,0.1296296,0.03703704]
+			,
+			
+        		['Context-aware',new Date('2008-10-01'),0.001267248,0.6852764,0.162233,0.1312713,0.03096165]
+			,
+			
+        		['Context-aware',new Date('2009-01-01'),0.0003734211,0.6341346,0.1430649,0.1233337,0.01973114]
+			,
+			
+        		['Context-aware',new Date('2009-04-01'),0.001230877,0.7659255,0.1183366,0.1104423,0.007894315]
+			,
+			
+        		['Context-aware',new Date('2009-07-01'),0.003954601,1,0.09722222,0.09722222,0]
+			,
+			
+        		['Context-aware',new Date('2009-10-01'),0.008456121,1.265925,0.08689264,0.08762861,0]
+			,
+			
+        		['Context-aware',new Date('2010-01-01'),0.01383312,1.534135,0.08650558,0.08293525,0.003570327]
+			,
+			
+        		['Context-aware',new Date('2010-04-01'),0.01897983,1.785276,0.09321551,0.08374567,0.00946984]
+			,
+			
+        		['Context-aware',new Date('2010-07-01'),0.02279046,2,0.1041769,0.09066339,0.01351351]
+			,
+			
+        		['Context-aware',new Date('2010-10-01'),0.02441294,2.157272,0.1163869,0.1032307,0.01315622]
+			,
+			
+        		['Context-aware',new Date('2011-01-01'),0.0240099,2.229327,0.1262133,0.1167448,0.009468535]
+			,
+			
+        		['Context-aware',new Date('2011-04-01'),0.02199767,2.186719,0.1298668,0.1254418,0.004424961]
+			,
+			
+        		['Context-aware',new Date('2011-07-01'),0.01879258,2,0.1235577,0.1235577,3.469447e-18]
+			,
+			
+        		['Context-aware',new Date('2011-10-01'),0.01477391,1.651863,0.1047012,0.1069702,0]
+			,
+			
+        		['Context-aware',new Date('2012-01-01'),0.01017283,1.173558,0.07553081,0.07812392,0]
+			,
+			
+        		['Context-aware',new Date('2012-04-01'),0.005183483,0.6084736,0.0394844,0.0411051,0]
+			,
+			
+        		['Context-aware',new Date('2012-07-01'),0,0,0,0,0]
+			,
+			
+        		['Location',new Date('2006-07-01'),0.01671193,4,0.08084694,0.08084694,0]
+			,
+			
+        		['Location',new Date('2006-10-01'),0.02135212,4.698918,0.08436263,0.08014342,0.004219207]
+			,
+			
+        		['Location',new Date('2007-01-01'),0.02505684,5.218269,0.0860481,0.07782983,0.008218262]
+			,
+			
+        		['Location',new Date('2007-04-01'),0.0268906,5.378486,0.08407314,0.07229613,0.01177701]
+			,
+			
+        		['Location',new Date('2007-07-01'),0.02591793,5,0.07660753,0.06193223,0.0146753]
+			,
+			
+        		['Location',new Date('2007-10-01'),0.02170868,4.004688,0.06306878,0.04634012,0.01672866]
+			,
+			
+        		['Location',new Date('2008-01-01'),0.01585405,2.720192,0.0478652,0.02996992,0.01789528]
+			,
+			
+        		['Location',new Date('2008-04-01'),0.01045056,1.575601,0.03665283,0.01848378,0.01816906]
+			,
+			
+        		['Location',new Date('2008-07-01'),0.007594744,1,0.03508772,0.01754386,0.01754386]
+			,
+			
+        		['Location',new Date('2008-10-01'),0.00869866,1.282332,0.04670247,0.03060729,0.01609518]
+			,
+			
+        		['Location',new Date('2009-01-01'),0.01243651,2.150962,0.06653605,0.05231111,0.01422494]
+			,
+			
+        		['Location',new Date('2009-04-01'),0.01679805,3.194111,0.08750399,0.07508731,0.01241667]
+			,
+			
+        		['Location',new Date('2009-07-01'),0.01977301,4,0.1025218,0.09136791,0.0111539]
+			,
+			
+        		['Location',new Date('2009-10-01'),0.01991476,4.256611,0.1065764,0.09579451,0.01078193]
+			,
+			
+        		['Location',new Date('2010-01-01'),0.0180312,4.050962,0.1029403,0.09184715,0.01109313]
+			,
+			
+        		['Location',new Date('2010-04-01'),0.01549387,3.569832,0.09695711,0.08521548,0.01174163]
+			,
+			
+        		['Location',new Date('2010-07-01'),0.01367428,3,0.09397071,0.08158915,0.01238157]
+			,
+			
+        		['Location',new Date('2010-10-01'),0.01359692,2.503726,0.09781478,0.08509812,0.01271666]
+			,
+			
+        		['Location',new Date('2011-01-01'),0.01489804,2.145192,0.1062826,0.0936337,0.0126489]
+			,
+			
+        		['Location',new Date('2011-04-01'),0.01686686,1.964062,0.1156573,0.1035275,0.01212986]
+			,
+			
+        		['Location',new Date('2011-07-01'),0.01879258,2,0.1222222,0.1111111,0.01111111]
+			,
+			
+        		['Location',new Date('2011-10-01'),0.02011429,2.275361,0.1231518,0.1135767,0.009575144]
+			,
+			
+        		['Location',new Date('2012-01-01'),0.02087059,2.743269,0.1191864,0.1115583,0.007628078]
+			,
+			
+        		['Location',new Date('2012-04-01'),0.02124994,3.339543,0.1119577,0.1065507,0.005406946]
+			,
+			
+        		['Location',new Date('2012-07-01'),0.02144082,4,0.1030972,0.1000485,0.00304878]
+			,
+			
+        		['Location-based',new Date('2006-07-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2006-10-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2007-01-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2007-04-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2007-07-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2007-10-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2008-01-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2008-04-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2008-07-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2008-10-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2009-01-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2009-04-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2009-07-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2009-10-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2010-01-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2010-04-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2010-07-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2010-10-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2011-01-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2011-04-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2011-07-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2011-10-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2012-01-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2012-04-01'),0,0,0,0,0]
+			,
+			
+        		['Location-based',new Date('2012-07-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2006-07-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2006-10-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2007-01-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2007-04-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2007-07-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2007-10-01'),0.0001709285,0.0375,0.001975034,0.001757011,0.0002180233]
+			,
+			
+        		['Location-aware',new Date('2008-01-01'),0.0003155603,0.06923077,0.003646217,0.003243713,0.0004025045]
+			,
+			
+        		['Location-aware',new Date('2008-04-01'),0.0003024119,0.06634615,0.003494291,0.003108558,0.0003857335]
+			,
+			
+        		['Location-aware',new Date('2008-07-01'),1.084202e-19,1.387779e-17,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2008-10-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2009-01-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2009-04-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2009-07-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2009-10-01'),0.002443401,0.5360577,0.02823286,0.02511625,0.003116614]
+			,
+			
+        		['Location-aware',new Date('2010-01-01'),0.00545218,1.196154,0.06299853,0.05604414,0.006954383]
+			,
+			
+        		['Location-aware',new Date('2010-04-01'),0.008013916,1.758173,0.09259872,0.08237678,0.01022194]
+			,
+			
+        		['Location-aware',new Date('2010-07-01'),0.009116186,2,0.1053352,0.09370725,0.01162791]
+			,
+			
+        		['Location-aware',new Date('2010-10-01'),0.008079658,1.772596,0.09335835,0.08305256,0.01030579]
+			,
+			
+        		['Location-aware',new Date('2011-01-01'),0.005557367,1.219231,0.06421393,0.05712538,0.007088551]
+			,
+			
+        		['Location-aware',new Date('2011-04-01'),0.002535439,0.55625,0.02929634,0.02606233,0.003234012]
+			,
+			
+        		['Location-aware',new Date('2011-07-01'),1.734723e-18,4.440892e-16,0,0,1.734723e-18]
+			,
+			
+        		['Location-aware',new Date('2011-10-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2012-01-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2012-04-01'),0,0,0,0,0]
+			,
+			
+        		['Location-aware',new Date('2012-07-01'),0,0,0,0,0]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	gadgets.window.adjustHeight();
+      	}
+  </script>
+
+</head>
+
+<div>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="reduced">
+
+</div>
+
+
+
+<div class="reduced">
+<p><a href="http://arc12.github.com/Text-Mining-Weak-Signals-Output/History Visualiser/Union C 2006 to 2012/Context.Sensitive.Services.html" target="_new">Larger version</a> with more options and more info...</p></div>
+</body>
+    ]]>
+  </Content>
+</Module>
+

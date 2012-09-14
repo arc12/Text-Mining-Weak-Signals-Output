@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>History Visualiser: Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Mobile</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=800;
+      		options['height']=600;
+      		      		options['showSidePanel']=true;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Tablet',new Date('2006-07-01'),0.004177982,1,0.04166667,0.04166667,0]
+			,
+			
+        		['Tablet',new Date('2006-10-01'),0.002606498,0.625,0.01403125,0.01403454,0]
+			,
+			
+        		['Tablet',new Date('2007-01-01'),0.001245809,0.3,0,0,0]
+			,
+			
+        		['Tablet',new Date('2007-04-01'),0.0003067111,0.075,0,0,0]
+			,
+			
+        		['Tablet',new Date('2007-07-01'),0,1.110223e-16,6.938894e-18,6.938894e-18,0]
+			,
+			
+        		['Tablet',new Date('2007-10-01'),0.0004502905,0.10625,0.03750312,0.03749457,8.545229e-06]
+			,
+			
+        		['Tablet',new Date('2008-01-01'),0.001437475,0.35,0.08702499,0.08700921,1.577581e-05]
+			,
+			
+        		['Tablet',new Date('2008-04-01'),0.002655265,0.66875,0.1330344,0.1330192,1.511848e-05]
+			,
+			
+        		['Tablet',new Date('2008-07-01'),0.003797372,1,0.16,0.16,6.776264e-21]
+			,
+			
+        		['Tablet',new Date('2008-10-01'),0.004719705,1.29375,0.157531,0.1575618,0]
+			,
+			
+        		['Tablet',new Date('2009-01-01'),0.00592696,1.55,0.1357975,0.1358553,0]
+			,
+			
+        		['Tablet',new Date('2009-04-01'),0.008086029,1.78125,0.11011,0.1101659,0]
+			,
+			
+        		['Tablet',new Date('2009-07-01'),0.0118638,2,0.09577922,0.09577922,0]
+			,
+			
+        		['Tablet',new Date('2009-10-01'),0.01747169,2.203125,0.1031583,0.1030433,0.0001150319]
+			,
+			
+        		['Tablet',new Date('2010-01-01'),0.02329914,2.325,0.1227719,0.1225563,0.0002156027]
+			,
+			
+        		['Tablet',new Date('2010-04-01'),0.0272801,2.284375,0.1401874,0.139979,0.0002083721]
+			,
+			
+        		['Tablet',new Date('2010-07-01'),0.02734856,2,0.140972,0.140972,0]
+			,
+			
+        		['Tablet',new Date('2010-10-01'),0.02226383,1.440625,0.1155501,0.1159794,0]
+			,
+			
+        		['Tablet',new Date('2011-01-01'),0.01408671,0.775,0.07377444,0.074579,0]
+			,
+			
+        		['Tablet',new Date('2011-04-01'),0.005703377,0.221875,0.03035452,0.03113213,0]
+			,
+			
+        		['Tablet',new Date('2011-07-01'),0,0,0,0,0]
+			,
+			
+        		['Tablet',new Date('2011-10-01'),0,0.26875,0,0,0.001772806]
+			,
+			
+        		['Tablet',new Date('2012-01-01'),0.002474185,0.95,0.00845451,0.004084612,0.004369899]
+			,
+			
+        		['Tablet',new Date('2012-04-01'),0.008581636,1.90625,0.03698492,0.0294684,0.007516515]
+			,
+			
+        		['Tablet',new Date('2012-07-01'),0.01608062,3,0.07245909,0.06152119,0.01093789]
+			,
+			
+        		['Smartphone',new Date('2006-07-01'),0,0,0,0,0]
+			,
+			
+        		['Smartphone',new Date('2006-10-01'),4.170181e-07,0.0006009615,6.606777e-05,6.606777e-05,0]
+			,
+			
+        		['Smartphone',new Date('2007-01-01'),6.67229e-07,0.0009615385,0.0001057084,0.0001057084,0]
+			,
+			
+        		['Smartphone',new Date('2007-04-01'),5.838253e-07,0.0008413462,9.249488e-05,9.249488e-05,0]
+			,
+			
+        		['Smartphone',new Date('2007-07-01'),0,0,0,0,0]
+			,
+			
+        		['Smartphone',new Date('2007-10-01'),0,0,0,0,0]
+			,
+			
+        		['Smartphone',new Date('2008-01-01'),0,0,0,0,0]
+			,
+			
+        		['Smartphone',new Date('2008-04-01'),0,0,0,0,0]
+			,
+			
+        		['Smartphone',new Date('2008-07-01'),4.235165e-22,0,0,0,0]
+			,
+			
+        		['Smartphone',new Date('2008-10-01'),3.91997e-06,0.005649038,0.000621037,0.000621037,0]
+			,
+			
+        		['Smartphone',new Date('2009-01-01'),7.339519e-06,0.01057692,0.001162793,0.001162793,0]
+			,
+			
+        		['Smartphone',new Date('2009-04-01'),7.089308e-06,0.01021635,0.001123152,0.001123152,0]
+			,
+			
+        		['Smartphone',new Date('2009-07-01'),1.694066e-21,0,4.336809e-19,4.336809e-19,0]
+			,
+			
+        		['Smartphone',new Date('2009-10-01'),0,0,0,0,0]
+			,
+			
+        		['Smartphone',new Date('2010-01-01'),0,0,0,0,0]
+			,
+			
+        		['Smartphone',new Date('2010-04-01'),0,0,0,0,0]
+			,
+			
+        		['Smartphone',new Date('2010-07-01'),0,1.387779e-17,1.734723e-18,1.734723e-18,0]
+			,
+			
+        		['Smartphone',new Date('2010-10-01'),0.0001278711,0.09411058,0.009396893,0.009396893,0]
+			,
+			
+        		['Smartphone',new Date('2011-01-01'),0.0006893541,0.2721154,0.02232093,0.02232093,0]
+			,
+			
+        		['Smartphone',new Date('2011-04-01'),0.002080696,0.5640625,0.03637959,0.03637959,0]
+			,
+			
+        		['Smartphone',new Date('2011-07-01'),0.004698144,1,0.04918033,0.04918033,0]
+			,
+			
+        		['Smartphone',new Date('2011-10-01'),0.008804306,1.597716,0.05888149,0.05888149,0]
+			,
+			
+        		['Smartphone',new Date('2012-01-01'),0.01412723,2.325962,0.06584482,0.06584482,0]
+			,
+			
+        		['Smartphone',new Date('2012-04-01'),0.02026134,3.141226,0.07098293,0.07098293,0]
+			,
+			
+        		['Smartphone',new Date('2012-07-01'),0.02680103,4,0.07520843,0.07520843,0]
+			,
+			
+        		['Mobile',new Date('2006-07-01'),0.2005431,24,0.0709647,0.0672841,0.003680608]
+			,
+			
+        		['Mobile',new Date('2006-10-01'),0.1759372,20.84345,0.07464861,0.07065734,0.003991262]
+			,
+			
+        		['Mobile',new Date('2007-01-01'),0.15667,18.24952,0.07806133,0.07376896,0.004292375]
+			,
+			
+        		['Mobile',new Date('2007-04-01'),0.1480805,16.78083,0.08093171,0.0763573,0.004574405]
+			,
+			
+        		['Mobile',new Date('2007-07-01'),0.1555076,17,0.08298856,0.07816074,0.004827812]
+			,
+			
+        		['Mobile',new Date('2007-10-01'),0.1808443,19.14141,0.08414133,0.07908919,0.005052145]
+			,
+			
+        		['Mobile',new Date('2008-01-01'),0.2122018,22.12644,0.08502199,0.07973866,0.005283323]
+			,
+			
+        		['Mobile',new Date('2008-04-01'),0.2342451,24.54826,0.08644311,0.08087675,0.005566356]
+			,
+			
+        		['Mobile',new Date('2008-07-01'),0.2316397,25,0.08921727,0.08327102,0.005946254]
+			,
+			
+        		['Mobile',new Date('2008-10-01'),0.1954118,22.59093,0.09375515,0.08729604,0.006459114]
+			,
+			
+        		['Mobile',new Date('2009-01-01'),0.1420314,18.49471,0.09885972,0.09175433,0.007105386]
+			,
+			
+        		['Mobile',new Date('2009-04-01'),0.09432956,14.40114,0.102932,0.09505542,0.007876606]
+			,
+			
+        		['Mobile',new Date('2009-07-01'),0.07513742,12,0.1043731,0.09560882,0.008764311]
+			,
+			
+        		['Mobile',new Date('2009-10-01'),0.09963924,12.47927,0.1021436,0.09243678,0.009706863]
+			,
+			
+        		['Mobile',new Date('2010-01-01'),0.1524324,15.01971,0.09744242,0.0870125,0.01042992]
+			,
+			
+        		['Mobile',new Date('2010-04-01'),0.2104675,18.3003,0.09202787,0.0814219,0.01060597]
+			,
+			
+        		['Mobile',new Date('2010-07-01'),0.2506951,21,0.0876584,0.07775091,0.009907495]
+			,
+			
+        		['Mobile',new Date('2010-10-01'),0.2567765,22.13263,0.08563794,0.07746946,0.008168481]
+			,
+			
+        		['Mobile',new Date('2011-01-01'),0.2392151,22.05144,0.08545248,0.07958355,0.005868927]
+			,
+			
+        		['Mobile',new Date('2011-04-01'),0.215225,21.44453,0.08613352,0.08248318,0.003650332]
+			,
+			
+        		['Mobile',new Date('2011-07-01'),0.2020202,21,0.08671257,0.08455837,0.002154195]
+			,
+			
+        		['Mobile',new Date('2011-10-01'),0.212779,21.25583,0.08642716,0.08456889,0.001858268]
+			,
+			
+        		['Mobile',new Date('2012-01-01'),0.2445374,22.14952,0.08533888,0.08275357,0.002585309]
+			,
+			
+        		['Mobile',new Date('2012-04-01'),0.2902954,23.46845,0.08371537,0.07972104,0.003994329]
+			,
+			
+        		['Mobile',new Date('2012-07-01'),0.3430532,25,0.08182423,0.07607989,0.005744339]
+			,
+			
+        		['Ubiquitous',new Date('2006-07-01'),0.02088991,4,0.08722383,0.07649882,0.01072501]
+			,
+			
+        		['Ubiquitous',new Date('2006-10-01'),0.01784779,3.28155,0.07269686,0.06546098,0.007235885]
+			,
+			
+        		['Ubiquitous',new Date('2007-01-01'),0.01566139,2.750481,0.06038024,0.05631033,0.004069908]
+			,
+			
+        		['Ubiquitous',new Date('2007-04-01'),0.01518643,2.594171,0.05248431,0.05093408,0.00155023]
+			,
+			
+        		['Ubiquitous',new Date('2007-07-01'),0.01727862,3,0.05121942,0.05121942,0]
+			,
+			
+        		['Ubiquitous',new Date('2007-10-01'),0.02225842,4.046094,0.05773844,0.05807467,0]
+			,
+			
+        		['Ubiquitous',new Date('2008-01-01'),0.02830522,5.373558,0.06896432,0.06849265,0.0004716757]
+			,
+			
+        		['Ubiquitous',new Date('2008-04-01'),0.03306316,6.514243,0.08076254,0.07848727,0.002275274]
+			,
+			
+        		['Ubiquitous',new Date('2008-07-01'),0.03417635,7,0.08899857,0.08407246,0.004926108]
+			,
+			
+        		['Ubiquitous',new Date('2008-10-01'),0.03017642,6.51845,0.09070604,0.08249854,0.008207504]
+			,
+			
+        		['Ubiquitous',new Date('2009-01-01'),0.02314497,5.380288,0.08759118,0.07596127,0.01162991]
+			,
+			
+        		['Ubiquitous',new Date('2009-04-01'),0.01605107,4.051983,0.08252839,0.06789284,0.01463555]
+			,
+			
+        		['Ubiquitous',new Date('2009-07-01'),0.0118638,3,0.07839206,0.06172539,0.01666667]
+			,
+			
+        		['Ubiquitous',new Date('2009-10-01'),0.01274513,2.583233,0.0773611,0.06003765,0.01732345]
+			,
+			
+        		['Ubiquitous',new Date('2010-01-01'),0.0176285,2.730288,0.07883253,0.06199452,0.01683801]
+			,
+			
+        		['Ubiquitous',new Date('2010-04-01'),0.02464023,3.2622,0.08150788,0.06590745,0.01560043]
+			,
+			
+        		['Ubiquitous',new Date('2010-07-01'),0.03190665,4,0.08408871,0.07008791,0.0140008]
+			,
+			
+        		['Ubiquitous',new Date('2010-10-01'),0.03780779,4.773618,0.08552847,0.07313989,0.01238858]
+			,
+			
+        		['Ubiquitous',new Date('2011-01-01'),0.04173853,5.448558,0.08578835,0.07483755,0.0109508]
+			,
+			
+        		['Ubiquitous',new Date('2011-04-01'),0.0433475,5.899219,0.08508147,0.07524762,0.009833858]
+			,
+			
+        		['Ubiquitous',new Date('2011-07-01'),0.0422833,6,0.08362096,0.07443678,0.009184177]
+			,
+			
+        		['Ubiquitous',new Date('2011-10-01'),0.03837912,5.666046,0.08160692,0.07250872,0.009098193]
+			,
+			
+        		['Ubiquitous',new Date('2012-01-01'),0.03220652,4.975481,0.07918749,0.06971503,0.00947246]
+			,
+			
+        		['Ubiquitous',new Date('2012-04-01'),0.02452164,4.047175,0.07649779,0.06634423,0.01015356]
+			,
+			
+        		['Ubiquitous',new Date('2012-07-01'),0.01608062,3,0.07367296,0.06268489,0.01098808]
+			,
+			
+        		['Pervasive',new Date('2006-07-01'),0.02506789,2,0.1602729,0.1602729,0]
+			,
+			
+        		['Pervasive',new Date('2006-10-01'),0.01467672,0.8440505,0.103844,0.1045559,0]
+			,
+			
+        		['Pervasive',new Date('2007-01-01'),0.005935229,0,0.05395944,0.0550985,0]
+			,
+			
+        		['Pervasive',new Date('2007-04-01'),0.0004930953,0,0.01716335,0.01816002,0]
+			,
+			
+        		['Pervasive',new Date('2007-07-01'),0,0,0,0,0]
+			,
+			
+        		['Pervasive',new Date('2007-10-01'),0.0053223,1.330469,0.006270961,0.004309823,0.001961138]
+			,
+			
+        		['Pervasive',new Date('2008-01-01'),0.01419306,3.148558,0.02880705,0.02450848,0.00429857]
+			,
+			
+        		['Pervasive',new Date('2008-04-01'),0.02356204,4.892368,0.05769642,0.05144688,0.006249538]
+			,
+			
+        		['Pervasive',new Date('2008-07-01'),0.03037898,6,0.0830272,0.07597592,0.007051282]
+			,
+			
+        		['Pervasive',new Date('2008-10-01'),0.0323538,6.06845,0.09689164,0.09069296,0.006198687]
+			,
+			
+        		['Pervasive',new Date('2009-01-01'),0.03023719,5.330288,0.09939845,0.09518124,0.004217209]
+			,
+			
+        		['Pervasive',new Date('2009-04-01'),0.02553997,4.176983,0.09266043,0.09077048,0.001889947]
+			,
+			
+        		['Pervasive',new Date('2009-07-01'),0.01977301,3,0.07879039,0.07879039,0]
+			,
+			
+        		['Pervasive',new Date('2009-10-01'),0.01426485,2.114483,0.06038167,0.06124613,0]
+			,
+			
+        		['Pervasive',new Date('2010-01-01'),0.009614908,1.530288,0.04194973,0.0428447,0]
+			,
+			
+        		['Pervasive',new Date('2010-04-01'),0.006240285,1.18095,0.02849051,0.02896851,0]
+			,
+			
+        		['Pervasive',new Date('2010-07-01'),0.004558093,1,0.025,0.025,0]
+			,
+			
+        		['Pervasive',new Date('2010-10-01'),0.004771386,0.9267428,0.03455346,0.03431955,0.0002339127]
+			,
+			
+        		['Pervasive',new Date('2011-01-01'),0.006226998,0.9235577,0.05254333,0.05229925,0.0002440828]
+			,
+			
+        		['Pervasive',new Date('2011-04-01'),0.008057707,0.9585938,0.07244137,0.07230915,0.0001322115]
+			,
+			
+        		['Pervasive',new Date('2011-07-01'),0.009396288,1,0.0877193,0.0877193,2.168404e-19]
+			,
+			
+        		['Pervasive',new Date('2011-10-01'),0.009576698,1.022296,0.09340143,0.09347262,0]
+			,
+			
+        		['Pervasive',new Date('2012-01-01'),0.008737596,1.025481,0.09072229,0.09080365,0]
+			,
+			
+        		['Pervasive',new Date('2012-04-01'),0.00721882,1.015925,0.08246898,0.08251983,0]
+			,
+			
+        		['Pervasive',new Date('2012-07-01'),0.005360206,1,0.07142857,0.07142857,0]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	
+      	}
+  </script>
+
+</head>
+
+<div>
+<h1>Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Mobile</h1>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="nice">
+
+<p><a href="Groups.html">View terms as a group</a>.</p>
+
+<p>Other sets:</p>
+
+<p><a href="Cloud.html">Cloud</a></p>
+
+<p><a href="eBooks.html">eBooks</a></p>
+
+<p><a href="Analytics.html">Analytics</a></p>
+
+<p><a href="Gesture.html">Gesture</a></p>
+
+<p><a href="Context.Sensitive.Services.html">Context Sensitive Services</a></p>
+
+<p><a href="Games.html">Games</a></p>
+
+<p><a href="Learning.Platforms.html">Learning Platforms</a></p>
+
+</div>
+
+
+
+<div class="reduced">
+<a href="http://fusion.google.com/add?source=atgs&moduleurl=http%3a%2f%2farc12.github.com%2fText-Mining-Weak-Signals-Output%2fHistory%20Visualiser%2fUnion%20C%202006%20to%202012%2fMobile%20gadget.xml"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a><p>
+This shows the history of the way certain terms have been used (related words are counted also, e.g. &quot;gaming&quot; would be counted as &quot;game&quot;). The chart loads up showing the trend in word-frequency for a term (or group of terms) with the line coloured to show the average &quot;positive sentiment&quot; of abstracts containing the term. &quot;Positive sentiment&quot; is calculated as the fraction of words that generally have either a positive connotation according to the <a href="http://www.wjh.harvard.edu/~inquirer/">Harvard General Inquirer</a> dictionary. Calculations were conducted in 12 month slices and the number of abstracts per slice is (in date order): 441, 394, 460, 420, 374, 336, 308. True calculated values are plotted for the mid-point of each time slice to show the aggregate value over that 12 month period and spline interpolation is used to give the impression of a smooth change between these points. In total, 2733 abstracts were use</p>
+
+<p><em>NB: be aware that insignificant fluctuations in the data may appear magnified since the plots are shown "zoomed in" (especially true for sentiment scores (or &quot;subjectivity&quot;, which is the sum of positive and negative sentiment). Also note that sentiment values are essentially meaningless when the frequency is close to the baseline.</em></p>
+</div>
+</body>
+</html>
+

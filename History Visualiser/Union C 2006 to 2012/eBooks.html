@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>History Visualiser: Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - eBooks</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=800;
+      		options['height']=600;
+      		      		options['showSidePanel']=true;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['eBook',new Date('2006-07-01'),0,0,0,0,0]
+			,
+			
+        		['eBook',new Date('2006-10-01'),3.912978e-05,0.003004808,0.0001698681,0.000149836,2.003205e-05]
+			,
+			
+        		['eBook',new Date('2007-01-01'),6.260765e-05,0.004807692,0.0002717889,0.0002397377,3.205128e-05]
+			,
+			
+        		['eBook',new Date('2007-04-01'),5.47817e-05,0.004206731,0.0002378153,0.0002097705,2.804487e-05]
+			,
+			
+        		['eBook',new Date('2007-07-01'),0,0,0,0,0]
+			,
+			
+        		['eBook',new Date('2007-10-01'),0,0,0,0,0]
+			,
+			
+        		['eBook',new Date('2008-01-01'),0,0,0,0,0]
+			,
+			
+        		['eBook',new Date('2008-04-01'),0,0,0,0,0]
+			,
+			
+        		['eBook',new Date('2008-07-01'),0,3.469447e-18,4.336809e-19,0,0]
+			,
+			
+        		['eBook',new Date('2008-10-01'),0.00036782,0.02824519,0.00159676,0.001408459,0.0001883013]
+			,
+			
+        		['eBook',new Date('2009-01-01'),0.0006886842,0.05288462,0.002989678,0.002637114,0.0003525641]
+			,
+			
+        		['eBook',new Date('2009-04-01'),0.0006652063,0.05108173,0.002887758,0.002547213,0.0003405449]
+			,
+			
+        		['eBook',new Date('2009-07-01'),2.168404e-19,0,0,8.673617e-19,0]
+			,
+			
+        		['eBook',new Date('2009-10-01'),0,0,0,0,0]
+			,
+			
+        		['eBook',new Date('2010-01-01'),0,0,0,0,0]
+			,
+			
+        		['eBook',new Date('2010-04-01'),0,0,0,0,0]
+			,
+			
+        		['eBook',new Date('2010-07-01'),0,0,3.469447e-18,0,0]
+			,
+			
+        		['eBook',new Date('2010-10-01'),0.005477392,0.4236779,0.02397799,0.0211882,0.002789797]
+			,
+			
+        		['eBook',new Date('2011-01-01'),0.01251531,0.9855769,0.05592947,0.04963673,0.006292735]
+			,
+			
+        		['eBook',new Date('2011-04-01'),0.01916825,1.554688,0.08860773,0.07918065,0.009427083]
+			,
+			
+        		['eBook',new Date('2011-07-01'),0.02349072,2,0.1147661,0.103655,0.01111111]
+			,
+			
+        		['eBook',new Date('2011-10-01'),0.02403963,2.222957,0.1289392,0.1183903,0.01054888]
+			,
+			
+        		['eBook',new Date('2012-01-01'),0.02138155,2.254808,0.1327874,0.1246998,0.008087607]
+			,
+			
+        		['eBook',new Date('2012-04-01'),0.01658548,2.159255,0.1297523,0.125392,0.00436031]
+			,
+			
+        		['eBook',new Date('2012-07-01'),0.01072041,2,0.1232755,0.1232755,0]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	
+      	}
+  </script>
+
+</head>
+
+<div>
+<h1>Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - eBooks</h1>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="nice">
+
+<p><a href="Groups.html">View terms as a group</a>.</p>
+
+<p>Other sets:</p>
+
+<p><a href="Cloud.html">Cloud</a></p>
+
+<p><a href="Analytics.html">Analytics</a></p>
+
+<p><a href="Gesture.html">Gesture</a></p>
+
+<p><a href="Context.Sensitive.Services.html">Context Sensitive Services</a></p>
+
+<p><a href="Games.html">Games</a></p>
+
+<p><a href="Mobile.html">Mobile</a></p>
+
+<p><a href="Learning.Platforms.html">Learning Platforms</a></p>
+
+</div>
+
+
+
+<div class="reduced">
+<a href="http://fusion.google.com/add?source=atgs&moduleurl=http%3a%2f%2farc12.github.com%2fText-Mining-Weak-Signals-Output%2fHistory%20Visualiser%2fUnion%20C%202006%20to%202012%2feBooks%20gadget.xml"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a><p>
+This shows the history of the way certain terms have been used (related words are counted also, e.g. &quot;gaming&quot; would be counted as &quot;game&quot;). The chart loads up showing the trend in word-frequency for a term (or group of terms) with the line coloured to show the average &quot;positive sentiment&quot; of abstracts containing the term. &quot;Positive sentiment&quot; is calculated as the fraction of words that generally have either a positive connotation according to the <a href="http://www.wjh.harvard.edu/~inquirer/">Harvard General Inquirer</a> dictionary. Calculations were conducted in 12 month slices and the number of abstracts per slice is (in date order): 441, 394, 460, 420, 374, 336, 308. True calculated values are plotted for the mid-point of each time slice to show the aggregate value over that 12 month period and spline interpolation is used to give the impression of a smooth change between these points. In total, 2733 abstracts were use</p>
+
+<p><em>NB: be aware that insignificant fluctuations in the data may appear magnified since the plots are shown "zoomed in" (especially true for sentiment scores (or &quot;subjectivity&quot;, which is the sum of positive and negative sentiment). Also note that sentiment values are essentially meaningless when the frequency is close to the baseline.</em></p>
+</div>
+</body>
+</html>
+

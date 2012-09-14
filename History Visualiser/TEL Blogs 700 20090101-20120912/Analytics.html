@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>History Visualiser: TEL Blogs - Jan 1st 2009 - Sept 12th 2012 - Analytics</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=800;
+      		options['height']=600;
+      		      		options['showSidePanel']=true;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Analytics',new Date('2009-02-01'),0.004167639,8,0.07132585,0.05394953,0.01737632]
+			,
+			
+        		['Analytics',new Date('2009-03-01'),0.004309087,9.66755,0.07035984,0.05456673,0.01579312]
+			,
+			
+        		['Analytics',new Date('2009-04-01'),0.004610215,10.0369,0.06719125,0.0541855,0.01300575]
+			,
+			
+        		['Analytics',new Date('2009-05-01'),0.005086142,8.327548,0.06123679,0.05277856,0.00845823]
+			,
+			
+        		['Analytics',new Date('2009-06-01'),0.005084825,6.148355,0.05938646,0.05480049,0.004585974]
+			,
+			
+        		['Analytics',new Date('2009-07-01'),0.004212096,5.574316,0.06770508,0.06363015,0.004074921]
+			,
+			
+        		['Analytics',new Date('2009-08-01'),0.004473794,7.493488,0.07637334,0.07002409,0.006349246]
+			,
+			
+        		['Analytics',new Date('2009-09-01'),0.00787247,11.8263,0.07325837,0.06351338,0.009744991]
+			,
+			
+        		['Analytics',new Date('2009-10-01'),0.0114753,14.95261,0.06447942,0.05191639,0.01256303]
+			,
+			
+        		['Analytics',new Date('2009-11-01'),0.01126167,12.94518,0.06152217,0.04809934,0.01342284]
+			,
+			
+        		['Analytics',new Date('2009-12-01'),0.008893789,9.344747,0.06448292,0.05116089,0.01332203]
+			,
+			
+        		['Analytics',new Date('2010-01-01'),0.008043575,10.04341,0.06887816,0.05486018,0.01401798]
+			,
+			
+        		['Analytics',new Date('2010-02-01'),0.008446442,13.34491,0.07351849,0.05857221,0.01494629]
+			,
+			
+        		['Analytics',new Date('2010-03-01'),0.008157741,14.34586,0.07855703,0.06396302,0.01459401]
+			,
+			
+        		['Analytics',new Date('2010-04-01'),0.00803422,13.82166,0.08112086,0.06761291,0.01350794]
+			,
+			
+        		['Analytics',new Date('2010-05-01'),0.01025672,15.36907,0.07724872,0.06401289,0.01323583]
+			,
+			
+        		['Analytics',new Date('2010-06-01'),0.01383783,17.76788,0.07035396,0.05702538,0.01332858]
+			,
+			
+        		['Analytics',new Date('2010-07-01'),0.0158529,16.98982,0.06808925,0.05588639,0.01220286]
+			,
+			
+        		['Analytics',new Date('2010-08-01'),0.01499101,13.44927,0.07080826,0.06029428,0.01051398]
+			,
+			
+        		['Analytics',new Date('2010-09-01'),0.01129869,10.74819,0.07367506,0.06322589,0.01044917]
+			,
+			
+        		['Analytics',new Date('2010-10-01'),0.007385984,10.83164,0.07529591,0.06312496,0.01217095]
+			,
+			
+        		['Analytics',new Date('2010-11-01'),0.007761118,14.1448,0.07716561,0.06300966,0.01415594]
+			,
+			
+        		['Analytics',new Date('2010-12-01'),0.01274933,19.80191,0.07941808,0.0640609,0.01535718]
+			,
+			
+        		['Analytics',new Date('2011-01-01'),0.01875237,25.69057,0.08087215,0.06561802,0.01525414]
+			,
+			
+        		['Analytics',new Date('2011-02-01'),0.0237563,29.21812,0.08153061,0.06740984,0.01412076]
+			,
+			
+        		['Analytics',new Date('2011-03-01'),0.02763113,27.47818,0.08264594,0.06960093,0.01304501]
+			,
+			
+        		['Analytics',new Date('2011-04-01'),0.03144211,22.4108,0.08334156,0.07054792,0.01279364]
+			,
+			
+        		['Analytics',new Date('2011-05-01'),0.03747476,21.65658,0.08019177,0.06652361,0.01366816]
+			,
+			
+        		['Analytics',new Date('2011-06-01'),0.04320698,25.9118,0.07370135,0.05906499,0.01463636]
+			,
+			
+        		['Analytics',new Date('2011-07-01'),0.03959019,26.0386,0.06988393,0.05695403,0.0129299]
+			,
+			
+        		['Analytics',new Date('2011-08-01'),0.02601967,19.88327,0.07066915,0.06200541,0.008663738]
+			,
+			
+        		['Analytics',new Date('2011-09-01'),0.01564562,17.15044,0.07107851,0.06449446,0.006584047]
+			,
+			
+        		['Analytics',new Date('2011-10-01'),0.0160168,21.69418,0.06946735,0.06087259,0.00859476]
+			,
+			
+        		['Analytics',new Date('2011-11-01'),0.02271343,25.28705,0.07108715,0.06018781,0.01089934]
+			,
+			
+        		['Analytics',new Date('2011-12-01'),0.02964987,23.2942,0.07760594,0.06648559,0.01112035]
+			,
+			
+        		['Analytics',new Date('2012-01-01'),0.02986743,20.75869,0.08210097,0.07120811,0.01089286]
+			,
+			
+        		['Analytics',new Date('2012-02-01'),0.02251357,22.17538,0.08039672,0.06876136,0.01163535]
+			,
+			
+        		['Analytics',new Date('2012-03-01'),0.02096327,28.12658,0.07696645,0.06379686,0.01316959]
+			,
+			
+        		['Analytics',new Date('2012-04-01'),0.03461504,36.89452,0.07532131,0.06051344,0.01480787]
+			,
+			
+        		['Analytics',new Date('2012-05-01'),0.05722032,42.15853,0.07328163,0.05817124,0.01511039]
+			,
+			
+        		['Analytics',new Date('2012-06-01'),0.07881287,39.52474,0.06944155,0.05616068,0.01328087]
+			,
+			
+        		['Analytics',new Date('2012-07-01'),0.08586464,32.65288,0.06750575,0.05667634,0.01082941]
+			,
+			
+        		['Analytics',new Date('2012-08-01'),0.06952399,25.65882,0.07065065,0.06143893,0.009211718]
+			,
+			
+        		['Analytics',new Date('2012-09-01'),0.03947861,19,0.07689471,0.06870077,0.008193944]
+			,
+			
+        		['Data',new Date('2009-02-01'),0.1962958,133,0.07151467,0.05805203,0.01346264]
+			,
+			
+        		['Data',new Date('2009-03-01'),0.2302256,155.7864,0.07137953,0.05744971,0.01392982]
+			,
+			
+        		['Data',new Date('2009-04-01'),0.2823485,184.3935,0.06983551,0.05626955,0.01356595]
+			,
+			
+        		['Data',new Date('2009-05-01'),0.3563451,218.4062,0.0663232,0.05439271,0.01193049]
+			,
+			
+        		['Data',new Date('2009-06-01'),0.3889175,228.6322,0.06420367,0.05381871,0.01038495]
+			,
+			
+        		['Data',new Date('2009-07-01'),0.3222505,189.6502,0.06671057,0.05634418,0.01036638]
+			,
+			
+        		['Data',new Date('2009-08-01'),0.2306888,140.3679,0.07037334,0.05942856,0.01094478]
+			,
+			
+        		['Data',new Date('2009-09-01'),0.2121756,130.3662,0.07049537,0.05975731,0.01073806]
+			,
+			
+        		['Data',new Date('2009-10-01'),0.2396293,143.3479,0.06854351,0.05812189,0.01042162]
+			,
+			
+        		['Data',new Date('2009-11-01'),0.248657,143.6121,0.06791115,0.0567051,0.01120605]
+			,
+			
+        		['Data',new Date('2009-12-01'),0.2489411,136.3214,0.06896449,0.05644711,0.01251738]
+			,
+			
+        		['Data',new Date('2010-01-01'),0.2770115,142.0767,0.07068815,0.0575457,0.01314245]
+			,
+			
+        		['Data',new Date('2010-02-01'),0.3233706,161.35,0.07157104,0.05853359,0.01303745]
+			,
+			
+        		['Data',new Date('2010-03-01'),0.3580336,184.1699,0.07018951,0.05745245,0.01273706]
+			,
+			
+        		['Data',new Date('2010-04-01'),0.3755531,196.7942,0.06837643,0.0556536,0.01272283]
+			,
+			
+        		['Data',new Date('2010-05-01'),0.3835792,185.3268,0.06944084,0.05606947,0.01337137]
+			,
+			
+        		['Data',new Date('2010-06-01'),0.3791654,158.4492,0.07237445,0.05815686,0.01421758]
+			,
+			
+        		['Data',new Date('2010-07-01'),0.3531968,138.3344,0.07358948,0.05927699,0.0143125]
+			,
+			
+        		['Data',new Date('2010-08-01'),0.3071622,132.2477,0.0725023,0.05898615,0.01351615]
+			,
+			
+        		['Data',new Date('2010-09-01'),0.2511868,136.1574,0.07076037,0.05844922,0.01231115]
+			,
+			
+        		['Data',new Date('2010-10-01'),0.2088165,142.3314,0.0700226,0.0584314,0.0115912]
+			,
+			
+        		['Data',new Date('2010-11-01'),0.2126326,140.8687,0.07178656,0.05930051,0.01248605]
+			,
+			
+        		['Data',new Date('2010-12-01'),0.2553026,136.0138,0.074902,0.06069841,0.01420358]
+			,
+			
+        		['Data',new Date('2011-01-01'),0.2929635,144.538,0.07585499,0.06162435,0.01423064]
+			,
+			
+        		['Data',new Date('2011-02-01'),0.3135982,161.8381,0.07422722,0.06180705,0.01242018]
+			,
+			
+        		['Data',new Date('2011-03-01'),0.3397423,160.8105,0.0729343,0.06176083,0.01117347]
+			,
+			
+        		['Data',new Date('2011-04-01'),0.3660992,139.4924,0.07298535,0.06143186,0.01155349]
+			,
+			
+        		['Data',new Date('2011-05-01'),0.3529389,127.0573,0.07292032,0.06006758,0.01285275]
+			,
+			
+        		['Data',new Date('2011-06-01'),0.3099207,131.6864,0.07230774,0.05831361,0.01399413]
+			,
+			
+        		['Data',new Date('2011-07-01'),0.3158191,130.6181,0.07231218,0.05874676,0.01356542]
+			,
+			
+        		['Data',new Date('2011-08-01'),0.3798809,117.2027,0.07350054,0.06179837,0.01170217]
+			,
+			
+        		['Data',new Date('2011-09-01'),0.3966063,113.0711,0.07533304,0.06437374,0.0109593]
+			,
+			
+        		['Data',new Date('2011-10-01'),0.3265875,126.6018,0.07710309,0.06474671,0.01235639]
+			,
+			
+        		['Data',new Date('2011-11-01'),0.2640308,138.6032,0.07797991,0.06413455,0.01384536]
+			,
+			
+        		['Data',new Date('2011-12-01'),0.2687908,139.609,0.07741095,0.06338088,0.01403007]
+			,
+			
+        		['Data',new Date('2012-01-01'),0.3044745,145.2796,0.07543015,0.06197972,0.01345044]
+			,
+			
+        		['Data',new Date('2012-02-01'),0.3370359,164.3797,0.07269079,0.05989599,0.0127948]
+			,
+			
+        		['Data',new Date('2012-03-01'),0.3641892,182.9842,0.07110287,0.05854233,0.01256054]
+			,
+			
+        		['Data',new Date('2012-04-01'),0.3889254,187.0291,0.07147727,0.05863569,0.01284158]
+			,
+			
+        		['Data',new Date('2012-05-01'),0.4164528,170.3971,0.07128063,0.05853758,0.01274305]
+			,
+			
+        		['Data',new Date('2012-06-01'),0.4450163,135.5924,0.06886252,0.05714347,0.01171905]
+			,
+			
+        		['Data',new Date('2012-07-01'),0.4507958,107.2182,0.06686596,0.05610796,0.010758]
+			,
+			
+        		['Data',new Date('2012-08-01'),0.4158104,105.3527,0.06773211,0.05696007,0.01077205]
+			,
+			
+        		['Data',new Date('2012-09-01'),0.3566927,120,0.07040816,0.0589977,0.01141047]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	
+      	}
+  </script>
+
+</head>
+
+<div>
+<h1>TEL Blogs - Jan 1st 2009 - Sept 12th 2012 - Analytics</h1>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="nice">
+
+<p><a href="Groups.html">View terms as a group</a>.</p>
+
+<p>Other sets:</p>
+
+<p><a href="Cloud.html">Cloud</a></p>
+
+<p><a href="eBooks.html">eBooks</a></p>
+
+<p><a href="Gesture.html">Gesture</a></p>
+
+<p><a href="Context.Sensitive.Services.html">Context Sensitive Services</a></p>
+
+<p><a href="Games.html">Games</a></p>
+
+<p><a href="Mobile.html">Mobile</a></p>
+
+<p><a href="Learning.Platforms.html">Learning Platforms</a></p>
+
+</div>
+
+
+
+<div class="reduced">
+<a href="http://fusion.google.com/add?source=atgs&moduleurl=http%3a%2f%2farc12.github.com%2fText-Mining-Weak-Signals-Output%2fHistory%20Visualiser%2fTEL%20Blogs%20700%2020090101-20120912%2fAnalytics%20gadget.xml"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a><p>
+This shows the history of the way certain terms have been used (related words are counted also, e.g. &quot;gaming&quot; would be counted as &quot;game&quot;). The chart loads up showing the trend in word-frequency for a term (or group of terms) with the line coloured to show the average &quot;positive sentiment&quot; of blog posts containing the term. &quot;Positive sentiment&quot; is calculated as the fraction of words that generally have either a positive connotation according to the <a href="http://www.wjh.harvard.edu/~inquirer/">Harvard General Inquirer</a> dictionary. Calculations were conducted in 2 month slices and the number of blog posts per slice is (in date order): 1553, 1520, 1343, 1100, 1150, 1040, 1114, 1198, 990, 914, 1337, 1225, 1249, 984, 1056, 756, 1253, 1106, 1236, 991, 612, 675. True calculated values are plotted for the mid-point of each time slice to show the aggregate value over that 2 month period and spline interpolation is used to give the impression of a smooth change between these points. In total, 24402 blog posts were use</p>
+
+<p><em>NB: be aware that insignificant fluctuations in the data may appear magnified since the plots are shown "zoomed in" (especially true for sentiment scores (or &quot;subjectivity&quot;, which is the sum of positive and negative sentiment). Also note that sentiment values are essentially meaningless when the frequency is close to the baseline.</em></p>
+</div>
+</body>
+</html>
+

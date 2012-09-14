@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>History Visualiser: Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Learning Platforms</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=800;
+      		options['height']=600;
+      		      		options['showSidePanel']=true;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['LMS',new Date('2006-07-01'),0.03760184,5,0.06726586,0.06349227,0.003773585]
+			,
+			
+        		['LMS',new Date('2006-10-01'),0.06492936,8.167368,0.06863017,0.0636429,0.004987265]
+			,
+			
+        		['LMS',new Date('2007-01-01'),0.08879679,10.96779,0.07044893,0.06438725,0.006061677]
+			,
+			
+        		['LMS',new Date('2007-04-01'),0.105744,13.03431,0.07317659,0.06631904,0.006857552]
+			,
+			
+        		['LMS',new Date('2007-07-01'),0.112311,14,0.07726761,0.07003199,0.007235622]
+			,
+			
+        		['LMS',new Date('2007-10-01'),0.1064655,13.64609,0.08273077,0.07563338,0.007097385]
+			,
+			
+        		['LMS',new Date('2008-01-01'),0.09188705,12.34663,0.08779225,0.08128483,0.006507413]
+			,
+			
+        		['LMS',new Date('2008-04-01'),0.07368294,10.62386,0.09023255,0.08466151,0.005571041]
+			,
+			
+        		['LMS',new Date('2008-07-01'),0.05696058,9,0.08783219,0.08343858,0.004393609]
+			,
+			
+        		['LMS',new Date('2008-10-01'),0.0458346,7.888882,0.0795912,0.07642171,0.003169489]
+			,
+			
+        		['LMS',new Date('2009-01-01'),0.04044866,7.270673,0.0693877,0.0669385,0.002449191]
+			,
+			
+        		['LMS',new Date('2009-04-01'),0.03995369,7.017127,0.0623193,0.05944703,0.002872264]
+			,
+			
+        		['LMS',new Date('2009-07-01'),0.04350061,7,0.06348364,0.05840538,0.005078255]
+			,
+			
+        		['LMS',new Date('2009-10-01'),0.04996984,7.095252,0.07600725,0.06667691,0.009330334]
+			,
+			
+        		['LMS',new Date('2010-01-01'),0.05715977,7.195673,0.09513223,0.08074606,0.01438617]
+			,
+			
+        		['LMS',new Date('2010-04-01'),0.0625983,7.198257,0.1141296,0.09550255,0.01862704]
+			,
+			
+        		['LMS',new Date('2010-07-01'),0.0638133,7,0.1262704,0.1058361,0.02043424]
+			,
+			
+        		['LMS',new Date('2010-10-01'),0.05927938,6.542608,0.1267176,0.1079827,0.01873485]
+			,
+			
+        		['LMS',new Date('2011-01-01'),0.05125796,5.946635,0.1182028,0.1035637,0.01463908]
+			,
+			
+        		['LMS',new Date('2011-04-01'),0.04295717,5.377344,0.1053494,0.09554652,0.009802911]
+			,
+			
+        		['LMS',new Date('2011-07-01'),0.03758515,5,0.09278111,0.08689875,0.005882353]
+			,
+			
+        		['LMS',new Date('2011-10-01'),0.03755964,4.93744,0.08414622,0.07999597,0.004150248]
+			,
+			
+        		['LMS',new Date('2012-01-01'),0.04213681,5.142788,0.07919274,0.07484589,0.004346846]
+			,
+			
+        		['LMS',new Date('2012-04-01'),0.04978242,5.526743,0.07669354,0.07086429,0.005829245]
+			,
+			
+        		['LMS',new Date('2012-07-01'),0.05896226,6,0.07542147,0.06746693,0.007954545]
+			,
+			
+        		['VLE',new Date('2006-07-01'),0,0,0,0,0]
+			,
+			
+        		['VLE',new Date('2006-10-01'),0.0118118,0.7593149,0.02903121,0.02237405,0.006657158]
+			,
+			
+        		['VLE',new Date('2007-01-01'),0.02192264,1.414904,0.05561256,0.0433393,0.01227325]
+			,
+			
+        		['VLE',new Date('2007-04-01'),0.02863156,1.863041,0.07729418,0.06148696,0.01580722]
+			,
+			
+        		['VLE',new Date('2007-07-01'),0.03023758,2,0.09162621,0.07540821,0.01621801]
+			,
+			
+        		['VLE',new Date('2007-10-01'),0.02585512,1.778906,0.09704742,0.08404864,0.01299879]
+			,
+			
+        		['VLE',new Date('2008-01-01'),0.01786009,1.380288,0.09555108,0.08777133,0.007779753]
+			,
+			
+        		['VLE',new Date('2008-04-01'),0.009443744,1.041526,0.09001908,0.08729374,0.002725345]
+			,
+			
+        		['VLE',new Date('2008-07-01'),0.003797372,1,0.08333333,0.08333333,0]
+			,
+			
+        		['VLE',new Date('2008-10-01'),0.003161101,1.40631,0.07775992,0.0766388,0.00112112]
+			,
+			
+        		['VLE',new Date('2009-01-01'),0.005970479,2.063942,0.0731017,0.06808374,0.005017961]
+			,
+			
+        		['VLE',new Date('2009-04-01'),0.009709911,2.689603,0.06854573,0.05857299,0.00997274]
+			,
+			
+        		['VLE',new Date('2009-07-01'),0.0118638,3,0.06327907,0.04901139,0.01426768]
+			,
+			
+        		['VLE',new Date('2009-10-01'),0.01070165,2.798978,0.05717084,0.04059317,0.01657767]
+			,
+			
+        		['VLE',new Date('2010-01-01'),0.007633339,2.238942,0.05281854,0.03567019,0.01714835]
+			,
+			
+        		['VLE',new Date('2010-04-01'),0.004853829,1.559435,0.05350174,0.03688371,0.01661802]
+			,
+			
+        		['VLE',new Date('2010-07-01'),0.004558093,1,0.0625,0.046875,0.015625]
+			,
+			
+        		['VLE',new Date('2010-10-01'),0.008254798,0.7415264,0.08143773,0.06676956,0.01466817]
+			,
+			
+        		['VLE',new Date('2011-01-01'),0.0147074,0.7302885,0.1053187,0.09162988,0.01368877]
+			,
+			
+        		['VLE',new Date('2011-04-01'),0.02199304,0.8539062,0.1274913,0.1150027,0.01248863]
+			,
+			
+        		['VLE',new Date('2011-07-01'),0.02818887,1,0.1413043,0.1304348,0.01086957]
+			,
+			
+        		['VLE',new Date('2011-10-01'),0.03181804,1.078666,0.1418403,0.1331481,0.008692138]
+			,
+			
+        		['VLE',new Date('2012-01-01'),0.03318771,1.089904,0.1311178,0.125066,0.006051885]
+			,
+			
+        		['VLE',new Date('2012-04-01'),0.03305106,1.05619,0.1128899,0.1097868,0.00310308]
+			,
+			
+        		['VLE',new Date('2012-07-01'),0.03216123,1,0.09090909,0.09090909,0]
+			,
+			
+        		['LCMS',new Date('2006-07-01'),0,0,0,0,0]
+			,
+			
+        		['LCMS',new Date('2006-10-01'),0.006994502,0.8389423,0.01546325,0.01515594,0.0003073099]
+			,
+			
+        		['LCMS',new Date('2007-01-01'),0.01291907,1.542308,0.02839233,0.02790064,0.0004916958]
+			,
+			
+        		['LCMS',new Date('2007-04-01'),0.01670375,1.974519,0.0362531,0.03582286,0.0004302338]
+			,
+			
+        		['LCMS',new Date('2007-07-01'),0.01727862,2,0.03651138,0.03651138,0]
+			,
+			
+        		['LCMS',new Date('2007-10-01'),0.01410371,1.55625,0.02802619,0.0288252,0]
+			,
+			
+        		['LCMS',new Date('2008-01-01'),0.008759003,0.8730769,0.01522929,0.01670437,0]
+			,
+			
+        		['LCMS',new Date('2008-04-01'),0.003354448,0.2533654,0.00394558,0.005359206,0]
+			,
+			
+        		['LCMS',new Date('2008-07-01'),0,2.220446e-16,0,0,0]
+			,
+			
+        		['LCMS',new Date('2008-10-01'),0.0001591579,0.3110577,0.007153069,0.004086799,0.00306627]
+			,
+			
+        		['LCMS',new Date('2009-01-01'),0.002709598,0.9653846,0.02090772,0.01407861,0.006829108]
+			,
+			
+        		['LCMS',new Date('2009-04-01'),0.005882539,1.637019,0.03470248,0.02468418,0.0100183]
+			,
+			
+        		['LCMS',new Date('2009-07-01'),0.007909202,2,0.04197588,0.03061224,0.01136364]
+			,
+			
+        		['LCMS',new Date('2009-10-01'),0.007502409,1.824519,0.03812542,0.02810712,0.0100183]
+			,
+			
+        		['LCMS',new Date('2010-01-01'),0.00530139,1.265385,0.02638442,0.01955532,0.006829108]
+			,
+			
+        		['LCMS',new Date('2010-04-01'),0.002426976,0.5735577,0.01194519,0.008878918,0.00306627]
+			,
+			
+        		['LCMS',new Date('2010-07-01'),0,0,0,0,0]
+			,
+			
+        		['LCMS',new Date('2010-10-01'),0,0,0,0,0]
+			,
+			
+        		['LCMS',new Date('2011-01-01'),0,0,0,0,0]
+			,
+			
+        		['LCMS',new Date('2011-04-01'),0,0,0,0,0]
+			,
+			
+        		['LCMS',new Date('2011-07-01'),0,0,0,3.469447e-18,1.734723e-18]
+			,
+			
+        		['LCMS',new Date('2011-10-01'),0.0003430589,0.08076923,0.001681387,0.001251153,0.0004302338]
+			,
+			
+        		['LCMS',new Date('2012-01-01'),0.0003920673,0.09230769,0.001921585,0.00142989,0.0004916958]
+			,
+			
+        		['LCMS',new Date('2012-04-01'),0.000245042,0.05769231,0.001200991,0.000893681,0.0003073099]
+			,
+			
+        		['LCMS',new Date('2012-07-01'),0,0,0,8.673617e-19,0]
+			,
+			
+        		['E-Portfolio',new Date('2006-07-01'),0.02088991,2,0.1757576,0.1757576,0]
+			,
+			
+        		['E-Portfolio',new Date('2006-10-01'),0.02139736,2.254207,0.152921,0.1528509,7.006028e-05]
+			,
+			
+        		['E-Portfolio',new Date('2007-01-01'),0.02134071,2.406731,0.1294327,0.1293206,0.0001120965]
+			,
+			
+        		['E-Portfolio',new Date('2007-04-01'),0.02015583,2.355889,0.104641,0.1045429,9.80844e-05]
+			,
+			
+        		['E-Portfolio',new Date('2007-07-01'),0.01727862,2,0.07789409,0.07789409,0]
+			,
+			
+        		['E-Portfolio',new Date('2007-10-01'),0.01249552,1.307813,0.04950408,0.04968623,0]
+			,
+			
+        		['E-Portfolio',new Date('2008-01-01'),0.006995229,0.5298077,0.02363791,0.0239742,0]
+			,
+			
+        		['E-Portfolio',new Date('2008-04-01'),0.002316974,0,0.005426313,0.00574859,0]
+			,
+			
+        		['E-Portfolio',new Date('2008-07-01'),0,0,0,0,1.084202e-19]
+			,
+			
+        		['E-Portfolio',new Date('2008-10-01'),0.001125558,0.7645433,0.01044293,0.009743881,0.0006990459]
+			,
+			
+        		['E-Portfolio',new Date('2009-01-01'),0.004942942,1.974038,0.031652,0.0300951,0.001556895]
+			,
+			
+        		['E-Portfolio',new Date('2009-04-01'),0.01024346,3.196514,0.05647734,0.05419338,0.002283965]
+			,
+			
+        		['E-Portfolio',new Date('2009-07-01'),0.0158184,4,0.07776911,0.07517843,0.002590674]
+			,
+			
+        		['E-Portfolio',new Date('2009-10-01'),0.02062565,4.071514,0.09012971,0.08784575,0.002283965]
+			,
+			
+        		['E-Portfolio',new Date('2010-01-01'),0.02428931,3.574038,0.09517071,0.09361381,0.001556895]
+			,
+			
+        		['E-Portfolio',new Date('2010-04-01'),0.02660006,2.789543,0.09625593,0.09555689,0.0006990459]
+			,
+			
+        		['E-Portfolio',new Date('2010-07-01'),0.02734856,2,0.09674923,0.09674923,4.336809e-19]
+			,
+			
+        		['E-Portfolio',new Date('2010-10-01'),0.02645453,1.433774,0.09927729,0.09959957,0]
+			,
+			
+        		['E-Portfolio',new Date('2011-01-01'),0.02435389,1.104808,0.1035183,0.1038546,0]
+			,
+			
+        		['E-Portfolio',new Date('2011-04-01'),0.02161159,0.9734375,0.1084133,0.1085954,0]
+			,
+			
+        		['E-Portfolio',new Date('2011-07-01'),0.01879258,1,0.1129032,0.1129032,0]
+			,
+			
+        		['E-Portfolio',new Date('2011-10-01'),0.01634732,1.146514,0.1161667,0.1160686,9.80844e-05]
+			,
+			
+        		['E-Portfolio',new Date('2012-01-01'),0.01426824,1.381731,0.1183322,0.1182201,0.0001120965]
+			,
+			
+        		['E-Portfolio',new Date('2012-04-01'),0.0124333,1.676082,0.1197658,0.1196957,7.006028e-05]
+			,
+			
+        		['E-Portfolio',new Date('2012-07-01'),0.01072041,2,0.1208333,0.1208333,0]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	
+      	}
+  </script>
+
+</head>
+
+<div>
+<h1>Conference Proceedings from ICALT, ECTEL, CAL, ICHL and ICWL - Learning Platforms</h1>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="nice">
+
+<p><a href="Groups.html">View terms as a group</a>.</p>
+
+<p>Other sets:</p>
+
+<p><a href="Cloud.html">Cloud</a></p>
+
+<p><a href="eBooks.html">eBooks</a></p>
+
+<p><a href="Analytics.html">Analytics</a></p>
+
+<p><a href="Gesture.html">Gesture</a></p>
+
+<p><a href="Context.Sensitive.Services.html">Context Sensitive Services</a></p>
+
+<p><a href="Games.html">Games</a></p>
+
+<p><a href="Mobile.html">Mobile</a></p>
+
+</div>
+
+
+
+<div class="reduced">
+<a href="http://fusion.google.com/add?source=atgs&moduleurl=http%3a%2f%2farc12.github.com%2fText-Mining-Weak-Signals-Output%2fHistory%20Visualiser%2fUnion%20C%202006%20to%202012%2fLearning.Platforms%20gadget.xml"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a><p>
+This shows the history of the way certain terms have been used (related words are counted also, e.g. &quot;gaming&quot; would be counted as &quot;game&quot;). The chart loads up showing the trend in word-frequency for a term (or group of terms) with the line coloured to show the average &quot;positive sentiment&quot; of abstracts containing the term. &quot;Positive sentiment&quot; is calculated as the fraction of words that generally have either a positive connotation according to the <a href="http://www.wjh.harvard.edu/~inquirer/">Harvard General Inquirer</a> dictionary. Calculations were conducted in 12 month slices and the number of abstracts per slice is (in date order): 441, 394, 460, 420, 374, 336, 308. True calculated values are plotted for the mid-point of each time slice to show the aggregate value over that 12 month period and spline interpolation is used to give the impression of a smooth change between these points. In total, 2733 abstracts were use</p>
+
+<p><em>NB: be aware that insignificant fluctuations in the data may appear magnified since the plots are shown "zoomed in" (especially true for sentiment scores (or &quot;subjectivity&quot;, which is the sum of positive and negative sentiment). Also note that sentiment values are essentially meaningless when the frequency is close to the baseline.</em></p>
+</div>
+</body>
+</html>
+
