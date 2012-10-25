@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Module>
-  <ModulePrefs title="History Visualiser: TEL Blogs - Jan 1st 2009 - Sept 12th 2012 - Learning Platforms" height="400">
+  <ModulePrefs title="History Visualiser: TEL Blogs - Jan 1st 2009 - Oct 23rd 2012 - Learning Platforms" height="400">
  <Require feature="dynamic-height"/>
  </ModulePrefs>
   <Content type="html">
     <![CDATA[
 <head>
-  <title>History Visualiser: TEL Blogs - Jan 1st 2009 - Sept 12th 2012 - Learning Platforms</title>
+  <title>History Visualiser: TEL Blogs - Jan 1st 2009 - Oct 23rd 2012 - Learning Platforms</title>
   <meta name="AUTHOR" content="Adam Cooper" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -591,9 +591,9 @@
 
 
 <div class="reduced">
-<p><a href="http://arc12.github.com/Text-Mining-Weak-Signals-Output/History Visualiser/TEL Blogs 700 20090101-20120912/Learning.Platforms.html" target="_new">Larger version</a> with more options and more info...</p></div>
+<p><a href="http://arc12.github.com/Text-Mining-Weak-Signals-Output/History Visualiser/TEL Blogs R2 20090101-20121023/Learning.Platforms.html" target="_new">Larger version</a> with more options and more info...</p></div>
 </body>
     ]]>
   </Content>
-</Module>
+ </Module>
 
