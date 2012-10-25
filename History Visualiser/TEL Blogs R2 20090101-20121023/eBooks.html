@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>History Visualiser: TEL Blogs - Jan 1st 2009 - Sept 12th 2012 - eBooks</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=800;
+      		options['height']=600;
+      		      		options['showSidePanel']=true;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['eBook',new Date('2009-02-01'),0.006765798,9,0.07192367,0.06126205,0.01066162]
+			,
+			
+        		['eBook',new Date('2009-03-01'),0.01209491,12.53049,0.07443581,0.06434854,0.01008727]
+			,
+			
+        		['eBook',new Date('2009-04-01'),0.01345272,14.01516,0.07372801,0.06351365,0.01021436]
+			,
+			
+        		['eBook',new Date('2009-05-01'),0.008638991,12.16925,0.06801689,0.05647173,0.01154515]
+			,
+			
+        		['eBook',new Date('2009-06-01'),0.003627099,9.22035,0.06214886,0.04848624,0.01366262]
+			,
+			
+        		['eBook',new Date('2009-07-01'),0.00509099,8.041612,0.0617545,0.04595675,0.01579775]
+			,
+			
+        		['eBook',new Date('2009-08-01'),0.01087795,9.549646,0.06645592,0.04973794,0.01671799]
+			,
+			
+        		['eBook',new Date('2009-09-01'),0.01621577,13.38488,0.07323038,0.05788705,0.01534332]
+			,
+			
+        		['eBook',new Date('2009-10-01'),0.01824332,15.31909,0.0750384,0.06255377,0.01248462]
+			,
+			
+        		['eBook',new Date('2009-11-01'),0.01588421,11.34522,0.06563376,0.05598973,0.00964403]
+			,
+			
+        		['eBook',new Date('2009-12-01'),0.01563148,9.60669,0.05542372,0.04730905,0.008114664]
+			,
+			
+        		['eBook',new Date('2010-01-01'),0.02511843,20.91277,0.05946957,0.05065649,0.008813078]
+			,
+			
+        		['eBook',new Date('2010-02-01'),0.03390216,34.02803,0.07098971,0.06071652,0.01027319]
+			,
+			
+        		['eBook',new Date('2010-03-01'),0.02525004,29.45299,0.07399911,0.06383654,0.01016258]
+			,
+			
+        		['eBook',new Date('2010-04-01'),0.009127501,14.44367,0.06909255,0.05980169,0.009290857]
+			,
+			
+        		['eBook',new Date('2010-05-01'),0.008634261,9.789572,0.0656786,0.05565665,0.01002195]
+			,
+			
+        		['eBook',new Date('2010-06-01'),0.02313458,16.71119,0.06581126,0.05379148,0.01201978]
+			,
+			
+        		['eBook',new Date('2010-07-01'),0.0374162,24.28496,0.06687787,0.05357265,0.01330522]
+			,
+			
+        		['eBook',new Date('2010-08-01'),0.04780417,29.62346,0.06824516,0.05481757,0.01342759]
+			,
+			
+        		['eBook',new Date('2010-09-01'),0.05866921,35.5357,0.07067001,0.05759263,0.01307738]
+			,
+			
+        		['eBook',new Date('2010-10-01'),0.06468441,39.2185,0.0729662,0.05998151,0.01298469]
+			,
+			
+        		['eBook',new Date('2010-11-01'),0.05320079,33.6247,0.07252614,0.0587056,0.01382054]
+			,
+			
+        		['eBook',new Date('2010-12-01'),0.02964921,22.44216,0.07122078,0.05641332,0.01480747]
+			,
+			
+        		['eBook',new Date('2011-01-01'),0.01601976,19.07578,0.07486336,0.06095633,0.01390703]
+			,
+			
+        		['eBook',new Date('2011-02-01'),0.01781385,24.24705,0.08135459,0.06973442,0.01162017]
+			,
+			
+        		['eBook',new Date('2011-03-01'),0.0224787,25.08729,0.08031212,0.0691873,0.01112482]
+			,
+			
+        		['eBook',new Date('2011-04-01'),0.02324765,18.88765,0.07124765,0.05820217,0.01304548]
+			,
+			
+        		['eBook',new Date('2011-05-01'),0.02140154,15.8183,0.06590463,0.0511128,0.01479183]
+			,
+			
+        		['eBook',new Date('2011-06-01'),0.01901379,19.0286,0.06827365,0.05365986,0.01461379]
+			,
+			
+        		['eBook',new Date('2011-07-01'),0.01855024,21.1079,0.07082532,0.05862971,0.01219561]
+			,
+			
+        		['eBook',new Date('2011-08-01'),0.02032351,19.3765,0.07001227,0.06129262,0.008719658]
+			,
+			
+        		['eBook',new Date('2011-09-01'),0.02128242,19.62141,0.06972191,0.06222028,0.007501632]
+			,
+			
+        		['eBook',new Date('2011-10-01'),0.01996874,23.57974,0.07170414,0.06238523,0.009318906]
+			,
+			
+        		['eBook',new Date('2011-11-01'),0.01824,24.60205,0.07282233,0.06265424,0.0101681]
+			,
+			
+        		['eBook',new Date('2011-12-01'),0.01776687,20.6769,0.07094117,0.06273125,0.00820992]
+			,
+			
+        		['eBook',new Date('2012-01-01'),0.01916707,20.79868,0.06693699,0.06001637,0.00692062]
+			,
+			
+        		['eBook',new Date('2012-02-01'),0.02295966,29.64559,0.06248142,0.05401362,0.008467803]
+			,
+			
+        		['eBook',new Date('2012-03-01'),0.02972032,38.98852,0.06024039,0.049677,0.01056339]
+			,
+			
+        		['eBook',new Date('2012-04-01'),0.03717124,41.21305,0.06113536,0.05013745,0.0109979]
+			,
+			
+        		['eBook',new Date('2012-05-01'),0.03552882,35.04569,0.06114645,0.05174639,0.009400059]
+			,
+			
+        		['eBook',new Date('2012-06-01'),0.02095998,22.7024,0.05773705,0.05132379,0.006413257]
+			,
+			
+        		['eBook',new Date('2012-07-01'),0.01122756,13.81777,0.05525286,0.05041196,0.004840901]
+			,
+			
+        		['eBook',new Date('2012-08-01'),0.02157082,15.99991,0.05766207,0.05080333,0.006858744]
+			,
+			
+        		['eBook',new Date('2012-09-01'),0.04442273,25,0.06314504,0.05208521,0.01105984]
+			,
+			
+        		['eTextbook',new Date('2009-02-01'),0,0,0,0,0]
+			,
+			
+        		['eTextbook',new Date('2009-03-01'),0,0,0,0,0]
+			,
+			
+        		['eTextbook',new Date('2009-04-01'),0,0,0,0,0]
+			,
+			
+        		['eTextbook',new Date('2009-05-01'),2.791664e-05,0.06908921,0.003249662,0.003140016,0.0001096465]
+			,
+			
+        		['eTextbook',new Date('2009-06-01'),7.785729e-06,0.01926843,0.0009063047,0.0008757252,3.057952e-05]
+			,
+			
+        		['eTextbook',new Date('2009-07-01'),0,0,0,0,0]
+			,
+			
+        		['eTextbook',new Date('2009-08-01'),0,0,0,0,0]
+			,
+			
+        		['eTextbook',new Date('2009-09-01'),0.0004107315,1.017344,0.04788069,0.04625728,0.001623417]
+			,
+			
+        		['eTextbook',new Date('2009-10-01'),0.0007972914,1.981812,0.09351249,0.09027714,0.003235346]
+			,
+			
+        		['eTextbook',new Date('2009-11-01'),0.0005343656,1.348218,0.06429757,0.06188936,0.00240821]
+			,
+			
+        		['eTextbook',new Date('2009-12-01'),5.154846e-05,0.1410487,0.007096473,0.006732092,0.000364381]
+			,
+			
+        		['eTextbook',new Date('2010-01-01'),9.80677e-05,0.1780279,0.005982946,0.006436119,0]
+			,
+			
+        		['eTextbook',new Date('2010-02-01'),0.000397617,0.9070485,0.0378889,0.03800909,0]
+			,
+			
+        		['eTextbook',new Date('2010-03-01'),0.0002618669,0.7823393,0.0343193,0.03418897,0.0001303273]
+			,
+			
+        		['eTextbook',new Date('2010-04-01'),0,0.1105363,0.00561741,0.005569574,4.783591e-05]
+			,
+			
+        		['eTextbook',new Date('2010-05-01'),0.0003172415,0.1392396,0.00308355,0.002975188,0.0001083628]
+			,
+			
+        		['eTextbook',new Date('2010-06-01'),0.001088577,0.7871278,0.03188296,0.02918554,0.002697427]
+			,
+			
+        		['eTextbook',new Date('2010-07-01'),0.001526393,1.160391,0.06703195,0.05623122,0.01080073]
+			,
+			
+        		['eTextbook',new Date('2010-08-01'),0.001303227,1.082825,0.08233132,0.06362391,0.01870742]
+			,
+			
+        		['eTextbook',new Date('2010-09-01'),0.0004750164,0.9079213,0.05403333,0.03882773,0.0152056]
+			,
+			
+        		['eTextbook',new Date('2010-10-01'),2.998431e-06,0.8968887,0.00833219,0.004601092,0.003731098]
+			,
+			
+        		['eTextbook',new Date('2010-11-01'),0.001472927,1.211424,0.009535276,0.01020676,0]
+			,
+			
+        		['eTextbook',new Date('2010-12-01'),0.004010637,1.747739,0.05439841,0.05073174,0.003666671]
+			,
+			
+        		['eTextbook',new Date('2011-01-01'),0.004519661,2.159204,0.07716886,0.07131704,0.005851819]
+			,
+			
+        		['eTextbook',new Date('2011-02-01'),0.002666713,2.197465,0.06512382,0.06143189,0.003691933]
+			,
+			
+        		['eTextbook',new Date('2011-03-01'),0.001102291,1.742059,0.06348459,0.05889392,0.004590671]
+			,
+			
+        		['eTextbook',new Date('2011-04-01'),0.0008816896,1.111738,0.08226605,0.07233972,0.009926328]
+			,
+			
+        		['eTextbook',new Date('2011-05-01'),0.0009789841,1.134611,0.08627001,0.07292108,0.01334893]
+			,
+			
+        		['eTextbook',new Date('2011-06-01'),0.001060682,2.091392,0.06681675,0.05416724,0.01264951]
+			,
+			
+        		['eTextbook',new Date('2011-07-01'),0.00189382,3.471753,0.05478373,0.04293048,0.01185325]
+			,
+			
+        		['eTextbook',new Date('2011-08-01'),0.003363072,4.657634,0.06015586,0.04827111,0.01188475]
+			,
+			
+        		['eTextbook',new Date('2011-09-01'),0.003873174,4.957182,0.05633622,0.04810338,0.008232831]
+			,
+			
+        		['eTextbook',new Date('2011-10-01'),0.002774502,4.108343,0.03621675,0.03400558,0.002211172]
+			,
+			
+        		['eTextbook',new Date('2011-11-01'),0.001307255,2.621091,0.03243837,0.02628347,0.006154906]
+			,
+			
+        		['eTextbook',new Date('2011-12-01'),0.0005760028,1.474286,0.05835678,0.03519153,0.02316524]
+			,
+			
+        		['eTextbook',new Date('2012-01-01'),0.001024023,2.423299,0.08054119,0.04496047,0.03558072]
+			,
+			
+        		['eTextbook',new Date('2012-02-01'),0.002398893,5.554481,0.07699211,0.04523875,0.03175336]
+			,
+			
+        		['eTextbook',new Date('2012-03-01'),0.003036014,6.919008,0.06472243,0.04521355,0.01950888]
+			,
+			
+        		['eTextbook',new Date('2012-04-01'),0.001927359,4.188044,0.05684918,0.049339,0.007510178]
+			,
+			
+        		['eTextbook',new Date('2012-05-01'),0.0003051054,0.7613567,0.04198641,0.04249966,0]
+			,
+			
+        		['eTextbook',new Date('2012-06-01'),0,0,0.01478175,0.01739149,0]
+			,
+			
+        		['eTextbook',new Date('2012-07-01'),6.345267e-05,0.02607805,2.829107e-05,0,0.0002238514]
+			,
+			
+        		['eTextbook',new Date('2012-08-01'),0.002145139,0.5350027,0.01846375,0.01205237,0.006411374]
+			,
+			
+        		['eTextbook',new Date('2012-09-01'),0.005076883,1,0.05714286,0.04285714,0.01428571]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	
+      	}
+  </script>
+
+</head>
+
+<div>
+<h1>TEL Blogs - Jan 1st 2009 - Sept 12th 2012 - eBooks</h1>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="nice">
+
+<p><a href="Groups.html">View terms as a group</a>.</p>
+
+<p>Other sets:</p>
+
+<p><a href="Cloud.html">Cloud</a></p>
+
+<p><a href="Analytics.html">Analytics</a></p>
+
+<p><a href="Gesture.html">Gesture</a></p>
+
+<p><a href="Context.Sensitive.Services.html">Context Sensitive Services</a></p>
+
+<p><a href="Games.html">Games</a></p>
+
+<p><a href="Mobile.html">Mobile</a></p>
+
+<p><a href="Learning.Platforms.html">Learning Platforms</a></p>
+
+</div>
+
+
+
+<div class="reduced">
+<a href="http://fusion.google.com/add?source=atgs&moduleurl=http%3a%2f%2farc12.github.com%2fText-Mining-Weak-Signals-Output%2fHistory%20Visualiser%2fTEL%20Blogs%20700%2020090101-20120912%2feBooks%20gadget.xml"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a><p>
+This shows the history of the way certain terms have been used (related words are counted also, e.g. &quot;gaming&quot; would be counted as &quot;game&quot;). The chart loads up showing the trend in word-frequency for a term (or group of terms) with the line coloured to show the average &quot;positive sentiment&quot; of blog posts containing the term. &quot;Positive sentiment&quot; is calculated as the fraction of words that generally have either a positive connotation according to the <a href="http://www.wjh.harvard.edu/~inquirer/">Harvard General Inquirer</a> dictionary. Calculations were conducted in 2 month slices and the number of blog posts per slice is (in date order): 1749, 1723, 1553, 1280, 1334, 1166, 1270, 1335, 1131, 1018, 1443, 1309, 1323, 1076, 1126, 835, 1351, 1169, 1323, 1075, 838, 756. True calculated values are plotted for the mid-point of each time slice to show the aggregate value over that 2 month period and spline interpolation is used to give the impression of a smooth change between these points. In total, 27183 blog posts were use</p>
+
+<p><em>NB: be aware that insignificant fluctuations in the data may appear magnified since the plots are shown "zoomed in" (especially true for sentiment scores (or &quot;subjectivity&quot;, which is the sum of positive and negative sentiment). Also note that sentiment values are essentially meaningless when the frequency is close to the baseline.</em></p>
+</div>
+</body>
+</html>
+
