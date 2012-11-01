@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>History Visualiser: Conferences (ICALT, ECTEL, CAL, ICHL and ICWL) - Games</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=800;
+      		options['height']=600;
+      		      		options['showSidePanel']=true;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Game',new Date('2006-07-01'),0.1056011,13,0.08032931,0.0771452,0.003184111]
+			,
+			
+        		['Game',new Date('2006-10-01'),0.1050855,11.99579,0.08846292,0.08552026,0.002942658]
+			,
+			
+        		['Game',new Date('2007-01-01'),0.106425,11.29327,0.09531138,0.09245824,0.002853134]
+			,
+			
+        		['Game',new Date('2007-04-01'),0.1114746,11.19411,0.09958953,0.09652206,0.003067468]
+			,
+			
+        		['Game',new Date('2007-07-01'),0.1220895,12,0.1000122,0.09627465,0.00373759]
+			,
+			
+        		['Game',new Date('2007-10-01'),0.1390458,13.85156,0.09606031,0.09112505,0.004935252]
+			,
+			
+        		['Game',new Date('2008-01-01'),0.1588047,16.24519,0.09027844,0.08386694,0.006411506]
+			,
+			
+        		['Game',new Date('2008-04-01'),0.1767483,18.51623,0.08597732,0.07814009,0.007837229]
+			,
+			
+        		['Game',new Date('2008-07-01'),0.1882588,20,0.0864676,0.0775843,0.008883296]
+			,
+			
+        		['Game',new Date('2008-10-01'),0.1911831,20.28546,0.09380552,0.08447141,0.009334116]
+			,
+			
+        		['Game',new Date('2009-01-01'),0.1932266,19.97596,0.1050296,0.09560135,0.009428221]
+			,
+			
+        		['Game',new Date('2009-04-01'),0.204559,19.92849,0.1159238,0.1064061,0.009517678]
+			,
+			
+        		['Game',new Date('2009-07-01'),0.2353504,21,0.1222723,0.1123177,0.009954552]
+			,
+			
+        		['Game',new Date('2009-10-01'),0.2911313,23.74099,0.1211083,0.1101507,0.01095761]
+			,
+			
+        		['Game',new Date('2010-01-01'),0.3588743,27.47596,0.1144627,0.1022503,0.01221243]
+			,
+			
+        		['Game',new Date('2010-04-01'),0.4209127,31.22296,0.1056153,0.09234405,0.01327128]
+			,
+			
+        		['Game',new Date('2010-07-01'),0.4595799,34,0.09784623,0.08415977,0.01368645]
+			,
+			
+        		['Game',new Date('2010-10-01'),0.4638901,35.1256,0.09369988,0.08054639,0.01315349]
+			,
+			
+        		['Game',new Date('2011-01-01'),0.4495813,35.12019,0.09277878,0.08083773,0.01194104]
+			,
+			
+        		['Game',new Date('2011-04-01'),0.4390723,34.80469,0.0939499,0.08348884,0.01046106]
+			,
+			
+        		['Game',new Date('2011-07-01'),0.4547823,35,0.09608023,0.08695477,0.009125466]
+			,
+			
+        		['Game',new Date('2011-10-01'),0.5133671,36.33474,0.09823284,0.08997847,0.008254364]
+			,
+			
+        		['Game',new Date('2012-01-01'),0.6084303,38.66827,0.1002551,0.09245457,0.007800507]
+			,
+			
+        		['Game',new Date('2012-04-01'),0.7278124,41.66767,0.1021904,0.09456561,0.007624813]
+			,
+			
+        		['Game',new Date('2012-07-01'),0.8593539,45,0.1040823,0.09649411,0.007588201]
+			,
+			
+        		['Gamification',new Date('2006-07-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2006-10-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2007-01-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2007-04-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2007-07-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2007-10-01'),3.515027e-06,0.00078125,0.0001373626,0.0001373626,0]
+			,
+			
+        		['Gamification',new Date('2008-01-01'),6.489281e-06,0.001442308,0.0002535926,0.0002535926,0]
+			,
+			
+        		['Gamification',new Date('2008-04-01'),6.218895e-06,0.001382212,0.0002430262,0.0002430262,0]
+			,
+			
+        		['Gamification',new Date('2008-07-01'),1.694066e-21,0,1.084202e-19,1.084202e-19,0]
+			,
+			
+        		['Gamification',new Date('2008-10-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2009-01-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2009-04-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2009-07-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2009-10-01'),4.731768e-05,0.01051683,0.001849112,0.001849112,0]
+			,
+			
+        		['Gamification',new Date('2010-01-01'),8.868685e-05,0.01971154,0.003465765,0.003465765,0]
+			,
+			
+        		['Gamification',new Date('2010-04-01'),8.571259e-05,0.01905048,0.003349535,0.003349535,0]
+			,
+			
+        		['Gamification',new Date('2010-07-01'),0,0,8.673617e-19,8.673617e-19,0]
+			,
+			
+        		['Gamification',new Date('2010-10-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2011-01-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2011-04-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2011-07-01'),1.084202e-19,2.775558e-17,0,0,0]
+			,
+			
+        		['Gamification',new Date('2011-10-01'),0.000729233,0.1620793,0.02849746,0.02849746,0]
+			,
+			
+        		['Gamification',new Date('2012-01-01'),0.001797531,0.3995192,0.07024514,0.07024514,0]
+			,
+			
+        		['Gamification',new Date('2012-04-01'),0.003091872,0.6871995,0.1208263,0.1208263,0]
+			,
+			
+        		['Gamification',new Date('2012-07-01'),0.004499235,1,0.1758242,0.1758242,0]
+			,
+			
+        		['Game-based',new Date('2006-07-01'),0.01689617,4,0.05102041,0.05102041,0]
+			,
+			
+        		['Game-based',new Date('2006-10-01'),0.01113553,2.740986,0.08952097,0.09013765,0]
+			,
+			
+        		['Game-based',new Date('2007-01-01'),0.006425562,1.685577,0.1235193,0.124506,0]
+			,
+			
+        		['Game-based',new Date('2007-04-01'),0.00381694,1.03738,0.148513,0.1493764,0]
+			,
+			
+        		['Game-based',new Date('2007-07-01'),0.004360338,1,0.16,0.16,0]
+			,
+			
+        		['Game-based',new Date('2007-10-01'),0.00860372,1.682813,0.155399,0.1537111,0.001687903]
+			,
+			
+        		['Game-based',new Date('2008-01-01'),0.0150842,2.818269,0.1398136,0.1361772,0.003636351]
+			,
+			
+        		['Game-based',new Date('2008-04-01'),0.0218362,4.044591,0.1202682,0.115149,0.005119202]
+			,
+			
+        		['Game-based',new Date('2008-07-01'),0.02689411,5,0.1037875,0.09837722,0.005410312]
+			,
+			
+        		['Game-based',new Date('2008-10-01'),0.02899592,5.434014,0.09572382,0.09154588,0.004177944]
+			,
+			
+        		['Game-based',new Date('2009-01-01'),0.02969381,5.541346,0.0947403,0.09207233,0.002667974]
+			,
+			
+        		['Game-based',new Date('2009-04-01'),0.03124355,5.628005,0.0978279,0.09530722,0.002520681]
+			,
+			
+        		['Game-based',new Date('2009-07-01'),0.03590091,6,0.1019776,0.09660121,0.005376344]
+			,
+			
+        		['Game-based',new Date('2009-10-01'),0.04502807,6.86238,0.1046464,0.0925364,0.01211003]
+			,
+			
+        		['Game-based',new Date('2010-01-01'),0.05641291,8.016346,0.1051567,0.08462071,0.02053597]
+			,
+			
+        		['Game-based',new Date('2010-04-01'),0.06694971,9.162139,0.1032967,0.07559352,0.02770316]
+			,
+			
+        		['Game-based',new Date('2010-07-01'),0.07353279,10,0.09885481,0.06819418,0.03066063]
+			,
+			
+        		['Game-based',new Date('2010-10-01'),0.07404662,10.31959,0.09193728,0.06451044,0.02742684]
+			,
+			
+        		['Game-based',new Date('2011-01-01'),0.07033637,10.26827,0.08392169,0.06402353,0.01989816]
+			,
+			
+        		['Game-based',new Date('2011-04-01'),0.06523742,10.08281,0.07650346,0.06556305,0.01094041]
+			,
+			
+        		['Game-based',new Date('2011-07-01'),0.06158511,10,0.07137801,0.06795859,0.003419417]
+			,
+			
+        		['Game-based',new Date('2011-10-01'),0.06156382,10.203,0.06979202,0.07024793,0]
+			,
+			
+        		['Game-based',new Date('2012-01-01'),0.06475405,10.66058,0.07119718,0.07230148,0]
+			,
+			
+        		['Game-based',new Date('2012-04-01'),0.07008527,11.28786,0.07459644,0.07419784,0.0003985965]
+			,
+			
+        		['Game-based',new Date('2012-07-01'),0.076487,12,0.07899275,0.07601561,0.00297714]
+			,
+			
+        		['Game-play',new Date('2006-07-01'),0,0,0,0,0]
+			,
+			
+        		['Game-play',new Date('2006-10-01'),0,0,0,0,0]
+			,
+			
+        		['Game-play',new Date('2007-01-01'),0,0,0,0,0]
+			,
+			
+        		['Game-play',new Date('2007-04-01'),0,0,0,0,0]
+			,
+			
+        		['Game-play',new Date('2007-07-01'),0,0,0,0,0]
+			,
+			
+        		['Game-play',new Date('2007-10-01'),0.002833522,0.3171875,0.02839076,0.02292616,0.005464592]
+			,
+			
+        		['Game-play',new Date('2008-01-01'),0.005969966,0.6817308,0.06184055,0.0498667,0.01197385]
+			,
+			
+        		['Game-play',new Date('2008-04-01'),0.008042436,0.9554087,0.08887987,0.07148173,0.01739814]
+			,
+			
+        		['Game-play',new Date('2008-07-01'),0.007684033,1,0.09803922,0.07843137,0.01960784]
+			,
+			
+        		['Game-play',new Date('2008-10-01'),0.004237176,0.7378606,0.08212271,0.06492607,0.01719664]
+			,
+			
+        		['Game-play',new Date('2009-01-01'),0,0.3336538,0.0510291,0.03937765,0.01165145]
+			,
+			
+        		['Game-play',new Date('2009-04-01'),0,0.01262019,0.01893073,0.01374824,0.005182494]
+			,
+			
+        		['Game-play',new Date('2009-07-01'),0,2.220446e-16,0,0,0]
+			,
+			
+        		['Game-play',new Date('2009-10-01'),0.009007057,0.4344952,0.004014563,0.006268169,0]
+			,
+			
+        		['Game-play',new Date('2010-01-01'),0.02119123,1.108654,0.02317326,0.02538035,0]
+			,
+			
+        		['Game-play',new Date('2010-04-01'),0.03197138,1.728486,0.0452802,0.04633724,0]
+			,
+			
+        		['Game-play',new Date('2010-07-01'),0.0367664,2,0.05813953,0.05813953,0]
+			,
+			
+        		['Game-play',new Date('2010-10-01'),0.03248776,1.727284,0.05309939,0.05300955,8.984122e-05]
+			,
+			
+        		['Game-play',new Date('2011-01-01'),0.02201744,1.106731,0.03568395,0.03605604,0]
+			,
+			
+        		['Game-play',new Date('2011-04-01'),0.009729994,0.4328125,0.01496142,0.0156094,0]
+			,
+			
+        		['Game-play',new Date('2011-07-01'),0,0,0,0,0]
+			,
+			
+        		['Game-play',new Date('2011-10-01'),0,0.03137019,0,0,0.002117455]
+			,
+			
+        		['Game-play',new Date('2012-01-01'),0,0.4644231,0.00659926,0.001118087,0.005481173]
+			,
+			
+        		['Game-play',new Date('2012-04-01'),0.002416339,1.165264,0.02287454,0.0131988,0.009675733]
+			,
+			
+        		['Game-play',new Date('2012-07-01'),0.00899847,2,0.04285714,0.02857143,0.01428571]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	
+      	}
+  </script>
+
+</head>
+
+<div>
+<h1>Conferences (ICALT, ECTEL, CAL, ICHL and ICWL) - Games</h1>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="nice">
+
+<p><a href="Groups conf.html">View terms as a group</a>.</p>
+
+<p>Other sets:</p>
+
+<p><a href="Cloud conf.html">Cloud</a></p>
+
+<p><a href="Analytics conf.html">Analytics</a></p>
+
+<p><a href="Gesture conf.html">Gesture</a></p>
+
+<p><a href="Context.Sensitive.Services conf.html">Context Sensitive Services</a></p>
+
+<p><a href="Mobile conf.html">Mobile</a></p>
+
+<p><a href="Learning.Platforms conf.html">Learning Platforms</a></p>
+
+</div>
+
+
+
+<div class="reduced">
+<a href="http://fusion.google.com/add?source=atgs&moduleurl=http%3a%2f%2farc12.github.com%2fText-Mining-Weak-Signals-Output%2fHistory%20Visualiser%2fTELMap%20Emerging%20Technologies%2fGames%20conf%20gadget.xml"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a><p>
+This shows the history of the way certain terms have been used (related words are counted also, e.g. &quot;gaming&quot; would be counted as &quot;game&quot;). The chart loads up showing the trend in word-frequency for a term (or group of terms) with the line coloured to show the average &quot;positive sentiment&quot; of abstracts containing the term. &quot;Positive sentiment&quot; is calculated as the fraction of words that generally have either a positive connotation according to the <a href="http://www.wjh.harvard.edu/~inquirer/">Harvard General Inquirer</a> dictionary. For both sentiment and frequency calculations, common words such as &quot;and&quot; are ignored. The attribute &quot;Documents&quot; is an estimate of the number of abstracts per year that contain the specified term(s). Calculations were conducted in 12 month slices and the number of abstracts per slice is (in date order): 441, 394, 460, 420, 374, 336, 374. True calculated values are plotted for the mid-point of each time slice to show the aggregate value over that 12 month period and spline interpolation is used to give the impression of a smooth change between these points. In total, 2799 abstracts were use</p>
+
+<p><em>NB: be aware that insignificant fluctuations in the data may appear magnified since the plots are shown "zoomed in" (especially true for sentiment scores (or &quot;subjectivity&quot;, which is the sum of positive and negative sentiment). Also note that sentiment values are essentially meaningless when the frequency is close to the baseline.</em></p>
+</div>
+</body>
+</html>
+

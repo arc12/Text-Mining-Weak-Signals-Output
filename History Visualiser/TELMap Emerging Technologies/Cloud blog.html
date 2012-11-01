@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>History Visualiser: Conferences (ICALT, ECTEL, CAL, ICHL and ICWL) - Cloud</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=800;
+      		options['height']=600;
+      		      		options['showSidePanel']=true;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Cloud',new Date('2009-02-01'),0.04377097,21.5,0.06508882,0.05303536,0.01205346]
+			,
+			
+        		['Cloud',new Date('2009-03-01'),0.07527084,23.15401,0.0626148,0.05051171,0.01210309]
+			,
+			
+        		['Cloud',new Date('2009-04-01'),0.08643513,23,0.06166935,0.04947964,0.01218971]
+			,
+			
+        		['Cloud',new Date('2009-05-01'),0.06554949,19.97546,0.06318259,0.05076663,0.01241595]
+			,
+			
+        		['Cloud',new Date('2009-06-01'),0.03538457,16,0.06569083,0.05254371,0.01314712]
+			,
+			
+        		['Cloud',new Date('2009-07-01'),0.02231594,13.44414,0.06768719,0.0531372,0.01454999]
+			,
+			
+        		['Cloud',new Date('2009-08-01'),0.03265394,13.5,0.06988565,0.05415097,0.01573468]
+			,
+			
+        		['Cloud',new Date('2009-09-01'),0.06171738,16.31047,0.0729522,0.05716766,0.01578455]
+			,
+			
+        		['Cloud',new Date('2009-10-01'),0.08092437,19,0.07514015,0.06040745,0.0147327]
+			,
+			
+        		['Cloud',new Date('2009-11-01'),0.06803799,19.18899,0.07468917,0.06165427,0.01303489]
+			,
+			
+        		['Cloud',new Date('2009-12-01'),0.05010177,19.5,0.07219716,0.06030939,0.01188777]
+			,
+			
+        		['Cloud',new Date('2010-01-01'),0.05458756,22.24606,0.06917328,0.05697734,0.01219594]
+			,
+			
+        		['Cloud',new Date('2010-02-01'),0.06139983,23.5,0.06841323,0.05545832,0.01295491]
+			,
+			
+        		['Cloud',new Date('2010-03-01'),0.04802524,19.76427,0.07143498,0.05841987,0.0130151]
+			,
+			
+        		['Cloud',new Date('2010-04-01'),0.02984661,15.5,0.07335885,0.06080333,0.01255552]
+			,
+			
+        		['Cloud',new Date('2010-05-01'),0.02552672,15.19686,0.06983882,0.05797032,0.0118685]
+			,
+			
+        		['Cloud',new Date('2010-06-01'),0.02895235,15.5,0.06506096,0.05468993,0.01037103]
+			,
+			
+        		['Cloud',new Date('2010-07-01'),0.03045788,12.9483,0.06395327,0.05601793,0.007935334]
+			,
+			
+        		['Cloud',new Date('2010-08-01'),0.03094449,11.5,0.06587924,0.05874922,0.007130017]
+			,
+			
+        		['Cloud',new Date('2010-09-01'),0.03270582,15.00993,0.06888277,0.05904271,0.009840056]
+			,
+			
+        		['Cloud',new Date('2010-10-01'),0.03303877,19.5,0.07129375,0.05877415,0.0125196]
+			,
+			
+        		['Cloud',new Date('2010-11-01'),0.03016575,20.44946,0.07228486,0.06039128,0.01189358]
+			,
+			
+        		['Cloud',new Date('2010-12-01'),0.03100803,19,0.07411396,0.06291304,0.01120092]
+			,
+			
+        		['Cloud',new Date('2011-01-01'),0.04105938,17.37973,0.0783269,0.06466177,0.01366513]
+			,
+			
+        		['Cloud',new Date('2011-02-01'),0.05140458,16.5,0.08053636,0.06460237,0.01593398]
+			,
+			
+        		['Cloud',new Date('2011-03-01'),0.05235143,16.65662,0.07704788,0.06250561,0.01454226]
+			,
+			
+        		['Cloud',new Date('2011-04-01'),0.04550879,17,0.07287176,0.06072327,0.0121485]
+			,
+			
+        		['Cloud',new Date('2011-05-01'),0.03669688,16.68129,0.0733727,0.06133302,0.01203969]
+			,
+			
+        		['Cloud',new Date('2011-06-01'),0.0372804,16,0.07662825,0.06273526,0.01389299]
+			,
+			
+        		['Cloud',new Date('2011-07-01'),0.05180616,15.30573,0.07876888,0.06267767,0.01609121]
+			,
+			
+        		['Cloud',new Date('2011-08-01'),0.05200515,14,0.0754239,0.05997437,0.01544953]
+			,
+			
+        		['Cloud',new Date('2011-09-01'),0.02043097,11.9708,0.06530909,0.05503975,0.01026934]
+			,
+			
+        		['Cloud',new Date('2011-10-01'),0.01574354,12,0.05998713,0.0536228,0.006364325]
+			,
+			
+        		['Cloud',new Date('2011-11-01'),0.08276064,15.99859,0.06848631,0.05971176,0.008774553]
+			,
+			
+        		['Cloud',new Date('2011-12-01'),0.1348251,19.5,0.07685037,0.06491711,0.01193325]
+			,
+			
+        		['Cloud',new Date('2012-01-01'),0.09056893,18.47236,0.07169336,0.06155231,0.01014105]
+			,
+			
+        		['Cloud',new Date('2012-02-01'),0.02125579,17,0.06489521,0.05712027,0.007774939]
+			,
+			
+        		['Cloud',new Date('2012-03-01'),0.009862193,19.17448,0.06890899,0.05919989,0.009709097]
+			,
+			
+        		['Cloud',new Date('2012-04-01'),0.03358446,21,0.07321427,0.06048437,0.0127299]
+			,
+			
+        		['Cloud',new Date('2012-05-01'),0.05156068,18.26721,0.0670041,0.05407003,0.01293407]
+			,
+			
+        		['Cloud',new Date('2012-06-01'),0.05647614,14,0.06129874,0.04955131,0.01174744]
+			,
+			
+        		['Cloud',new Date('2012-07-01'),0.0508598,12.06917,0.06736033,0.05597824,0.01138209]
+			,
+			
+        		['Cloud',new Date('2012-08-01'),0.04306803,12.5,0.07559124,0.06372522,0.01186602]
+			,
+			
+        		['Cloud',new Date('2012-09-01'),0.04064203,14.39361,0.0747013,0.06196136,0.01273995]
+			,
+			
+        		['Cloud',new Date('2012-10-01'),0.04203492,17,0.06748976,0.05371026,0.0137795]
+			,
+			
+        		['SaaS',new Date('2009-02-01'),0.0003873537,0.5,0.06024096,0.04819277,0.01204819]
+			,
+			
+        		['SaaS',new Date('2009-03-01'),0.002335687,2.691823,0.06385557,0.05223009,0.01162548]
+			,
+			
+        		['SaaS',new Date('2009-04-01'),0.004358074,4,0.05973272,0.04814021,0.01159251]
+			,
+			
+        		['SaaS',new Date('2009-05-01'),0.006262288,3.862032,0.04474264,0.03257624,0.0121664]
+			,
+			
+        		['SaaS',new Date('2009-06-01'),0.006790977,3,0.03418625,0.02131262,0.01287364]
+			,
+			
+        		['SaaS',new Date('2009-07-01'),0.005082633,2.297549,0.04148798,0.02838008,0.0131079]
+			,
+			
+        		['SaaS',new Date('2009-08-01'),0.002924233,2,0.05413545,0.04171324,0.01242221]
+			,
+			
+        		['SaaS',new Date('2009-09-01'),0.002143878,2.072773,0.0583656,0.04756994,0.01079566]
+			,
+			
+        		['SaaS',new Date('2009-10-01'),0.00208568,2,0.06134935,0.05159717,0.009752181]
+			,
+			
+        		['SaaS',new Date('2009-11-01'),0.001789936,1.411361,0.07058345,0.06006848,0.01051497]
+			,
+			
+        		['SaaS',new Date('2009-12-01'),0.00156568,1,0.07393395,0.06237458,0.01155936]
+			,
+			
+        		['SaaS',new Date('2010-01-01'),0.001835647,1.406784,0.06241289,0.05109386,0.01131904]
+			,
+			
+        		['SaaS',new Date('2010-02-01'),0.002208627,2,0.05924714,0.04843825,0.0108089]
+			,
+			
+        		['SaaS',new Date('2010-03-01'),0.002189507,2.024005,0.08162589,0.07067343,0.01095245]
+			,
+			
+        		['SaaS',new Date('2010-04-01'),0.001681499,1.5,0.09037279,0.08064645,0.009726343]
+			,
+			
+        		['SaaS',new Date('2010-05-01'),0.0007861461,0.6846978,0.05048263,0.04512774,0.005354885]
+			,
+			
+        		['SaaS',new Date('2010-06-01'),2.168404e-19,0,0,0,0]
+			,
+			
+        		['SaaS',new Date('2010-07-01'),0,0,0,0,0]
+			,
+			
+        		['SaaS',new Date('2010-08-01'),0,0,1.387779e-17,0,0]
+			,
+			
+        		['SaaS',new Date('2010-09-01'),0.000371134,0.366485,0.03363821,0.02320003,0.01043818]
+			,
+			
+        		['SaaS',new Date('2010-10-01'),0.0004182123,0.5,0.06007509,0.04130163,0.01877347]
+			,
+			
+        		['SaaS',new Date('2010-11-01'),0,0.2343558,0.06156722,0.04510934,0.01645788]
+			,
+			
+        		['SaaS',new Date('2010-12-01'),0.0004493917,0.5,0.05660377,0.04716981,0.009433962]
+			,
+			
+        		['SaaS',new Date('2011-01-01'),0.002646463,1.946092,0.06512525,0.05936767,0.005757579]
+			,
+			
+        		['SaaS',new Date('2011-02-01'),0.004112366,3,0.07664481,0.06919734,0.007447463]
+			,
+			
+        		['SaaS',new Date('2011-03-01'),0.002773395,2.293777,0.07882211,0.06529275,0.01352936]
+			,
+			
+        		['SaaS',new Date('2011-04-01'),0.00151696,1.5,0.08233008,0.06523589,0.01709419]
+			,
+			
+        		['SaaS',new Date('2011-05-01'),0.003082951,2.253799,0.09565336,0.08300313,0.01265023]
+			,
+			
+        		['SaaS',new Date('2011-06-01'),0.004660049,3,0.09551015,0.08920019,0.006309966]
+			,
+			
+        		['SaaS',new Date('2011-07-01'),0.003315492,2.128528,0.06378095,0.05894572,0.004835235]
+			,
+			
+        		['SaaS',new Date('2011-08-01'),0.001181935,1,0.03476179,0.02878069,0.005981099]
+			,
+			
+        		['SaaS',new Date('2011-09-01'),0.0007999712,1.107088,0.04317223,0.03720532,0.00596691]
+			,
+			
+        		['SaaS',new Date('2011-10-01'),0.001276503,1.5,0.07301044,0.06913447,0.003875969]
+			,
+			
+        		['SaaS',new Date('2011-11-01'),0.001245653,1.068121,0.0982674,0.09784246,0.0004249413]
+			,
+			
+        		['SaaS',new Date('2011-12-01'),0.000884099,0.5,0.1036269,0.1036269,0]
+			,
+			
+        		['SaaS',new Date('2012-01-01'),0.0006654552,0.6204291,0.08371772,0.07790975,0.005807965]
+			,
+			
+        		['SaaS',new Date('2012-02-01'),0.0007085264,1,0.06225494,0.04958621,0.01266873]
+			,
+			
+        		['SaaS',new Date('2012-03-01'),0.001001078,1.075163,0.06010147,0.04508491,0.01501657]
+			,
+			
+        		['SaaS',new Date('2012-04-01'),0.001361532,1,0.05762416,0.04349405,0.01413012]
+			,
+			
+        		['SaaS',new Date('2012-05-01'),0.001624894,1.01642,0.03832804,0.02550531,0.01282273]
+			,
+			
+        		['SaaS',new Date('2012-06-01'),0.001861851,1,0.03876679,0.02556471,0.01320208]
+			,
+			
+        		['SaaS',new Date('2012-07-01'),0.002103608,0.7966583,0.08677754,0.07088333,0.01589421]
+			,
+			
+        		['SaaS',new Date('2012-08-01'),0.001987755,0.5,0.1222826,0.1059783,0.01630435]
+			,
+			
+        		['SaaS',new Date('2012-09-01'),0.001198484,0.2344472,0.08478183,0.07458416,0.01019767]
+			,
+			
+        		['SaaS',new Date('2012-10-01'),0,0,2.775558e-17,0,0]
+			,
+			
+        		['PaaS',new Date('2009-02-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2009-03-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2009-04-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2009-05-01'),1.103499e-06,0.00124909,0.0001213713,0.0001213707,5.868431e-10]
+			,
+			
+        		['PaaS',new Date('2009-06-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2009-07-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2009-08-01'),0,1.734723e-18,0,1.084202e-19,8.271806e-25]
+			,
+			
+        		['PaaS',new Date('2009-09-01'),1.508115e-05,0.0170709,0.001658741,0.001658733,8.020189e-09]
+			,
+			
+        		['PaaS',new Date('2009-10-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2009-11-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2009-12-01'),2.710505e-20,0,0,1.734723e-18,0]
+			,
+			
+        		['PaaS',new Date('2010-01-01'),0.0002652483,0.3002435,0.02917388,0.02917376,1.116958e-07]
+			,
+			
+        		['PaaS',new Date('2010-02-01'),0.0004417254,0.5,0.048583,0.048583,0]
+			,
+			
+        		['PaaS',new Date('2010-03-01'),0.0002652456,0.3002295,0.02917055,0.02917096,0]
+			,
+			
+        		['PaaS',new Date('2010-04-01'),1.084202e-19,1.110223e-16,6.938894e-18,0,0]
+			,
+			
+        		['PaaS',new Date('2010-05-01'),0,0,0,0,1.555721e-06]
+			,
+			
+        		['PaaS',new Date('2010-06-01'),0,0,1.387779e-17,0,4.235165e-22]
+			,
+			
+        		['PaaS',new Date('2010-07-01'),1.505125e-05,0.01691636,0.00162213,0.001627937,0]
+			,
+			
+        		['PaaS',new Date('2010-08-01'),0,0,0,1.734723e-18,1.694066e-21]
+			,
+			
+        		['PaaS',new Date('2010-09-01'),0,0,0,0,2.16684e-05]
+			,
+			
+        		['PaaS',new Date('2010-10-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2010-11-01'),6.875765e-07,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2010-12-01'),0,1.734723e-18,0,0,0]
+			,
+			
+        		['PaaS',new Date('2011-01-01'),1.184401e-06,0.007605947,0.001859954,0.001558153,0.0003018019]
+			,
+			
+        		['PaaS',new Date('2011-02-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2011-03-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2011-04-01'),0,0,0,1.734723e-18,4.336809e-19]
+			,
+			
+        		['PaaS',new Date('2011-05-01'),8.523923e-05,0.1729872,0.0344377,0.02892934,0.005508359]
+			,
+			
+        		['PaaS',new Date('2011-06-01'),0.0005177833,0.5,0.06471816,0.05427975,0.01043841]
+			,
+			
+        		['PaaS',new Date('2011-07-01'),0.001374708,0.9000744,0.0597111,0.04986012,0.009850978]
+			,
+			
+        		['PaaS',new Date('2011-08-01'),0.001772903,1,0.03476179,0.02878069,0.005981099]
+			,
+			
+        		['PaaS',new Date('2011-09-01'),0.001001652,0.5392153,0.01272275,0.01042893,0.002293824]
+			,
+			
+        		['PaaS',new Date('2011-10-01'),0,0,0,3.469447e-18,0]
+			,
+			
+        		['PaaS',new Date('2011-11-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2011-12-01'),0,0,0,0,4.336809e-19]
+			,
+			
+        		['PaaS',new Date('2012-01-01'),9.794216e-05,0.06352648,0.001911296,0.001354226,0.0005570699]
+			,
+			
+        		['PaaS',new Date('2012-02-01'),0,2.775558e-17,0,0,0]
+			,
+			
+        		['PaaS',new Date('2012-03-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2012-04-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2012-05-01'),0.0007463058,0.6001555,0.02322646,0.0153234,0.007903052]
+			,
+			
+        		['PaaS',new Date('2012-06-01'),0.001241234,1,0.03876679,0.02556471,0.01320208]
+			,
+			
+        		['PaaS',new Date('2012-07-01'),0.0007555972,0.6090485,0.02362167,0.01557544,0.008046226]
+			,
+			
+        		['PaaS',new Date('2012-08-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2012-09-01'),0,0,0,0,0]
+			,
+			
+        		['PaaS',new Date('2012-10-01'),2.168404e-19,1.110223e-16,0,3.469447e-18,0]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	
+      	}
+  </script>
+
+</head>
+
+<div>
+<h1>Conferences (ICALT, ECTEL, CAL, ICHL and ICWL) - Cloud</h1>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="nice">
+
+<p><a href="Groups blog.html">View terms as a group</a>.</p>
+
+<p>Other sets:</p>
+
+<p><a href="eBooks blog.html">eBooks</a></p>
+
+<p><a href="Analytics blog.html">Analytics</a></p>
+
+<p><a href="Gesture blog.html">Gesture</a></p>
+
+<p><a href="Context.Sensitive.Services blog.html">Context Sensitive Services</a></p>
+
+<p><a href="Games blog.html">Games</a></p>
+
+<p><a href="Mobile blog.html">Mobile</a></p>
+
+<p><a href="Learning.Platforms blog.html">Learning Platforms</a></p>
+
+</div>
+
+
+
+<div class="reduced">
+<a href="http://fusion.google.com/add?source=atgs&moduleurl=http%3a%2f%2farc12.github.com%2fText-Mining-Weak-Signals-Output%2fHistory%20Visualiser%2fTELMap%20Emerging%20Technologies%2fCloud%20blog%20gadget.xml"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a><p>
+This shows the history of the way certain terms have been used (related words are counted also, e.g. &quot;gaming&quot; would be counted as &quot;game&quot;). The chart loads up showing the trend in word-frequency for a term (or group of terms) with the line coloured to show the average &quot;positive sentiment&quot; of blog posts containing the term. &quot;Positive sentiment&quot; is calculated as the fraction of words that generally have either a positive connotation according to the <a href="http://www.wjh.harvard.edu/~inquirer/">Harvard General Inquirer</a> dictionary. For both sentiment and frequency calculations, common words such as &quot;and&quot; are ignored. The attribute &quot;Documents&quot; is an estimate of the number of blog posts per month that contain the specified term(s). Calculations were conducted in 2 month slices and the number of blog posts per slice is (in date order): 1771, 1723, 1553, 1280, 1334, 1166, 1270, 1335, 1131, 1018, 1443, 1309, 1323, 1076, 1126, 835, 1351, 1169, 1323, 1075, 838, 756, 911. True calculated values are plotted for the mid-point of each time slice to show the aggregate value over that 2 month period and spline interpolation is used to give the impression of a smooth change between these points. In total, 28116 blog posts were use</p>
+
+<p><em>NB: be aware that insignificant fluctuations in the data may appear magnified since the plots are shown "zoomed in" (especially true for sentiment scores (or &quot;subjectivity&quot;, which is the sum of positive and negative sentiment). Also note that sentiment values are essentially meaningless when the frequency is close to the baseline.</em></p>
+</div>
+</body>
+</html>
+

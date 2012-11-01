@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>History Visualiser: Conferences (ICALT, ECTEL, CAL, ICHL and ICWL) - Games</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=800;
+      		options['height']=600;
+      		      		options['showSidePanel']=true;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Game',new Date('2009-02-01'),0.1634633,68.5,0.07388505,0.05675639,0.01712866]
+			,
+			
+        		['Game',new Date('2009-03-01'),0.1604066,73.45341,0.07142599,0.05633008,0.01509591]
+			,
+			
+        		['Game',new Date('2009-04-01'),0.1739598,76.5,0.07066999,0.05700038,0.01366961]
+			,
+			
+        		['Game',new Date('2009-05-01'),0.2091679,75.82728,0.07250092,0.0591876,0.01331332]
+			,
+			
+        		['Game',new Date('2009-06-01'),0.2248171,70,0.07452584,0.06060676,0.01391908]
+			,
+			
+        		['Game',new Date('2009-07-01'),0.1875665,59.29997,0.07460468,0.05950112,0.01510356]
+			,
+			
+        		['Game',new Date('2009-08-01'),0.1418253,50.5,0.07488558,0.058932,0.01595358]
+			,
+			
+        		['Game',new Date('2009-09-01'),0.1364306,49.53534,0.07720229,0.06146324,0.01573905]
+			,
+			
+        		['Game',new Date('2009-10-01'),0.1601802,52.5,0.07784275,0.06285069,0.01499206]
+			,
+			
+        		['Game',new Date('2009-11-01'),0.186434,54.05867,0.07379397,0.05936999,0.01442397]
+			,
+			
+        		['Game',new Date('2009-12-01'),0.1868378,53,0.07038505,0.05618398,0.01420107]
+			,
+			
+        		['Game',new Date('2010-01-01'),0.1481468,50.22996,0.07262877,0.05837534,0.01425343]
+			,
+			
+        		['Game',new Date('2010-02-01'),0.1192659,51,0.07593048,0.06181911,0.01411137]
+			,
+			
+        		['Game',new Date('2010-03-01'),0.1455365,59.08397,0.07542829,0.06185014,0.01357815]
+			,
+			
+        		['Game',new Date('2010-04-01'),0.1958946,68,0.07479883,0.06085036,0.01394846]
+			,
+			
+        		['Game',new Date('2010-05-01'),0.2250071,69.99664,0.07769217,0.06168766,0.01600452]
+			,
+			
+        		['Game',new Date('2010-06-01'),0.2068692,62.5,0.07911367,0.06212663,0.01698704]
+			,
+			
+        		['Game',new Date('2010-07-01'),0.136271,46.92947,0.07470102,0.06001664,0.01468438]
+			,
+			
+        		['Game',new Date('2010-08-01'),0.07185415,35.5,0.07126606,0.05864935,0.0126167]
+			,
+			
+        		['Game',new Date('2010-09-01'),0.06811501,38.34797,0.0752633,0.06108411,0.01417919]
+			,
+			
+        		['Game',new Date('2010-10-01'),0.09911632,46.5,0.08054378,0.06400864,0.01653514]
+			,
+			
+        		['Game',new Date('2010-11-01'),0.1272614,49.99114,0.0802917,0.06385094,0.01644076]
+			,
+			
+        		['Game',new Date('2010-12-01'),0.1487487,54,0.07762742,0.06237175,0.01525567]
+			,
+			
+        		['Game',new Date('2011-01-01'),0.1656633,63.87498,0.07699702,0.06214726,0.01484975]
+			,
+			
+        		['Game',new Date('2011-02-01'),0.1698407,70.5,0.07821314,0.06368273,0.01453041]
+			,
+			
+        		['Game',new Date('2011-03-01'),0.156876,65.19643,0.07974164,0.06621156,0.01353009]
+			,
+			
+        		['Game',new Date('2011-04-01'),0.1476507,55.5,0.07929464,0.06595067,0.01334397]
+			,
+			
+        		['Game',new Date('2011-05-01'),0.1575018,50.15181,0.07568288,0.06054119,0.01514169]
+			,
+			
+        		['Game',new Date('2011-06-01'),0.1542994,46.5,0.07286546,0.05633747,0.01652799]
+			,
+			
+        		['Game',new Date('2011-07-01'),0.1124261,41.00883,0.07454138,0.05913469,0.01540669]
+			,
+			
+        		['Game',new Date('2011-08-01'),0.07978063,38,0.07822102,0.06377802,0.014443]
+			,
+			
+        		['Game',new Date('2011-09-01'),0.1042819,41.93789,0.0804221,0.06422131,0.01620079]
+			,
+			
+        		['Game',new Date('2011-10-01'),0.1604139,50,0.07988041,0.06180298,0.01807744]
+			,
+			
+        		['Game',new Date('2011-11-01'),0.2088605,58.55213,0.07659196,0.05926397,0.01732799]
+			,
+			
+        		['Game',new Date('2011-12-01'),0.2285396,68,0.07337542,0.0575707,0.01580472]
+			,
+			
+        		['Game',new Date('2012-01-01'),0.2107644,78.04109,0.07272962,0.05701333,0.0157163]
+			,
+			
+        		['Game',new Date('2012-02-01'),0.1781944,81.5,0.07305127,0.05695148,0.01609979]
+			,
+			
+        		['Game',new Date('2012-03-01'),0.1570093,72.40852,0.07214316,0.05659784,0.01554532]
+			,
+			
+        		['Game',new Date('2012-04-01'),0.1561224,56.5,0.06953478,0.05550785,0.01402693]
+			,
+			
+        		['Game',new Date('2012-05-01'),0.1741996,41.63735,0.0659478,0.05386874,0.01207906]
+			,
+			
+        		['Game',new Date('2012-06-01'),0.1861851,32.5,0.06514593,0.05405218,0.01109375]
+			,
+			
+        		['Game',new Date('2012-07-01'),0.1700763,31.29209,0.06988028,0.05783291,0.01204737]
+			,
+			
+        		['Game',new Date('2012-08-01'),0.1398055,33.5,0.07580946,0.06241354,0.01339592]
+			,
+			
+        		['Game',new Date('2012-09-01'),0.1137398,34.1943,0.07824802,0.0647721,0.01347591]
+			,
+			
+        		['Game',new Date('2012-10-01'),0.09205114,33.5,0.07822673,0.0655604,0.01266632]
+			,
+			
+        		['Gamification',new Date('2009-02-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2009-03-01'),9.365882e-08,0.0001119656,2.099332e-05,1.698399e-05,4.009331e-06]
+			,
+			
+        		['Gamification',new Date('2009-04-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2009-05-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2009-06-01'),0,0,0,1.355253e-20,0]
+			,
+			
+        		['Gamification',new Date('2009-07-01'),1.030247e-06,0.001231621,0.0002309266,0.0001868239,4.410264e-05]
+			,
+			
+        		['Gamification',new Date('2009-08-01'),0,0,0,0,1.355253e-20]
+			,
+			
+        		['Gamification',new Date('2009-09-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2009-10-01'),1.694066e-21,0,0,0,5.421011e-20]
+			,
+			
+        		['Gamification',new Date('2009-11-01'),1.43298e-05,0.01713073,0.003211978,0.002598551,0.0006134276]
+			,
+			
+        		['Gamification',new Date('2009-12-01'),6.776264e-21,0,0,0,2.168404e-19]
+			,
+			
+        		['Gamification',new Date('2010-01-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2010-02-01'),0,0,0,3.469447e-18,0]
+			,
+			
+        		['Gamification',new Date('2010-03-01'),0.0002521338,0.3010986,0.05645552,0.04567949,0.01077603]
+			,
+			
+        		['Gamification',new Date('2010-04-01'),0.0004203747,0.5,0.09375,0.07589286,0.01785714]
+			,
+			
+        		['Gamification',new Date('2010-05-01'),0.0002535213,0.2970379,0.05569635,0.04517185,0.01052451]
+			,
+			
+        		['Gamification',new Date('2010-06-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2010-07-01'),0,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2010-08-01'),0,0,1.387779e-17,0,0]
+			,
+			
+        		['Gamification',new Date('2010-09-01'),2.959288e-05,0,0,0,0]
+			,
+			
+        		['Gamification',new Date('2010-10-01'),0,0,6.938894e-18,0,0]
+			,
+			
+        		['Gamification',new Date('2010-11-01'),0,0.2244002,0.04053298,0.02726002,0.01327296]
+			,
+			
+        		['Gamification',new Date('2010-12-01'),0.0004493917,0.5,0.08214286,0.05714286,0.025]
+			,
+			
+        		['Gamification',new Date('2011-01-01'),0.00148625,0.6299369,0.08807017,0.06538241,0.02268776]
+			,
+			
+        		['Gamification',new Date('2011-02-01'),0.001644947,0.5,0.07122008,0.05720957,0.01401051]
+			,
+			
+        		['Gamification',new Date('2011-03-01'),0.0001439865,0.1933522,0.05523069,0.04591183,0.009318857]
+			,
+			
+        		['Gamification',new Date('2011-04-01'),0.0005056532,0.5,0.05700713,0.04750594,0.009501188]
+			,
+			
+        		['Gamification',new Date('2011-05-01'),0.005147796,1.846654,0.08047584,0.06825376,0.01222208]
+			,
+			
+        		['Gamification',new Date('2011-06-01'),0.007766749,2.5,0.08438147,0.07266832,0.01171315]
+			,
+			
+        		['Gamification',new Date('2011-07-01'),0.003401346,1.170031,0.03826068,0.03372532,0.004535361]
+			,
+			
+        		['Gamification',new Date('2011-08-01'),0.001181935,0.5,0,0,1.734723e-18]
+			,
+			
+        		['Gamification',new Date('2011-09-01'),0.008899063,2.723223,0.02520445,0.01888543,0.006319014]
+			,
+			
+        		['Gamification',new Date('2011-10-01'),0.01489254,4.5,0.07200313,0.05744653,0.0145566]
+			,
+			
+        		['Gamification',new Date('2011-11-01'),0.008408386,2.874579,0.08920286,0.0741239,0.01507897]
+			,
+			
+        		['Gamification',new Date('2011-12-01'),0.001768198,2,0.08579721,0.07318911,0.01260809]
+			,
+			
+        		['Gamification',new Date('2012-01-01'),0.007241789,5.590962,0.08110062,0.06790362,0.013197]
+			,
+			
+        		['Gamification',new Date('2012-02-01'),0.01381626,8.5,0.07552449,0.06165737,0.01386712]
+			,
+			
+        		['Gamification',new Date('2012-03-01'),0.009575009,5.699072,0.06719329,0.05594716,0.01124613]
+			,
+			
+        		['Gamification',new Date('2012-04-01'),0.00226922,1.5,0.06398701,0.05456868,0.00941833]
+			,
+			
+        		['Gamification',new Date('2012-05-01'),0.001390433,0.8627489,0.07329226,0.0611624,0.01212985]
+			,
+			
+        		['Gamification',new Date('2012-06-01'),0.003723701,2,0.09076667,0.07644916,0.0143175]
+			,
+			
+        		['Gamification',new Date('2012-07-01'),0.004399705,2.224932,0.1083855,0.09727585,0.01110967]
+			,
+			
+        		['Gamification',new Date('2012-08-01'),0.004638096,2,0.1151235,0.1079132,0.007210334]
+			,
+			
+        		['Gamification',new Date('2012-09-01'),0.006531765,2.300023,0.1030559,0.09505534,0.008000543]
+			,
+			
+        		['Gamification',new Date('2012-10-01'),0.009577576,3,0.07966011,0.06766617,0.01199395]
+			,
+			
+        		['Game-based',new Date('2009-02-01'),0,0,0,0,0]
+			,
+			
+        		['Game-based',new Date('2009-03-01'),0.001455866,1.898893,0.04838993,0.04448699,0.003902938]
+			,
+			
+        		['Game-based',new Date('2009-04-01'),0.003631728,3.5,0.07644764,0.07011235,0.006335298]
+			,
+			
+        		['Game-based',new Date('2009-05-01'),0.006602559,4.490822,0.07291054,0.06641796,0.006492586]
+			,
+			
+        		['Game-based',new Date('2009-06-01'),0.007863237,4.5,0.0627944,0.05655977,0.006234638]
+			,
+			
+        		['Game-based',new Date('2009-07-01'),0.005486531,3.450319,0.07092084,0.06341575,0.007505092]
+			,
+			
+        		['Game-based',new Date('2009-08-01'),0.002436861,2.5,0.08505646,0.075138,0.009918457]
+			,
+			
+        		['Game-based',new Date('2009-09-01'),0.0019352,2.707901,0.08781636,0.07565893,0.01215744]
+			,
+			
+        		['Game-based',new Date('2009-10-01'),0.003337088,3.5,0.07826469,0.06675805,0.01150665]
+			,
+			
+        		['Game-based',new Date('2009-11-01'),0.004942807,3.905575,0.06341347,0.05616074,0.007252731]
+			,
+			
+        		['Game-based',new Date('2009-12-01'),0.004697041,3,0.06561717,0.05752864,0.008088528]
+			,
+			
+        		['Game-based',new Date('2010-01-01'),0.001751514,0.7322983,0.09773044,0.0778825,0.01984794]
+			,
+			
+        		['Game-based',new Date('2010-02-01'),0.0004417254,0.5,0.1192661,0.09174312,0.02752294]
+			,
+			
+        		['Game-based',new Date('2010-03-01'),0.004240616,4.727732,0.09465585,0.07686894,0.01778692]
+			,
+			
+        		['Game-based',new Date('2010-04-01'),0.00798712,8.5,0.06134982,0.05646887,0.004880952]
+			,
+			
+        		['Game-based',new Date('2010-05-01'),0.006514685,7.044274,0.05964889,0.05547277,0.004176121]
+			,
+			
+        		['Game-based',new Date('2010-06-01'),0.003268813,3.5,0.06823969,0.06024381,0.007995878]
+			,
+			
+        		['Game-based',new Date('2010-07-01'),0.002444469,1.845171,0.06087902,0.05431252,0.006566499]
+			,
+			
+        		['Game-based',new Date('2010-08-01'),0.002622414,1.5,0.05321873,0.04844554,0.004773196]
+			,
+			
+        		['Game-based',new Date('2010-09-01'),0.001695386,1.075042,0.06383185,0.05526358,0.008568277]
+			,
+			
+        		['Game-based',new Date('2010-10-01'),0.0004182123,0.5,0.08108108,0.06756757,0.01351351]
+			,
+			
+        		['Game-based',new Date('2010-11-01'),3.673848e-05,0.1671624,0.08896645,0.07481183,0.01415462]
+			,
+			
+        		['Game-based',new Date('2010-12-01'),0.0008987835,1,0.08424765,0.07288401,0.01136364]
+			,
+			
+        		['Game-based',new Date('2011-01-01'),0.002785871,3.381309,0.07022922,0.06249227,0.007736949]
+			,
+			
+        		['Game-based',new Date('2011-02-01'),0.004112366,5,0.06363537,0.05719331,0.006442053]
+			,
+			
+        		['Game-based',new Date('2011-03-01'),0.003595145,3.870102,0.0762311,0.06706116,0.009169932]
+			,
+			
+        		['Game-based',new Date('2011-04-01'),0.002528266,2,0.08652499,0.07539056,0.01113443]
+			,
+			
+        		['Game-based',new Date('2011-05-01'),0.002361331,1.638283,0.07436628,0.0663185,0.008047781]
+			,
+			
+        		['Game-based',new Date('2011-06-01'),0.002588916,2,0.05822324,0.05413037,0.004092872]
+			,
+			
+        		['Game-based',new Date('2011-07-01'),0.002407088,1.889266,0.05877233,0.05489859,0.003873743]
+			,
+			
+        		['Game-based',new Date('2011-08-01'),0.001772903,1.5,0.06690357,0.06169524,0.005208333]
+			,
+			
+        		['Game-based',new Date('2011-09-01'),0.001026142,1.304654,0.07058815,0.06508943,0.005498725]
+			,
+			
+        		['Game-based',new Date('2011-10-01'),0.001276503,1.5,0.07590836,0.06863871,0.007269647]
+			,
+			
+        		['Game-based',new Date('2011-11-01'),0.003131562,2.079619,0.08846344,0.07606979,0.01239365]
+			,
+			
+        		['Game-based',new Date('2011-12-01'),0.004420495,2.5,0.09380927,0.07879734,0.01501194]
+			,
+			
+        		['Game-based',new Date('2012-01-01'),0.003225223,2.314371,0.0808243,0.07021594,0.01060836]
+			,
+			
+        		['Game-based',new Date('2012-02-01'),0.001417053,2,0.07172055,0.06395168,0.007768872]
+			,
+			
+        		['Game-based',new Date('2012-03-01'),0.00113698,2.037897,0.08666361,0.07221321,0.0144504]
+			,
+			
+        		['Game-based',new Date('2012-04-01'),0.001815376,2,0.1042997,0.08130806,0.02299169]
+			,
+			
+        		['Game-based',new Date('2012-05-01'),0.002538115,1.53404,0.1021879,0.07787871,0.02430924]
+			,
+			
+        		['Game-based',new Date('2012-06-01'),0.003723701,1.5,0.09505742,0.07580862,0.0192488]
+			,
+			
+        		['Game-based',new Date('2012-07-01'),0.005640773,2.575944,0.09980623,0.08836982,0.01143641]
+			,
+			
+        		['Game-based',new Date('2012-08-01'),0.006625851,3.5,0.1048376,0.09914756,0.00569005]
+			,
+			
+        		['Game-based',new Date('2012-09-01'),0.005146725,2.974685,0.09608767,0.09041316,0.005674515]
+			,
+			
+        		['Game-based',new Date('2012-10-01'),0.00212835,1.5,0.07811879,0.06886881,0.009249973]
+			,
+			
+        		['Game-play',new Date('2009-02-01'),0.003486183,2.5,0.09000401,0.06705143,0.02295258]
+			,
+			
+        		['Game-play',new Date('2009-03-01'),0.001934923,1.739933,0.09180381,0.08064548,0.01115833]
+			,
+			
+        		['Game-play',new Date('2009-04-01'),0.001452691,1.5,0.09122996,0.08273729,0.008492667]
+			,
+			
+        		['Game-play',new Date('2009-05-01'),0.002603539,2.0302,0.08751727,0.06851055,0.01900672]
+			,
+			
+        		['Game-play',new Date('2009-06-01'),0.003931618,2.5,0.08633454,0.0598927,0.02644183]
+			,
+			
+        		['Game-play',new Date('2009-07-01'),0.004053956,2.139268,0.09290712,0.07550388,0.01740324]
+			,
+			
+        		['Game-play',new Date('2009-08-01'),0.003898977,1.5,0.1042528,0.09399113,0.01026163]
+			,
+			
+        		['Game-play',new Date('2009-09-01'),0.004553031,1.287727,0.1137309,0.09182318,0.02190772]
+			,
+			
+        		['Game-play',new Date('2009-10-01'),0.005422767,1.5,0.1082755,0.07672861,0.0315469]
+			,
+			
+        		['Game-play',new Date('2009-11-01'),0.005612519,1.897324,0.08189739,0.0627817,0.01911569]
+			,
+			
+        		['Game-play',new Date('2009-12-01'),0.004697041,2,0.06334024,0.05817995,0.005160299]
+			,
+			
+        		['Game-play',new Date('2010-01-01'),0.002689147,1.497978,0.07740969,0.06634608,0.01106361]
+			,
+			
+        		['Game-play',new Date('2010-02-01'),0.0008834508,1,0.09842613,0.07748076,0.02094538]
+			,
+			
+        		['Game-play',new Date('2010-03-01'),0.0005102942,1.110765,0.09690401,0.08031106,0.01659295]
+			,
+			
+        		['Game-play',new Date('2010-04-01'),0.001261124,1.5,0.07861931,0.07089196,0.007727358]
+			,
+			
+        		['Game-play',new Date('2010-05-01'),0.002372689,1.683963,0.05875901,0.05185743,0.00690158]
+			,
+			
+        		['Game-play',new Date('2010-06-01'),0.00280184,1.5,0.05489261,0.04482972,0.01006289]
+			,
+			
+        		['Game-play',new Date('2010-07-01'),0.001855962,0.9658826,0.07578407,0.06467499,0.01110908]
+			,
+			
+        		['Game-play',new Date('2010-08-01'),0.0005244829,0.5,0.09259259,0.08024691,0.01234568]
+			,
+			
+        		['Game-play',new Date('2010-09-01'),2.88356e-05,0.5150066,0.0796809,0.06332287,0.01635803]
+			,
+			
+        		['Game-play',new Date('2010-10-01'),0.0008364246,1,0.0618307,0.04338773,0.01844297]
+			,
+			
+        		['Game-play',new Date('2010-11-01'),0.002797101,1.724091,0.06823283,0.05276044,0.01547239]
+			,
+			
+        		['Game-play',new Date('2010-12-01'),0.004044526,2,0.09529578,0.07738879,0.017907]
+			,
+			
+        		['Game-play',new Date('2011-01-01'),0.003035268,1.338629,0.1266353,0.09387607,0.03275928]
+			,
+			
+        		['Game-play',new Date('2011-02-01'),0.00123371,0.5,0.1274788,0.0878187,0.03966006]
+			,
+			
+        		['Game-play',new Date('2011-03-01'),0.0004045143,0.2963915,0.07778465,0.05648351,0.02130113]
+			,
+			
+        		['Game-play',new Date('2011-04-01'),0.0005056532,0.5,0.03482587,0.03482587,6.938894e-18]
+			,
+			
+        		['Game-play',new Date('2011-05-01'),0.001047078,0.7258047,0.05110663,0.05105162,5.50079e-05]
+			,
+			
+        		['Game-play',new Date('2011-06-01'),0.00155335,1,0.08274239,0.06868008,0.01406231]
+			,
+			
+        		['Game-play',new Date('2011-07-01'),0.001702633,1.36289,0.07983329,0.05210044,0.02773285]
+			,
+			
+        		['Game-play',new Date('2011-08-01'),0.001772903,1.5,0.06480681,0.03386792,0.03093889]
+			,
+			
+        		['Game-play',new Date('2011-09-01'),0.002087698,1.197637,0.0677166,0.04778005,0.01993655]
+			,
+			
+        		['Game-play',new Date('2011-10-01'),0.002553007,1,0.0767936,0.06443762,0.01235598]
+			,
+			
+        		['Game-play',new Date('2011-11-01'),0.002909271,1.346562,0.07338414,0.05052907,0.02285507]
+			,
+			
+        		['Game-play',new Date('2011-12-01'),0.002652297,1.5,0.05311879,0.02029024,0.03282855]
+			,
+			
+        		['Game-play',new Date('2012-01-01'),0.001594927,0.8536138,0.02232993,0,0.02440018]
+			,
+			
+        		['Game-play',new Date('2012-02-01'),0.00106279,0.5,0.01587302,0,0.01587302]
+			,
+			
+        		['Game-play',new Date('2012-03-01'),0.002051403,1.363983,0.05527872,0.03018528,0.02509344]
+			,
+			
+        		['Game-play',new Date('2012-04-01'),0.002723064,2,0.08025561,0.04835377,0.03190184]
+			,
+			
+        		['Game-play',new Date('2012-05-01'),0.001415327,1.065456,0.03956483,0.02288249,0.01668234]
+			,
+			
+        		['Game-play',new Date('2012-06-01'),4.336809e-19,0,0,0,0]
+			,
+			
+        		['Game-play',new Date('2012-07-01'),0.000414595,0.3116938,0.02750289,0.02399171,0.003511184]
+			,
+			
+        		['Game-play',new Date('2012-08-01'),0.00132517,1,0.0665754,0.05351891,0.01305649]
+			,
+			
+        		['Game-play',new Date('2012-09-01'),0.001076541,0.8127687,0.05185982,0.04106177,0.01079805]
+			,
+			
+        		['Game-play',new Date('2012-10-01'),0,2.220446e-16,1.387779e-17,0,3.469447e-18]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	
+      	}
+  </script>
+
+</head>
+
+<div>
+<h1>Conferences (ICALT, ECTEL, CAL, ICHL and ICWL) - Games</h1>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="nice">
+
+<p><a href="Groups blog.html">View terms as a group</a>.</p>
+
+<p>Other sets:</p>
+
+<p><a href="Cloud blog.html">Cloud</a></p>
+
+<p><a href="eBooks blog.html">eBooks</a></p>
+
+<p><a href="Analytics blog.html">Analytics</a></p>
+
+<p><a href="Gesture blog.html">Gesture</a></p>
+
+<p><a href="Context.Sensitive.Services blog.html">Context Sensitive Services</a></p>
+
+<p><a href="Mobile blog.html">Mobile</a></p>
+
+<p><a href="Learning.Platforms blog.html">Learning Platforms</a></p>
+
+</div>
+
+
+
+<div class="reduced">
+<a href="http://fusion.google.com/add?source=atgs&moduleurl=http%3a%2f%2farc12.github.com%2fText-Mining-Weak-Signals-Output%2fHistory%20Visualiser%2fTELMap%20Emerging%20Technologies%2fGames%20blog%20gadget.xml"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a><p>
+This shows the history of the way certain terms have been used (related words are counted also, e.g. &quot;gaming&quot; would be counted as &quot;game&quot;). The chart loads up showing the trend in word-frequency for a term (or group of terms) with the line coloured to show the average &quot;positive sentiment&quot; of blog posts containing the term. &quot;Positive sentiment&quot; is calculated as the fraction of words that generally have either a positive connotation according to the <a href="http://www.wjh.harvard.edu/~inquirer/">Harvard General Inquirer</a> dictionary. For both sentiment and frequency calculations, common words such as &quot;and&quot; are ignored. The attribute &quot;Documents&quot; is an estimate of the number of blog posts per month that contain the specified term(s). Calculations were conducted in 2 month slices and the number of blog posts per slice is (in date order): 1771, 1723, 1553, 1280, 1334, 1166, 1270, 1335, 1131, 1018, 1443, 1309, 1323, 1076, 1126, 835, 1351, 1169, 1323, 1075, 838, 756, 911. True calculated values are plotted for the mid-point of each time slice to show the aggregate value over that 2 month period and spline interpolation is used to give the impression of a smooth change between these points. In total, 28116 blog posts were use</p>
+
+<p><em>NB: be aware that insignificant fluctuations in the data may appear magnified since the plots are shown "zoomed in" (especially true for sentiment scores (or &quot;subjectivity&quot;, which is the sum of positive and negative sentiment). Also note that sentiment values are essentially meaningless when the frequency is close to the baseline.</em></p>
+</div>
+</body>
+</html>
+

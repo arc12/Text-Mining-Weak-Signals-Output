@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <ModulePrefs title="History Visualiser: Conferences (ICALT, ECTEL, CAL, ICHL and ICWL) - Gesture" height="400">
+ <Require feature="dynamic-height"/>
+ </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+<head>
+  <title>History Visualiser: Conferences (ICALT, ECTEL, CAL, ICHL and ICWL) - Gesture</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=420;
+      		options['height']=300;
+      		      		options['showSidePanel']=false;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Gesture-based',new Date('2009-02-01'),0,0,0,0,0]
+			,
+			
+        		['Gesture-based',new Date('2009-03-01'),1.567315e-07,0.0003106583,0.0002492081,0.0002167579,3.245024e-05]
+			,
+			
+        		['Gesture-based',new Date('2009-04-01'),0,0,0,0,0]
+			,
+			
+        		['Gesture-based',new Date('2009-05-01'),0,0,0,0,0]
+			,
+			
+        		['Gesture-based',new Date('2009-06-01'),1.058791e-22,4.336809e-19,0,2.168404e-19,2.710505e-20]
+			,
+			
+        		['Gesture-based',new Date('2009-07-01'),1.724047e-06,0.003417241,0.002741289,0.002384336,0.0003569527]
+			,
+			
+        		['Gesture-based',new Date('2009-08-01'),0,0,8.673617e-19,0,0]
+			,
+			
+        		['Gesture-based',new Date('2009-09-01'),0,0,0,0,0]
+			,
+			
+        		['Gesture-based',new Date('2009-10-01'),1.694066e-21,3.469447e-18,0,0,0]
+			,
+			
+        		['Gesture-based',new Date('2009-11-01'),8.92166e-05,0.1100307,0.04968346,0.04331801,0.006365448]
+			,
+			
+        		['Gesture-based',new Date('2009-12-01'),0.0005218934,0.5,0.09243697,0.08123249,0.01120448]
+			,
+			
+        		['Gesture-based',new Date('2010-01-01'),0.001370866,1.197614,0.08301911,0.07456048,0.008458629]
+			,
+			
+        		['Gesture-based',new Date('2010-02-01'),0.001766902,1.5,0.04623294,0.04321635,0.003016591]
+			,
+			
+        		['Gesture-based',new Date('2010-03-01'),0.001007605,0.8495128,0.01691612,0.0162305,0.0006856229]
+			,
+			
+        		['Gesture-based',new Date('2010-04-01'),0,0,6.938894e-18,0,0]
+			,
+			
+        		['Gesture-based',new Date('2010-05-01'),0,0,0,0,0]
+			,
+			
+        		['Gesture-based',new Date('2010-06-01'),0,2.220446e-16,0,0,4.336809e-19]
+			,
+			
+        		['Gesture-based',new Date('2010-07-01'),0.000303653,0.2831479,0.02027894,0.01455783,0.00572111]
+			,
+			
+        		['Gesture-based',new Date('2010-08-01'),0.0005244829,0.5,0.05263158,0.04048583,0.01214575]
+			,
+			
+        		['Gesture-based',new Date('2010-09-01'),0.0006017615,0.5880736,0.08906111,0.07438045,0.01468067]
+			,
+			
+        		['Gesture-based',new Date('2010-10-01'),0.0004182123,0.5,0.1012146,0.08906883,0.01214575]
+			,
+			
+        		['Gesture-based',new Date('2010-11-01'),5.572339e-05,0.3020577,0.07045719,0.06506291,0.005394282]
+			,
+			
+        		['Gesture-based',new Date('2010-12-01'),0.0004493917,0.5,0.03738318,0.03738318,0]
+			,
+			
+        		['Gesture-based',new Date('2011-01-01'),0.002146504,1.391196,0.04407355,0.0426248,0.001448742]
+			,
+			
+        		['Gesture-based',new Date('2011-02-01'),0.003289893,2,0.07932762,0.06917331,0.01015431]
+			,
+			
+        		['Gesture-based',new Date('2011-03-01'),0.002224189,1.44566,0.1162009,0.09320609,0.02299483]
+			,
+			
+        		['Gesture-based',new Date('2011-04-01'),0.0005056532,0.5,0.1180556,0.09027778,0.02777778]
+			,
+			
+        		['Gesture-based',new Date('2011-05-01'),0,0.07616375,0.06327229,0.04764559,0.0156267]
+			,
+			
+        		['Gesture-based',new Date('2011-06-01'),0,0,1.387779e-17,0,0]
+			,
+			
+        		['Gesture-based',new Date('2011-07-01'),0,0,0,0,0]
+			,
+			
+        		['Gesture-based',new Date('2011-08-01'),0,0,0,0,0]
+			,
+			
+        		['Gesture-based',new Date('2011-09-01'),0.0004830101,0.300097,0.04064313,0.03388185,0.00676128]
+			,
+			
+        		['Gesture-based',new Date('2011-10-01'),0.0008510023,0.5,0.0744072,0.06295993,0.01144726]
+			,
+			
+        		['Gesture-based',new Date('2011-11-01'),0.0006294816,0.3624271,0.08043955,0.06901211,0.01142744]
+			,
+			
+        		['Gesture-based',new Date('2011-12-01'),0.0004420495,0.5,0.07301587,0.06349206,0.00952381]
+			,
+			
+        		['Gesture-based',new Date('2012-01-01'),0.0008937188,1.375195,0.07011482,0.06109316,0.009021669]
+			,
+			
+        		['Gesture-based',new Date('2012-02-01'),0.001417053,2,0.06939857,0.05979146,0.009607108]
+			,
+			
+        		['Gesture-based',new Date('2012-03-01'),0.001360398,1.449294,0.06395978,0.05397976,0.009980019]
+			,
+			
+        		['Gesture-based',new Date('2012-04-01'),0.0009076881,0.5,0.04892966,0.04043493,0.008494733]
+			,
+			
+        		['Gesture-based',new Date('2012-05-01'),0.0004035735,0.07762838,0.02336672,0.01907519,0.004291525]
+			,
+			
+        		['Gesture-based',new Date('2012-06-01'),0,1.110223e-16,0,0,0]
+			,
+			
+        		['Gesture-based',new Date('2012-07-01'),0,0,0,0,0]
+			,
+			
+        		['Gesture-based',new Date('2012-08-01'),0,2.775558e-17,0,0,0]
+			,
+			
+        		['Gesture-based',new Date('2012-09-01'),0.000661251,0.3991026,0.02125199,0.01721308,0.004038903]
+			,
+			
+        		['Gesture-based',new Date('2012-10-01'),0.001596263,1,0.04949059,0.04007385,0.009416744]
+			,
+			
+        		['Gesture',new Date('2009-02-01'),0.002711476,2,0.08120179,0.06375499,0.0174468]
+			,
+			
+        		['Gesture',new Date('2009-03-01'),0.00581359,4.417225,0.08785751,0.07246988,0.01538763]
+			,
+			
+        		['Gesture',new Date('2009-04-01'),0.006537111,5,0.08234628,0.06900582,0.01334046]
+			,
+			
+        		['Gesture',new Date('2009-05-01'),0.003631373,2.810825,0.06029518,0.04827847,0.01201671]
+			,
+			
+        		['Gesture',new Date('2009-06-01'),0.0003574199,0.5,0.04850746,0.03358209,0.01492537]
+			,
+			
+        		['Gesture',new Date('2009-07-01'),6.531489e-05,0.6519757,0.06951534,0.04542517,0.02409016]
+			,
+			
+        		['Gesture',new Date('2009-08-01'),0.001949489,2,0.09759082,0.06479477,0.03279604]
+			,
+			
+        		['Gesture',new Date('2009-09-01'),0.004286857,2.768772,0.1040499,0.0697837,0.03426617]
+			,
+			
+        		['Gesture',new Date('2009-10-01'),0.005839903,3,0.09664452,0.06642927,0.03021525]
+			,
+			
+        		['Gesture',new Date('2009-11-01'),0.005748332,3.022935,0.08903592,0.06493123,0.02410469]
+			,
+			
+        		['Gesture',new Date('2009-12-01'),0.004175147,2.5,0.08208568,0.06419458,0.01789111]
+			,
+			
+        		['Gesture',new Date('2010-01-01'),0.001867205,1.326987,0.07489552,0.06154713,0.01334839]
+			,
+			
+        		['Gesture',new Date('2010-02-01'),0.0008834508,1,0.07232714,0.05930274,0.01302439]
+			,
+			
+        		['Gesture',new Date('2010-03-01'),0.002634322,2.669116,0.07721093,0.05944276,0.01776817]
+			,
+			
+        		['Gesture',new Date('2010-04-01'),0.004624122,4.5,0.07849198,0.05763244,0.02085954]
+			,
+			
+        		['Gesture',new Date('2010-05-01'),0.004360275,4.559047,0.06731818,0.05086798,0.0164502]
+			,
+			
+        		['Gesture',new Date('2010-06-01'),0.003268813,3.5,0.05753413,0.04778564,0.009748492]
+			,
+			
+        		['Gesture',new Date('2010-07-01'),0.003120561,2.469694,0.06321449,0.05590305,0.007311441]
+			,
+			
+        		['Gesture',new Date('2010-08-01'),0.003146897,2,0.07665756,0.06662333,0.01003423]
+			,
+			
+        		['Gesture',new Date('2010-09-01'),0.002442045,2.249677,0.08558792,0.06941338,0.01617454]
+			,
+			
+        		['Gesture',new Date('2010-10-01'),0.002091062,2.5,0.08121164,0.06210965,0.01910198]
+			,
+			
+        		['Gesture',new Date('2010-11-01'),0.003309254,2.281596,0.06204271,0.04790996,0.01413275]
+			,
+			
+        		['Gesture',new Date('2010-12-01'),0.005842093,3,0.05234541,0.04308784,0.00925757]
+			,
+			
+        		['Gesture',new Date('2011-01-01'),0.008704424,5.561437,0.07160987,0.05925078,0.0123591]
+			,
+			
+        		['Gesture',new Date('2011-02-01'),0.009458442,7,0.09447955,0.07626648,0.01821308]
+			,
+			
+        		['Gesture',new Date('2011-03-01'),0.006565918,4.847656,0.09404802,0.0738396,0.02020842]
+			,
+			
+        		['Gesture',new Date('2011-04-01'),0.003539572,2.5,0.08205612,0.06276255,0.01929357]
+			,
+			
+        		['Gesture',new Date('2011-05-01'),0.003713966,3.297938,0.07621633,0.05856655,0.01764978]
+			,
+			
+        		['Gesture',new Date('2011-06-01'),0.004660049,4.5,0.07948048,0.0646504,0.01483008]
+			,
+			
+        		['Gesture',new Date('2011-07-01'),0.003556049,3.085591,0.08903765,0.0783461,0.01069155]
+			,
+			
+        		['Gesture',new Date('2011-08-01'),0.001772903,1,0.09378672,0.08485116,0.008935566]
+			,
+			
+        		['Gesture',new Date('2011-09-01'),0.001264962,0.7346966,0.08530049,0.07288781,0.01241268]
+			,
+			
+        		['Gesture',new Date('2011-10-01'),0.002127506,2,0.07413758,0.05741183,0.01672574]
+			,
+			
+        		['Gesture',new Date('2011-11-01'),0.003898613,3.850622,0.07189125,0.05469289,0.01719836]
+			,
+			
+        		['Gesture',new Date('2011-12-01'),0.005746644,5.5,0.07530744,0.0600225,0.01528495]
+			,
+			
+        		['Gesture',new Date('2012-01-01'),0.006930318,6.362815,0.07795036,0.06447496,0.0134754]
+			,
+			
+        		['Gesture',new Date('2012-02-01'),0.007439527,6.5,0.07550459,0.06323373,0.01227086]
+			,
+			
+        		['Gesture',new Date('2012-03-01'),0.007520714,6.198118,0.06677635,0.0551471,0.01162925]
+			,
+			
+        		['Gesture',new Date('2012-04-01'),0.007715349,6,0.06093788,0.04961358,0.0113243]
+			,
+			
+        		['Gesture',new Date('2012-05-01'),0.00820635,6.157212,0.06558124,0.05426426,0.01131698]
+			,
+			
+        		['Gesture',new Date('2012-06-01'),0.007447403,5.5,0.07161173,0.05911034,0.01250139]
+			,
+			
+        		['Gesture',new Date('2012-07-01'),0.004342386,3.173033,0.06968171,0.05433159,0.01535012]
+			,
+			
+        		['Gesture',new Date('2012-08-01'),0.00132517,1,0.06611864,0.04840194,0.0177167]
+			,
+			
+        		['Gesture',new Date('2012-09-01'),0.0008757173,0.8381557,0.06874328,0.05120293,0.01754035]
+			,
+			
+        		['Gesture',new Date('2012-10-01'),0.00212835,2,0.07567452,0.05995223,0.01572229]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	gadgets.window.adjustHeight();
+      	}
+  </script>
+
+</head>
+
+<div>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="reduced">
+
+</div>
+
+
+
+<div class="reduced">
+<p><a href="http://arc12.github.com/Text-Mining-Weak-Signals-Output/History Visualiser/TELMap Emerging Technologies/Gesture blog.html" target="_new">Larger version</a> with more options and more info...</p></div>
+</body>
+    ]]>
+  </Content>
+</Module>
+
