@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Module>
-  <ModulePrefs title="History Visualiser: Conferences (ICALT, ECTEL, CAL, ICHL and ICWL) - Analytics" height="400">
+  <ModulePrefs title="History Visualiser: Blog Posts - Analytics" height="400">
  <Require feature="dynamic-height"/>
  </ModulePrefs>
   <Content type="html">
     <![CDATA[
 <head>
-  <title>History Visualiser: Conferences (ICALT, ECTEL, CAL, ICHL and ICWL) - Analytics</title>
+  <title>History Visualiser: Blog Posts - Analytics</title>
   <meta name="AUTHOR" content="Adam Cooper" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
