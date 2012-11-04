@@ -583,139 +583,139 @@
         		['Gesture',new Date('2012-10-01'),0.003653998,3,0.06694654,0.0533261,0.01362044]
 			,
 			
-        		['Context Sensitive Services',new Date('2009-02-01'),0.1252348,111.5,0.07239754,0.06049628,0.01190125]
+        		['Context Sensitive Services',new Date('2009-02-01'),0.05350942,48,0.0676787,0.05659318,0.01108552]
 			,
 			
-        		['Context Sensitive Services',new Date('2009-03-01'),0.1184064,117.9436,0.07286655,0.06098741,0.01187914]
+        		['Context Sensitive Services',new Date('2009-03-01'),0.05697771,55.20595,0.06776169,0.0569309,0.01083079]
 			,
 			
-        		['Context Sensitive Services',new Date('2009-04-01'),0.1279456,125.5,0.071851,0.06022168,0.01162931]
+        		['Context Sensitive Services',new Date('2009-04-01'),0.06236903,61,0.0658032,0.05527022,0.01053299]
 			,
 			
-        		['Context Sensitive Services',new Date('2009-05-01'),0.1608912,133.6068,0.06887849,0.0578542,0.01102428]
+        		['Context Sensitive Services',new Date('2009-05-01'),0.07053227,63.94466,0.06106995,0.05098411,0.01008583]
 			,
 			
-        		['Context Sensitive Services',new Date('2009-06-01'),0.1869665,135,0.06752535,0.05718782,0.01033753]
+        		['Context Sensitive Services',new Date('2009-06-01'),0.07801984,62.5,0.05806144,0.04893121,0.00913023]
 			,
 			
-        		['Context Sensitive Services',new Date('2009-07-01'),0.179901,125.3169,0.07058972,0.06061585,0.009973868]
+        		['Context Sensitive Services',new Date('2009-07-01'),0.08141371,56.76542,0.06043128,0.05277578,0.007655501]
 			,
 			
-        		['Context Sensitive Services',new Date('2009-08-01'),0.1667662,118.5,0.07370821,0.06324568,0.01046253]
+        		['Context Sensitive Services',new Date('2009-08-01'),0.08171067,53.5,0.06321646,0.05591903,0.007297432]
 			,
 			
-        		['Context Sensitive Services',new Date('2009-09-01'),0.175328,125.3132,0.07246055,0.06051451,0.01194604]
+        		['Context Sensitive Services',new Date('2009-09-01'),0.07985079,57.30616,0.06117913,0.05201073,0.0091684]
 			,
 			
-        		['Context Sensitive Services',new Date('2009-10-01'),0.1827899,125.5,0.06936031,0.0564646,0.01289571]
+        		['Context Sensitive Services',new Date('2009-10-01'),0.07213233,57.5,0.05659851,0.04595784,0.01064068]
 			,
 			
-        		['Context Sensitive Services',new Date('2009-11-01'),0.1651887,102.1803,0.0677751,0.05574009,0.01203501]
+        		['Context Sensitive Services',new Date('2009-11-01'),0.05725334,45.50994,0.05315189,0.0438497,0.009302193]
 			,
 			
-        		['Context Sensitive Services',new Date('2009-12-01'),0.1444583,83,0.06755493,0.05678759,0.01076734]
+        		['Context Sensitive Services',new Date('2009-12-01'),0.04815278,36.5,0.05259182,0.04524816,0.007343657]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-01-01'),0.1436936,94.46556,0.06770605,0.05709142,0.01061463]
+        		['Context Sensitive Services',new Date('2010-01-01'),0.05518615,44.65408,0.05520659,0.04798027,0.007226315]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-02-01'),0.1447354,114,0.06737752,0.05648449,0.01089303]
+        		['Context Sensitive Services',new Date('2010-02-01'),0.06413423,56.5,0.05735234,0.04946152,0.007890817]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-03-01'),0.1297137,115.7075,0.0664309,0.05567005,0.01076085]
+        		['Context Sensitive Services',new Date('2010-03-01'),0.06105264,56.87375,0.05627155,0.04835626,0.007915291]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-04-01'),0.1231689,109.5,0.06743493,0.0564842,0.01095073]
+        		['Context Sensitive Services',new Date('2010-04-01'),0.05767108,51.5,0.05668427,0.04873591,0.007948367]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-05-01'),0.1466108,108.5796,0.07216513,0.06004729,0.01211784]
+        		['Context Sensitive Services',new Date('2010-05-01'),0.06607866,48.66342,0.06297521,0.05408936,0.00888585]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-06-01'),0.1670167,103.5,0.07651683,0.06348379,0.01303304]
+        		['Context Sensitive Services',new Date('2010-06-01'),0.07412797,46,0.07071012,0.06016838,0.01054174]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-07-01'),0.1526614,86.4741,0.07663461,0.06403569,0.01259892]
+        		['Context Sensitive Services',new Date('2010-07-01'),0.06870116,40.47256,0.07468377,0.06234029,0.01234348]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-08-01'),0.1315404,79,0.07554003,0.06341065,0.01212938]
+        		['Context Sensitive Services',new Date('2010-08-01'),0.0570351,37,0.07542605,0.06217193,0.01325412]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-09-01'),0.1349517,99.08649,0.07695382,0.06395495,0.01299886]
+        		['Context Sensitive Services',new Date('2010-09-01'),0.04895744,39.82135,0.07505287,0.06240945,0.01264342]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-10-01'),0.1476808,121.5,0.08051617,0.06610337,0.0144128]
+        		['Context Sensitive Services',new Date('2010-10-01'),0.04430424,42.5,0.07628925,0.06431697,0.01197228]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-11-01'),0.1490464,120.0549,0.08458112,0.06939855,0.01518257]
+        		['Context Sensitive Services',new Date('2010-11-01'),0.04110661,38.74203,0.08035639,0.06779628,0.01256011]
 			,
 			
-        		['Context Sensitive Services',new Date('2010-12-01'),0.1430135,108,0.08643845,0.07172604,0.01471241]
+        		['Context Sensitive Services',new Date('2010-12-01'),0.04016738,33.5,0.08185126,0.06878212,0.01306914]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-01-01'),0.1374097,102.9438,0.0842881,0.07130759,0.01298051]
+        		['Context Sensitive Services',new Date('2011-01-01'),0.04220568,32.58551,0.07644189,0.06434692,0.01209496]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-02-01'),0.1308668,100.5,0.08103476,0.06936679,0.01166797]
+        		['Context Sensitive Services',new Date('2011-02-01'),0.04483399,34,0.07070493,0.06008101,0.01062392]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-03-01'),0.1217517,93.73251,0.07977879,0.06755272,0.01222608]
+        		['Context Sensitive Services',new Date('2011-03-01'),0.04556797,34.54092,0.07131774,0.06126965,0.01004809]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-04-01'),0.1165663,87.5,0.07969835,0.06621464,0.01348371]
+        		['Context Sensitive Services',new Date('2011-04-01'),0.04464241,34,0.0744519,0.06345999,0.01099192]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-05-01'),0.1203474,86.5012,0.0793607,0.06543144,0.01392925]
+        		['Context Sensitive Services',new Date('2011-05-01'),0.04319356,32.75081,0.07496832,0.06172646,0.01324186]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-06-01'),0.1241358,83,0.07881178,0.06550045,0.01331133]
+        		['Context Sensitive Services',new Date('2011-06-01'),0.04324401,30.5,0.07299095,0.05899073,0.01400022]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-07-01'),0.1185147,70.63768,0.07855759,0.06658834,0.01196926]
+        		['Context Sensitive Services',new Date('2011-07-01'),0.04537779,27.26834,0.07048335,0.05920167,0.01128167]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-08-01'),0.1062329,61,0.07946561,0.06812077,0.01134484]
+        		['Context Sensitive Services',new Date('2011-08-01'),0.04353808,25,0.07150431,0.06256986,0.008934453]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-09-01'),0.09413246,65.13559,0.08176832,0.06926757,0.01250075]
+        		['Context Sensitive Services',new Date('2011-09-01'),0.03371989,25.36334,0.0781258,0.06749272,0.01063308]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-10-01'),0.09326408,74,0.08279668,0.06891599,0.0138807]
+        		['Context Sensitive Services',new Date('2011-10-01'),0.02676637,27,0.08237711,0.06885347,0.01352364]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-11-01'),0.1103075,78.50746,0.0802768,0.06646325,0.01381355]
+        		['Context Sensitive Services',new Date('2011-11-01'),0.03340607,29.59082,0.07713678,0.06310813,0.01402865]
 			,
 			
-        		['Context Sensitive Services',new Date('2011-12-01'),0.1302502,89.5,0.07641686,0.06362906,0.0127878]
+        		['Context Sensitive Services',new Date('2011-12-01'),0.0490609,40,0.06872301,0.05651829,0.01220471]
 			,
 			
-        		['Context Sensitive Services',new Date('2012-01-01'),0.137729,115.6471,0.07369882,0.06200811,0.01169071]
+        		['Context Sensitive Services',new Date('2012-01-01'),0.06544476,62.08589,0.0645446,0.05531353,0.00923107]
 			,
 			
-        		['Context Sensitive Services',new Date('2012-02-01'),0.1376721,137,0.07121765,0.06037266,0.01084498]
+        		['Context Sensitive Services',new Date('2012-02-01'),0.07474621,80.5,0.06293328,0.05578995,0.007143323]
 			,
 			
-        		['Context Sensitive Services',new Date('2012-03-01'),0.1391579,134.6542,0.06804266,0.05770786,0.0103348]
+        		['Context Sensitive Services',new Date('2012-03-01'),0.07332959,81.25313,0.06108698,0.05367535,0.00741163]
 			,
 			
-        		['Context Sensitive Services',new Date('2012-04-01'),0.1475752,122.5,0.06652747,0.05667262,0.009854853]
+        		['Context Sensitive Services',new Date('2012-04-01'),0.07378762,75,0.06074579,0.05235779,0.008388005]
 			,
 			
-        		['Context Sensitive Services',new Date('2012-05-01'),0.1634349,116.7986,0.0685246,0.05933816,0.009186434]
+        		['Context Sensitive Services',new Date('2012-05-01'),0.08656202,73.8391,0.06356033,0.05526803,0.008292299]
 			,
 			
-        		['Context Sensitive Services',new Date('2012-06-01'),0.1714244,110.5,0.07059781,0.06175106,0.00884675]
+        		['Context Sensitive Services',new Date('2012-06-01'),0.09726207,71,0.06628115,0.0583473,0.007933855]
 			,
 			
-        		['Context Sensitive Services',new Date('2012-07-01'),0.1588907,95.65153,0.06947855,0.06021202,0.009266532]
+        		['Context Sensitive Services',new Date('2012-07-01'),0.0914383,59.45297,0.06577358,0.05743254,0.008341031]
 			,
 			
-        		['Context Sensitive Services',new Date('2012-08-01'),0.1396421,84,0.06785761,0.05806291,0.0097947]
+        		['Context Sensitive Services',new Date('2012-08-01'),0.07923879,50,0.06426177,0.05543302,0.008828746]
 			,
 			
-        		['Context Sensitive Services',new Date('2012-09-01'),0.1295559,87.78282,0.06891227,0.0591812,0.009731072]
+        		['Context Sensitive Services',new Date('2012-09-01'),0.07341794,53.91151,0.06450233,0.05594712,0.008555206]
 			,
 			
-        		['Context Sensitive Services',new Date('2012-10-01'),0.1263239,101.5,0.0718064,0.06254553,0.009260871]
+        		['Context Sensitive Services',new Date('2012-10-01'),0.07255796,66.5,0.06602273,0.05825751,0.007765216]
 			,
 			
         		['Games',new Date('2009-02-01'),0.1620463,71,0.07388505,0.05675639,0.01712866]
