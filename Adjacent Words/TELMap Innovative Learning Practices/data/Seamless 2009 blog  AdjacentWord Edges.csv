@@ -1,0 +1,11 @@
+"Source","Target","Type","Weight"
+"enable_","_focus_","Directed",2.5
+"humancentred_","_focus_","Directed",2.5
+"include_","_focus_","Directed",5
+"looks_","_focus_","Directed",2.5
+"offers_","_focus_","Directed",2.5
+"proactive_","_focus_","Directed",2.5
+"provide_","_focus_","Directed",2.5
+"relatively_","_focus_","Directed",2.5
+"_focus_","_access","Directed",7.5
+"_focus_","_integration","Directed",17.5

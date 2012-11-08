@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="v_size" for="node" attr.name="size" attr.type="double"/>
+  <key id="e_Type" for="edge" attr.name="Type" attr.type="string"/>
+  <key id="e_Weight" for="edge" attr.name="Weight" attr.type="double"/>
+  <key id="e_label" for="edge" attr.name="label" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="n0">
+      <data key="v_name">_focus_</data>
+      <data key="v_label">Open</data>
+      <data key="v_size">100</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">massive_</data>
+      <data key="v_label">massive</data>
+      <data key="v_size">17.7886</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">_access</data>
+      <data key="v_label">access</data>
+      <data key="v_size">22.3715</data>
+    </node>
+    <node id="n3">
+      <data key="v_name">_course</data>
+      <data key="v_label">course</data>
+      <data key="v_size">13.5665</data>
+    </node>
+    <node id="n4">
+      <data key="v_name">_courses</data>
+      <data key="v_label">courses</data>
+      <data key="v_size">14.8178</data>
+    </node>
+    <node id="n5">
+      <data key="v_name">_data</data>
+      <data key="v_label">data</data>
+      <data key="v_size">19.9288</data>
+    </node>
+    <node id="n6">
+      <data key="v_name">_education</data>
+      <data key="v_label">education</data>
+      <data key="v_size">19.9288</data>
+    </node>
+    <node id="n7">
+      <data key="v_name">_educational</data>
+      <data key="v_label">educational</data>
+      <data key="v_size">20.3299</data>
+    </node>
+    <node id="n8">
+      <data key="v_name">_learning</data>
+      <data key="v_label">learning</data>
+      <data key="v_size">14.7084</data>
+    </node>
+    <node id="n9">
+      <data key="v_name">_online</data>
+      <data key="v_label">online</data>
+      <data key="v_size">25.1569</data>
+    </node>
+    <node id="n10">
+      <data key="v_name">_source</data>
+      <data key="v_label">source</data>
+      <data key="v_size">29.5811</data>
+    </node>
+    <node id="n11">
+      <data key="v_name">_standards</data>
+      <data key="v_label">standards</data>
+      <data key="v_size">19.1016</data>
+    </node>
+    <node id="n12">
+      <data key="v_name">_university</data>
+      <data key="v_label">university</data>
+      <data key="v_size">17.5142</data>
+    </node>
+    <edge source="n1" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">3.16435</data>
+      <data key="e_label">3%</data>
+    </edge>
+    <edge source="n0" target="n2">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">5.00484</data>
+      <data key="e_label">5%</data>
+    </edge>
+    <edge source="n0" target="n3">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.84049</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n0" target="n4">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">2.19567</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n0" target="n5">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">3.97159</data>
+      <data key="e_label">4%</data>
+    </edge>
+    <edge source="n0" target="n6">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">3.97159</data>
+      <data key="e_label">4%</data>
+    </edge>
+    <edge source="n0" target="n7">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">4.13303</data>
+      <data key="e_label">4%</data>
+    </edge>
+    <edge source="n0" target="n8">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">2.16338</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n0" target="n9">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">6.32871</data>
+      <data key="e_label">6%</data>
+    </edge>
+    <edge source="n0" target="n10">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">8.7504</data>
+      <data key="e_label">9%</data>
+    </edge>
+    <edge source="n0" target="n11">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">3.64869</data>
+      <data key="e_label">4%</data>
+    </edge>
+    <edge source="n0" target="n12">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">3.06748</data>
+      <data key="e_label">3%</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="v_size" for="node" attr.name="size" attr.type="double"/>
+  <key id="e_Type" for="edge" attr.name="Type" attr.type="string"/>
+  <key id="e_Weight" for="edge" attr.name="Weight" attr.type="double"/>
+  <key id="e_label" for="edge" attr.name="label" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="n0">
+      <data key="v_name">_focus_</data>
+      <data key="v_label">Seamless</data>
+      <data key="v_size">100</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">provide_</data>
+      <data key="v_label">provide</data>
+      <data key="v_size">29.277</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">_access</data>
+      <data key="v_label">access</data>
+      <data key="v_size">33.8062</data>
+    </node>
+    <node id="n3">
+      <data key="v_name">_integration</data>
+      <data key="v_label">integration</data>
+      <data key="v_size">29.277</data>
+    </node>
+    <node id="n4">
+      <data key="v_name">_learning</data>
+      <data key="v_label">learning</data>
+      <data key="v_size">29.277</data>
+    </node>
+    <node id="n5">
+      <data key="v_name">_multitasking</data>
+      <data key="v_label">multitasking</data>
+      <data key="v_size">37.7964</data>
+    </node>
+    <node id="n6">
+      <data key="v_name">_sharing</data>
+      <data key="v_label">sharing</data>
+      <data key="v_size">29.277</data>
+    </node>
+    <edge source="n1" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">8.57143</data>
+      <data key="e_label">9%</data>
+    </edge>
+    <edge source="n0" target="n2">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">11.4286</data>
+      <data key="e_label">11%</data>
+    </edge>
+    <edge source="n0" target="n3">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">8.57143</data>
+      <data key="e_label">9%</data>
+    </edge>
+    <edge source="n0" target="n4">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">8.57143</data>
+      <data key="e_label">9%</data>
+    </edge>
+    <edge source="n0" target="n5">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">14.2857</data>
+      <data key="e_label">14%</data>
+    </edge>
+    <edge source="n0" target="n6">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">8.57143</data>
+      <data key="e_label">9%</data>
+    </edge>
+  </graph>
+</graphml>

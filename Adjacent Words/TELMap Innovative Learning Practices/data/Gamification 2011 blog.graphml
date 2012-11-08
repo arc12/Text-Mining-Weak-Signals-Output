@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="v_size" for="node" attr.name="size" attr.type="double"/>
+  <key id="e_Type" for="edge" attr.name="Type" attr.type="string"/>
+  <key id="e_Weight" for="edge" attr.name="Weight" attr.type="double"/>
+  <key id="e_label" for="edge" attr.name="label" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="n0">
+      <data key="v_name">_focus_</data>
+      <data key="v_label">Gamification</data>
+      <data key="v_size">100</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">abstract_</data>
+      <data key="v_label">abstract</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">add_</data>
+      <data key="v_label">add</data>
+      <data key="v_size">18.1071</data>
+    </node>
+    <node id="n3">
+      <data key="v_name">adding_</data>
+      <data key="v_label">adding</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n4">
+      <data key="v_name">apply_</data>
+      <data key="v_label">apply</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n5">
+      <data key="v_name">apps_</data>
+      <data key="v_label">apps</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n6">
+      <data key="v_name">badges_</data>
+      <data key="v_label">badges</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n7">
+      <data key="v_name">define_</data>
+      <data key="v_label">define</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n8">
+      <data key="v_name">deployed_</data>
+      <data key="v_label">deployed</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n9">
+      <data key="v_name">dispensing_</data>
+      <data key="v_label">dispensing</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n10">
+      <data key="v_name">effectiveness_</data>
+      <data key="v_label">effectiveness</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n11">
+      <data key="v_name">enterprise_</data>
+      <data key="v_label">enterprise</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n12">
+      <data key="v_name">hate_</data>
+      <data key="v_label">hate</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n13">
+      <data key="v_name">location_</data>
+      <data key="v_label">location</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n14">
+      <data key="v_name">mah_</data>
+      <data key="v_label">mah</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n15">
+      <data key="v_name">tweet_</data>
+      <data key="v_label">tweet</data>
+      <data key="v_size">12.8037</data>
+    </node>
+    <node id="n16">
+      <data key="v_name">_caution</data>
+      <data key="v_label">caution</data>
+      <data key="v_size">18.1071</data>
+    </node>
+    <edge source="n1" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n2" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">3.27869</data>
+      <data key="e_label">3%</data>
+    </edge>
+    <edge source="n3" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n4" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n5" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n6" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n7" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n8" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n9" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n10" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n11" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n12" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n13" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n14" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n15" target="n0">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">1.63934</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n0" target="n16">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">3.27869</data>
+      <data key="e_label">3%</data>
+    </edge>
+  </graph>
+</graphml>

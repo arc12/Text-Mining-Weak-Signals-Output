@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="v_size" for="node" attr.name="size" attr.type="double"/>
+  <key id="e_Type" for="edge" attr.name="Type" attr.type="string"/>
+  <key id="e_Weight" for="edge" attr.name="Weight" attr.type="double"/>
+  <key id="e_label" for="edge" attr.name="label" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="n0">
+      <data key="v_name">_focus_</data>
+      <data key="v_label">Flipped</data>
+      <data key="v_size">100</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">_approach</data>
+      <data key="v_label">approach</data>
+      <data key="v_size">15.8114</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">_class</data>
+      <data key="v_label">class</data>
+      <data key="v_size">19.3649</data>
+    </node>
+    <node id="n3">
+      <data key="v_name">_classes</data>
+      <data key="v_label">classes</data>
+      <data key="v_size">15.8114</data>
+    </node>
+    <node id="n4">
+      <data key="v_name">_classroom</data>
+      <data key="v_label">classroom</data>
+      <data key="v_size">85.8778</data>
+    </node>
+    <node id="n5">
+      <data key="v_name">_classrooms</data>
+      <data key="v_label">classrooms</data>
+      <data key="v_size">15.8114</data>
+    </node>
+    <edge source="n0" target="n1">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">2.5</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n0" target="n2">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">3.75</data>
+      <data key="e_label">4%</data>
+    </edge>
+    <edge source="n0" target="n3">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">2.5</data>
+      <data key="e_label">2%</data>
+    </edge>
+    <edge source="n0" target="n4">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">73.75</data>
+      <data key="e_label">74%</data>
+    </edge>
+    <edge source="n0" target="n5">
+      <data key="e_Type">Directed</data>
+      <data key="e_Weight">2.5</data>
+      <data key="e_label">2%</data>
+    </edge>
+  </graph>
+</graphml>

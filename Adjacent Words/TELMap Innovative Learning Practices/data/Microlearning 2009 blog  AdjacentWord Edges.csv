@@ -1,0 +1,11 @@
+"Source","Target","Type","Weight"
+"enterprise_","_focus_","Directed",28.5714285714286
+"information_","_focus_","Directed",14.2857142857143
+"meaningful_","_focus_","Directed",14.2857142857143
+"sun_","_focus_","Directed",14.2857142857143
+"term_","_focus_","Directed",14.2857142857143
+"wikipedia_","_focus_","Directed",14.2857142857143
+"_focus_","_deals","Directed",14.2857142857143
+"_focus_","_enterprise","Directed",14.2857142857143
+"_focus_","_janet","Directed",14.2857142857143
+"_focus_","_refers","Directed",14.2857142857143

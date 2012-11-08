@@ -1,0 +1,10 @@
+"Source","Target","Type","Weight"
+"cck08_","_focus_","Directed",1.72413793103448
+"cck09_","_focus_","Directed",1.72413793103448
+"siemens_","_focus_","Directed",2.58620689655172
+"_focus_","_approach","Directed",1.72413793103448
+"_focus_","_blog","Directed",4.31034482758621
+"_focus_","_cck08","Directed",1.72413793103448
+"_focus_","_course","Directed",6.89655172413793
+"_focus_","_learning","Directed",2.58620689655172
+"_focus_","_site","Directed",2.58620689655172
