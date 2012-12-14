@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <ModulePrefs title="History Visualiser: Blog Posts - Augmented Reality" height="400">
+ <Require feature="dynamic-height"/>
+ </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+<head>
+  <title>History Visualiser: Blog Posts - Augmented Reality</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=420;
+      		options['height']=300;
+      		      		options['showSidePanel']=false;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Augmented',new Date('2009-02-01'),0.003035996,3,0.05534176,0.04823079,0.007110972]
+			,
+			
+        		['Augmented',new Date('2009-03-01'),0.006910101,8.071667,0.07666969,0.06789968,0.008770009]
+			,
+			
+        		['Augmented',new Date('2009-04-01'),0.008197072,10.5,0.08821844,0.07814617,0.01007227]
+			,
+			
+        		['Augmented',new Date('2009-05-01'),0.005886092,8.847498,0.08429854,0.07345746,0.01084107]
+			,
+			
+        		['Augmented',new Date('2009-06-01'),0.005271611,6.5,0.07557919,0.06395914,0.01162005]
+			,
+			
+        		['Augmented',new Date('2009-07-01'),0.01043939,6.72584,0.07261534,0.0599392,0.01267614]
+			,
+			
+        		['Augmented',new Date('2009-08-01'),0.0143352,7.5,0.06914621,0.05669698,0.01244922]
+			,
+			
+        		['Augmented',new Date('2009-09-01'),0.0103141,6.43664,0.05889883,0.04898039,0.009918434]
+			,
+			
+        		['Augmented',new Date('2009-10-01'),0.004508271,5,0.05236735,0.04432021,0.008047136]
+			,
+			
+        		['Augmented',new Date('2009-11-01'),0.004034624,5.090099,0.05944865,0.0499053,0.009543348]
+			,
+			
+        		['Augmented',new Date('2009-12-01'),0.00717169,6.5,0.07088342,0.05877387,0.01210955]
+			,
+			
+        		['Augmented',new Date('2010-01-01'),0.01059839,8.515466,0.07555314,0.06267413,0.01287901]
+			,
+			
+        		['Augmented',new Date('2010-02-01'),0.01343352,10.5,0.07405867,0.06234495,0.01171372]
+			,
+			
+        		['Augmented',new Date('2010-03-01'),0.01569249,12.03554,0.06981194,0.0603899,0.009422036]
+			,
+			
+        		['Augmented',new Date('2010-04-01'),0.01853713,13.5,0.06574982,0.05788053,0.00786929]
+			,
+			
+        		['Augmented',new Date('2010-05-01'),0.02281841,15.09238,0.06417939,0.05570067,0.008478715]
+			,
+			
+        		['Augmented',new Date('2010-06-01'),0.02699722,15.5,0.06536348,0.05551517,0.00984831]
+			,
+			
+        		['Augmented',new Date('2010-07-01'),0.02902847,13.78245,0.06886745,0.05844222,0.01042523]
+			,
+			
+        		['Augmented',new Date('2010-08-01'),0.02723298,12,0.07351088,0.06263241,0.01087847]
+			,
+			
+        		['Augmented',new Date('2010-09-01'),0.02098886,12.02783,0.07782454,0.06585377,0.01197078]
+			,
+			
+        		['Augmented',new Date('2010-10-01'),0.01353741,12,0.07992962,0.06731166,0.01261797]
+			,
+			
+        		['Augmented',new Date('2010-11-01'),0.008764256,10.23125,0.07864006,0.06675062,0.01188944]
+			,
+			
+        		['Augmented',new Date('2010-12-01'),0.009269395,9.5,0.07595036,0.06463454,0.01131583]
+			,
+			
+        		['Augmented',new Date('2011-01-01'),0.01540174,12.10969,0.07409802,0.0619027,0.01219532]
+			,
+			
+        		['Augmented',new Date('2011-02-01'),0.01979158,14,0.07311181,0.06067662,0.01243519]
+			,
+			
+        		['Augmented',new Date('2011-03-01'),0.01635936,11.39249,0.07242468,0.06220612,0.01021855]
+			,
+			
+        		['Augmented',new Date('2011-04-01'),0.01190464,8,0.07129473,0.06307189,0.008222841]
+			,
+			
+        		['Augmented',new Date('2011-05-01'),0.01373553,7.945358,0.069311,0.06008056,0.009230446]
+			,
+			
+        		['Augmented',new Date('2011-06-01'),0.01831511,9.5,0.06756096,0.05561172,0.01194924]
+			,
+			
+        		['Augmented',new Date('2011-07-01'),0.0203763,10.13858,0.06696799,0.05288996,0.01407803]
+			,
+			
+        		['Augmented',new Date('2011-08-01'),0.01857625,10,0.06630077,0.05294681,0.01335396]
+			,
+			
+        		['Augmented',new Date('2011-09-01'),0.01366926,9.812822,0.06502263,0.05590372,0.009118912]
+			,
+			
+        		['Augmented',new Date('2011-10-01'),0.01087384,10,0.06753011,0.06043465,0.007095462]
+			,
+			
+        		['Augmented',new Date('2011-11-01'),0.01391309,10.67263,0.07673638,0.06504356,0.01169282]
+			,
+			
+        		['Augmented',new Date('2011-12-01'),0.01606419,11,0.08468779,0.06900172,0.01568606]
+			,
+			
+        		['Augmented',new Date('2012-01-01'),0.01144675,10.30915,0.08369512,0.07144472,0.0122504]
+			,
+			
+        		['Augmented',new Date('2012-02-01'),0.007996106,9.5,0.0779938,0.07019802,0.007795777]
+			,
+			
+        		['Augmented',new Date('2012-03-01'),0.01327724,9.403267,0.07308433,0.06397552,0.009108815]
+			,
+			
+        		['Augmented',new Date('2012-04-01'),0.01955816,9,0.067603,0.05635493,0.01124807]
+			,
+			
+        		['Augmented',new Date('2012-05-01'),0.01857047,7.452782,0.06019791,0.05143104,0.008766868]
+			,
+			
+        		['Augmented',new Date('2012-06-01'),0.0151972,6.5,0.05642872,0.05050302,0.005925696]
+			,
+			
+        		['Augmented',new Date('2012-07-01'),0.01555411,7.723105,0.06116564,0.05365323,0.00751241]
+			,
+			
+        		['Augmented',new Date('2012-08-01'),0.01753645,9.5,0.06960976,0.05889254,0.01071722]
+			,
+			
+        		['Augmented',new Date('2012-09-01'),0.01788888,9.967298,0.07603999,0.0641666,0.01187339]
+			,
+			
+        		['Augmented',new Date('2012-10-01'),0.01697409,9.5,0.08071571,0.06923171,0.01148401]
+			,
+			
+        		['Virtual',new Date('2009-02-01'),0.09449536,68,0.07440798,0.0620398,0.01236817]
+			,
+			
+        		['Virtual',new Date('2009-03-01'),0.1017408,74.30577,0.0722873,0.06107733,0.01120997]
+			,
+			
+        		['Virtual',new Date('2009-04-01'),0.1069183,77,0.07096577,0.06061258,0.01035319]
+			,
+			
+        		['Virtual',new Date('2009-05-01'),0.107894,73.6452,0.07095148,0.06093262,0.01001886]
+			,
+			
+        		['Virtual',new Date('2009-06-01'),0.1022693,66.5,0.07158842,0.06148197,0.01010645]
+			,
+			
+        		['Virtual',new Date('2009-07-01'),0.09042207,59.05095,0.07206475,0.0616056,0.01045915]
+			,
+			
+        		['Virtual',new Date('2009-08-01'),0.08409987,55,0.07210954,0.06109305,0.01101649]
+			,
+			
+        		['Virtual',new Date('2009-09-01'),0.09265751,56.27601,0.07162181,0.05997399,0.01164782]
+			,
+			
+        		['Virtual',new Date('2009-10-01'),0.1045099,57.5,0.07063948,0.05879412,0.01184536]
+			,
+			
+        		['Virtual',new Date('2009-11-01'),0.1073675,53.97001,0.06958374,0.05825523,0.01132851]
+			,
+			
+        		['Virtual',new Date('2009-12-01'),0.1070631,51,0.0702698,0.05916734,0.01110246]
+			,
+			
+        		['Virtual',new Date('2010-01-01'),0.1099824,53.78143,0.07365006,0.06169905,0.01195101]
+			,
+			
+        		['Virtual',new Date('2010-02-01'),0.1066015,57,0.07583156,0.06334514,0.01248641]
+			,
+			
+        		['Virtual',new Date('2010-03-01'),0.08916636,55.02925,0.07361914,0.06217663,0.01144251]
+			,
+			
+        		['Virtual',new Date('2010-04-01'),0.07291272,51.5,0.07145444,0.0612435,0.01021094]
+			,
+			
+        		['Virtual',new Date('2010-05-01'),0.07313396,50.47656,0.07340484,0.06321164,0.0101932]
+			,
+			
+        		['Virtual',new Date('2010-06-01'),0.08236441,48.5,0.074404,0.06423161,0.01017238]
+			,
+			
+        		['Virtual',new Date('2010-07-01'),0.08960589,43.002,0.0699907,0.06095749,0.009033214]
+			,
+			
+        		['Virtual',new Date('2010-08-01'),0.09248935,42.5,0.06725814,0.05857255,0.00868559]
+			,
+			
+        		['Virtual',new Date('2010-09-01'),0.09143973,53.64042,0.07301042,0.06222641,0.01078401]
+			,
+			
+        		['Virtual',new Date('2010-10-01'),0.08942893,64.5,0.08134099,0.06840469,0.01293629]
+			,
+			
+        		['Virtual',new Date('2010-11-01'),0.08859456,63.24881,0.08500309,0.0722507,0.01275239]
+			,
+			
+        		['Virtual',new Date('2010-12-01'),0.08519016,57,0.08409987,0.07220241,0.01189746]
+			,
+			
+        		['Virtual',new Date('2011-01-01'),0.07640664,54.61433,0.08073875,0.06855456,0.01218418]
+			,
+			
+        		['Virtual',new Date('2011-02-01'),0.06906858,53,0.07769422,0.06573419,0.01196003]
+			,
+			
+        		['Virtual',new Date('2011-03-01'),0.06956585,47.91886,0.07699828,0.06726677,0.009731517]
+			,
+			
+        		['Virtual',new Date('2011-04-01'),0.07291594,42.5,0.0770457,0.06893928,0.008106421]
+			,
+			
+        		['Virtual',new Date('2011-05-01'),0.07257867,40.08522,0.0759103,0.06640057,0.009509723]
+			,
+			
+        		['Virtual',new Date('2011-06-01'),0.06715541,37.5,0.07401942,0.06248558,0.01153384]
+			,
+			
+        		['Virtual',new Date('2011-07-01'),0.05885964,32.11527,0.07229287,0.06078882,0.01150405]
+			,
+			
+        		['Virtual',new Date('2011-08-01'),0.05921179,30,0.07126683,0.06075724,0.01050959]
+			,
+			
+        		['Virtual',new Date('2011-09-01'),0.07684514,36.1412,0.07152965,0.06123723,0.01029242]
+			,
+			
+        		['Virtual',new Date('2011-10-01'),0.09953744,42.5,0.07426199,0.0628206,0.01144138]
+			,
+			
+        		['Virtual',new Date('2011-11-01'),0.1131571,41.56992,0.07957459,0.06589969,0.0136749]
+			,
+			
+        		['Virtual',new Date('2011-12-01'),0.116791,41,0.08270624,0.06832353,0.01438272]
+			,
+			
+        		['Virtual',new Date('2012-01-01'),0.1139521,48.26662,0.07971734,0.06803613,0.0116812]
+			,
+			
+        		['Virtual',new Date('2012-02-01'),0.1126408,55,0.07482654,0.06590464,0.008921894]
+			,
+			
+        		['Virtual',new Date('2012-03-01'),0.1181506,52.1136,0.07269526,0.06332943,0.009365832]
+			,
+			
+        		['Virtual',new Date('2012-04-01'),0.1204605,43.5,0.07159767,0.06092071,0.01067696]
+			,
+			
+        		['Virtual',new Date('2012-05-01'),0.1105963,35.46647,0.0691937,0.05905295,0.01014076]
+			,
+			
+        		['Virtual',new Date('2012-06-01'),0.09908574,31,0.06707365,0.05794773,0.009125921]
+			,
+			
+        		['Virtual',new Date('2012-07-01'),0.09699895,31.39551,0.06724739,0.05785888,0.009388511]
+			,
+			
+        		['Virtual',new Date('2012-08-01'),0.09807424,34.5,0.06947273,0.05932199,0.01015073]
+			,
+			
+        		['Virtual',new Date('2012-09-01'),0.09410205,37.8265,0.0729748,0.06266228,0.01031252]
+			,
+			
+        		['Virtual',new Date('2012-10-01'),0.08641353,41,0.07710006,0.06708157,0.01001849]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	gadgets.window.adjustHeight();
+      	}
+  </script>
+
+</head>
+
+<div>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="reduced">
+
+</div>
+
+
+
+<div class="reduced">
+<p><a href="http://arc12.github.com/Text-Mining-Weak-Signals-Output/History Visualiser/TELMap Emerging Technologies/Augmented.Reality blog.html" target="_new">Larger version</a> with more options and more info...</p></div>
+</body>
+    ]]>
+  </Content>
+</Module>
+

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <ModulePrefs title="History Visualiser: Conferences - Augmented Reality" height="400">
+ <Require feature="dynamic-height"/>
+ </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+<head>
+  <title>History Visualiser: Conferences - Augmented Reality</title>
+  <meta name="AUTHOR" content="Adam Cooper" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+  <style type="text/css">
+	body { background-color: #efefef; padding: 10px;}
+	div.nice { width: 270px; float: left; padding: 10px; font-size: 14px; font-family: arial; color: black;}
+	div.chart {width: 800px; float: left; padding: 5px;}
+	div.clear { clear: both;} 
+	div.reduced {font-size: 12px; font-family: arial; color: black; clear: both;}
+  </style>
+
+  
+  <script language="javascript" type="text/javascript">
+	var gadgets;
+      
+      	google.load('visualization', '1', {'packages':['motionchart']});
+      	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+      		var options = {};
+      		      		options['width']=420;
+      		options['height']=300;
+      		      		options['showSidePanel']=false;
+      		options['state']='{"yAxisOption":"2","xZoomedIn":false,"yLambda":1,"iconType":"LINE","yZoomedIn":false,"yZoomedDataMin":-0.003,"yZoomedDataMax":0.8,"nonSelectedAlpha":0.4,"orderedByX":false,"xZoomedDataMin":1151712000000,"time":"2012-07-01","xZoomedDataMax":1341100800000,"orderedByY":false,"uniColorForNonSelected":false,"colorOption":"5","duration":{"timeUnit":"D","multiplier":1},"playDuration":15000,"showTrails":false,"sizeOption":"_UNISIZE","iconKeySettings":[],"xLambda":1,"dimensions":{"iconDimensions":["dim0"]},"xAxisOption":"_TIME"}';
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Term');
+        	data.addColumn('date', 'Date');
+        	data.addColumn('number', 'Frequency (%)');
+        	data.addColumn('number', 'Documents');
+        	data.addColumn('number', 'Subjectivity');
+        	data.addColumn('number', 'Positive Sentiment');
+        	data.addColumn('number', 'Negative Sentiment');
+        	data.addRows([
+        	//injected data from R. cannot use rjson because types vary
+        		        		
+        		['Augmented',new Date('2006-07-01'),0.059007,9,0.1033028,0.09968343,0.00361935]
+			,
+			
+        		['Augmented',new Date('2006-10-01'),0.04848959,7.696514,0.09371407,0.08724394,0.006470132]
+			,
+			
+        		['Augmented',new Date('2007-01-01'),0.03932682,6.614423,0.08573239,0.07676258,0.008969809]
+			,
+			
+        		['Augmented',new Date('2007-04-01'),0.03287335,5.97512,0.08096478,0.0701975,0.01076728]
+			,
+			
+        		['Augmented',new Date('2007-07-01'),0.03048382,6,0.08101827,0.06950683,0.01151144]
+			,
+			
+        		['Augmented',new Date('2007-10-01'),0.03278711,6.782813,0.0866542,0.07564057,0.01101363]
+			,
+			
+        		['Augmented',new Date('2008-01-01'),0.037509,7.906731,0.09525117,0.08551616,0.009735009]
+			,
+			
+        		['Augmented',new Date('2008-04-01'),0.04164951,8.827284,0.1033421,0.09504288,0.008299175]
+			,
+			
+        		['Augmented',new Date('2008-07-01'),0.04220866,9,0.1074598,0.10013,0.007329729]
+			,
+			
+        		['Augmented',new Date('2008-10-01'),0.03723808,8.078486,0.1052859,0.09804607,0.007239816]
+			,
+			
+        		['Augmented',new Date('2009-01-01'),0.02899583,6.508654,0.09909684,0.09149608,0.00760076]
+			,
+			
+        		['Augmented',new Date('2009-04-01'),0.02079157,4.934495,0.09231772,0.0845443,0.007773425]
+			,
+			
+        		['Augmented',new Date('2009-07-01'),0.01593499,4,0.08837366,0.08125498,0.007118678]
+			,
+			
+        		['Augmented',new Date('2009-10-01'),0.01694985,4.16887,0.08963341,0.08437732,0.00525609]
+			,
+			
+        		['Augmented',new Date('2010-01-01'),0.02321641,5.183654,0.09424036,0.0914003,0.002840051]
+			,
+			
+        		['Augmented',new Date('2010-04-01'),0.03332903,6.606611,0.09928154,0.09849788,0.0007836561]
+			,
+			
+        		['Augmented',new Date('2010-07-01'),0.04588208,8,0.101844,0.101844,0]
+			,
+			
+        		['Augmented',new Date('2010-10-01'),0.05935725,9.011659,0.09972501,0.09863865,0.001086352]
+			,
+			
+        		['Augmented',new Date('2011-01-01'),0.07178555,9.631731,0.09356292,0.09018624,0.003376682]
+			,
+			
+        		['Augmented',new Date('2011-04-01'),0.0810853,9.935938,0.08470635,0.07881721,0.005889133]
+			,
+			
+        		['Augmented',new Date('2011-07-01'),0.08517485,10,0.07450387,0.06686202,0.007641849]
+			,
+			
+        		['Augmented',new Date('2011-10-01'),0.08262329,9.89387,0.06407921,0.05619003,0.007889183]
+			,
+			
+        		['Augmented',new Date('2012-01-01'),0.07460284,9.664423,0.05365658,0.04682625,0.006830322]
+			,
+			
+        		['Augmented',new Date('2012-04-01'),0.06293645,9.352764,0.04323529,0.03833463,0.004900666]
+			,
+			
+        		['Augmented',new Date('2012-07-01'),0.04944709,9,0.03281469,0.03027907,0.002535613]
+			,
+			
+        		['Virtual',new Date('2006-07-01'),0.2233836,37,0.1001007,0.0892565,0.0108442]
+			,
+			
+        		['Virtual',new Date('2006-10-01'),0.1865359,30.92338,0.09808949,0.08684416,0.01124533]
+			,
+			
+        		['Virtual',new Date('2007-01-01'),0.1542824,25.5774,0.09593919,0.0843471,0.01159209]
+			,
+			
+        		['Virtual',new Date('2007-04-01'),0.1312174,21.69273,0.09351067,0.08168058,0.01183009]
+			,
+			
+        		['Virtual',new Date('2007-07-01'),0.1219353,20,0.09066484,0.07875989,0.01190495]
+			,
+			
+        		['Virtual',new Date('2007-10-01'),0.1291735,20.92109,0.0874015,0.07561823,0.01178327]
+			,
+			
+        		['Virtual',new Date('2008-01-01'),0.1482433,23.64279,0.08427606,0.07276061,0.01151545]
+			,
+			
+        		['Virtual',new Date('2008-04-01'),0.1725989,27.04309,0.08198284,0.07080999,0.01117286]
+			,
+			
+        		['Virtual',new Date('2008-07-01'),0.1956947,30,0.08121615,0.0703893,0.01082685]
+			,
+			
+        		['Virtual',new Date('2008-10-01'),0.2124611,31.64225,0.08238888,0.07186712,0.01052176]
+			,
+			
+        		['Virtual',new Date('2009-01-01'),0.2237318,32.10144,0.08478816,0.07459444,0.01019371]
+			,
+			
+        		['Virtual',new Date('2009-04-01'),0.2318165,31.75992,0.08741968,0.07766789,0.009751798]
+			,
+			
+        		['Virtual',new Date('2009-07-01'),0.2390248,31,0.08928917,0.08018407,0.009105097]
+			,
+			
+        		['Virtual',new Date('2009-10-01'),0.2468392,30.16617,0.08969024,0.0814735,0.008216738]
+			,
+			
+        		['Virtual',new Date('2010-01-01'),0.2534338,29.45144,0.08906831,0.0818023,0.007266009]
+			,
+			
+        		['Virtual',new Date('2010-04-01'),0.2561556,29.011,0.0881567,0.08167046,0.006486239]
+			,
+			
+        		['Virtual',new Date('2010-07-01'),0.2523515,29,0.08768876,0.081578,0.006110757]
+			,
+			
+        		['Virtual',new Date('2010-10-01'),0.2406172,29.50559,0.08815835,0.08187048,0.006287869]
+			,
+			
+        		['Virtual',new Date('2011-01-01'),0.224544,30.34279,0.08910148,0.0822757,0.006825782]
+			,
+			
+        		['Virtual',new Date('2011-04-01'),0.208972,31.25859,0.0898147,0.08236702,0.007447683]
+			,
+			
+        		['Virtual',new Date('2011-07-01'),0.1987413,32,0.08959456,0.0817178,0.007876756]
+			,
+			
+        		['Virtual',new Date('2011-10-01'),0.197461,32.37398,0.08792303,0.08002114,0.007901892]
+			,
+			
+        		['Virtual',new Date('2012-01-01'),0.2038167,32.4274,0.08502389,0.07744909,0.007574796]
+			,
+			
+        		['Virtual',new Date('2012-04-01'),0.215263,32.26713,0.08130633,0.07429345,0.007012879]
+			,
+			
+        		['Virtual',new Date('2012-07-01'),0.2292547,32,0.07717957,0.07084602,0.006333551]
+			
+			
+          	]);
+        	var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        	chart.draw(data, options);
+        	gadgets.window.adjustHeight();
+      	}
+  </script>
+
+</head>
+
+<div>
+
+<div id="chart_div" class="chart"></div>
+
+<div class="reduced">
+
+</div>
+
+
+
+<div class="reduced">
+<p><a href="http://arc12.github.com/Text-Mining-Weak-Signals-Output/History Visualiser/TELMap Emerging Technologies/Augmented.Reality conf.html" target="_new">Larger version</a> with more options and more info...</p></div>
+</body>
+    ]]>
+  </Content>
+</Module>
+
